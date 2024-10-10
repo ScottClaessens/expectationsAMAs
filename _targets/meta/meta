@@ -1,1 +1,8 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+data|stem|62f9e8416950063f|237276f659722970|7156cdddb2410c70|33550471||t20006.6524268082s|66c6be428d190ddb|14731|rds|local|vector|||0.516||
+data_file|stem|9684653e961279fd|cf06a36a4dd9338d|2c530c1562a7fbd1|-679625259|data/pilot/pilot_data_clean.csv|t20006.6089608983s|04d147e1ff67e41b|85588|file|local|vector|||1.187|package tidyverse was built under R version 4.2.3. package ggplot2 was built under R version 4.2.3. package tibble was built under R version 4.2.3. package tidyr was built under R version 4.2.3. package readr was built under R version 4.2.3. package purrr was built under R version 4.2.3. package dplyr was built under R version 4.2.3. package stringr was built under R version 4.2.3. package forcats was built under R version 4.2.3. package lubridate was built under R version 4.2.3|
+extract_means|function|d702f546196f83f8|||||||||||||||
+fit|stem|88385d5ba2e7ae79|122b7dd8ec340fb3|c1e6c06855f873a6|150100524||t20006.686666797s|b4eceb5ed65364a5|19312750|rds|local|vector|||202.031||
+fit_model|function|70af0e270c6b221e|||||||||||||||
+load_data|function|a4505372d5433e3a|||||||||||||||
+means|stem|8cb9c0ec9579dc0d|49311b0ed3ed7367|eb30dd22b06b4604|-292177593||t20006.691962505s|0c7df8a8f4749f02|2067|rds|local|vector|||8.265||
