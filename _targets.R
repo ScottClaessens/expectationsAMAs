@@ -14,5 +14,7 @@ list(
   # fit model
   tar_target(fit, fit_model(data)),
   # extract estimated means from the model
-  tar_target(means, extract_means(fit))
+  tar_target(means, extract_means(fit)),
+  # plot results
+  tar_target(plot, plot_results(data, means))
 )
