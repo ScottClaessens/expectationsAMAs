@@ -6,5 +6,5 @@ fit|stem|55d5ac7db2dfe47c|122b7dd8ec340fb3|ebc7993f6344bcae|150100524||t20006.89
 fit_model|function|4d3c143f002d7c94|||||||||||||||
 load_data|function|a4505372d5433e3a|||||||||||||||
 means|stem|7da71dac8bce69d6|49311b0ed3ed7367|f3226438745e9ad2|-292177593||t20007.3938649505s|dab2d0e3689082f6|1854|rds|local|vector|||13.047||
-plot|stem|e299f24a42a02993|8aa57db74a8703e7|73b91d1c0eb7c4f9|874984291||t20007.4584436597s|c5a403ef400fc4ba|288299|rds|local|vector|||0.938||
-plot_results|function|fa656562ffea0b69|||||||||||||||
+plot|stem|99602ab25e0d71d3|8aa57db74a8703e7|1e95887bba183ea8|874984291||t20007.5575990812s|efc8932c20a4f328|288268|rds|local|vector|||1.14||
+plot_results|function|64bfca1d5d3e0596|||||||||||||||

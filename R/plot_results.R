@@ -2,7 +2,7 @@
 plot_results <- function(data, means) {
   # questions
   questions <- c(
-    "Do you think that\n[person] should [do\nutilitarian option]?",
+    "Do you think that\n[person] should\n[utilitarian option]?",
     "How confident\nare you in\nyour decision?",
     "How easy to\nunderstand is\nthis scenario?"
   )
