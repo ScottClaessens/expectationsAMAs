@@ -8,7 +8,7 @@ To run this code, you will need to [install R](https://www.r-project.org/) and
 the following R packages:
 
 ```
-install.packages(c("targets", "tarchetypes", "tidyverse"))
+install.packages(c("brms", "targets", "tarchetypes", "tidyverse"))
 ```
 
 ### Executing code
