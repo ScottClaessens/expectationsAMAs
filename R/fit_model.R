@@ -16,14 +16,15 @@ fit_model <- function(data) {
       prior(normal(0, 2), class = Intercept, resp = decision),
       prior(normal(0, 2), class = Intercept, resp = confidence),
       prior(normal(0, 2), class = Intercept, resp = understand),
-      prior(exponential(2), class = sd, resp = decision),
-      prior(exponential(2), class = sd, resp = confidence),
-      prior(exponential(2), class = sd, resp = understand),
-      prior(lkj(3), class = cor, group = id),
-      prior(lkj(3), class = cor, group = dilemma)
+      prior(exponential(3), class = sd, resp = decision),
+      prior(exponential(3), class = sd, resp = confidence),
+      prior(exponential(3), class = sd, resp = understand),
+      prior(lkj(4), class = cor, group = id),
+      prior(lkj(4), class = cor, group = dilemma)
     ),
     iter = 4000,
     warmup = 2000,
+    control = list(adapt_delta = 0.95),
     chains = 4,
     cores = 4,
     seed = 2113
