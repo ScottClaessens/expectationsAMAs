@@ -2,7 +2,7 @@ library(targets)
 library(tarchetypes)
 
 # set options for targets and source R functions
-tar_option_set(packages = c("brms", "tidyverse"))
+tar_option_set(packages = c("brms", "cowplot", "ggsankey", "tidyverse"))
 tar_source()
 
 # targets pipeline
@@ -16,5 +16,6 @@ list(
   # extract estimated means from the model
   tar_target(means, extract_means(fit)),
   # plot results
-  tar_target(plot, plot_results(data, means))
+  tar_target(plot1, plot_results(data, means)),
+  tar_target(plot2, plot_sankey(data))
 )
