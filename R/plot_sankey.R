@@ -37,6 +37,18 @@ plot_sankey_individual <- function(data, plot_dilemma) {
       size = 2,
       color = "black"
     ) +
+    # viridis colour scheme
+    scale_fill_manual(
+      values = c(
+        "1" = "#440154",
+        "2" = "#443983",
+        "3" = "#31688e",
+        "4" = "#21918c",
+        "5" = "#35b779",
+        "6" = "#90d743",
+        "7" = "#fde725"
+      )
+    ) +
     ggtitle(plot_dilemma) +
     theme_sankey() +
     theme(
@@ -51,8 +63,8 @@ plot_sankey_individual <- function(data, plot_dilemma) {
 plot_sankey <- function(data) {
   # get all dilemmas in correct order
   dilemmas <-
-    c(as.character(unique(data$dilemma[data$type == "IH"])),
-      as.character(unique(data$dilemma[data$type == "IB"])))
+    c(as.character(sort(unique(data$dilemma[data$type == "IB"]))),
+      as.character(sort(unique(data$dilemma[data$type == "IH"]))))
   # get list of plots
   plot_list <- list()
   for (i in 1:length(dilemmas)) {
@@ -60,7 +72,27 @@ plot_sankey <- function(data) {
       plot_sankey_individual(data, plot_dilemma = dilemmas[i])
   }
   # put together
-  p <- plot_grid(plotlist = plot_list, nrow = 2)
+  p <- plot_grid(
+    plotlist = plot_list,
+    nrow = 2
+    )
+  # add title
+  title <- 
+    ggdraw() + 
+    draw_label(
+      "Do you think that [person] should [utilitarian option]?",
+      fontface = 'bold',
+      x = 0,
+      hjust = 0
+    ) +
+    theme(
+      plot.margin = margin(t = 0, r = 0, b = 0, l = 7)
+      )
+  p <- plot_grid(
+    title, p, 
+    ncol = 1,
+    rel_heights = c(0.1, 1)
+  )
   # save
   ggsave(
     plot = p,
