@@ -96,7 +96,7 @@ plot_sankey <- function(data) {
   # save
   ggsave(
     plot = p,
-    filename = "plots/pilot_sankey.pdf",
+    filename = "plots/pilot1_sankey.pdf",
     height = 5,
     width = 8
   )

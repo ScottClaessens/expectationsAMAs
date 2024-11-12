@@ -8,7 +8,7 @@ tar_source()
 # targets pipeline
 list(
   # pilot data file
-  tar_target(data_file, "data/pilot/pilot_data_clean.csv", format = "file"),
+  tar_target(data_file, "data/pilot1/pilot1_data_clean.csv", format = "file"),
   # load data
   tar_target(data, load_data(data_file)),
   # fit model
