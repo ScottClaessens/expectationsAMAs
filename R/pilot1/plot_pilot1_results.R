@@ -1,5 +1,5 @@
 # function to plot data and estimated means
-plot_results <- function(data, means) {
+plot_pilot1_results <- function(pilot1_data, pilot1_means) {
   # questions
   questions <- c(
     "Do you think that\n[person] should\n[utilitarian option]?",
@@ -9,7 +9,7 @@ plot_results <- function(data, means) {
   names(questions) <- c("decision", "confidence", "understand")
   # prepare data for plotting
   data <-
-    data %>%
+    pilot1_data %>%
     pivot_longer(
       cols = decision:understand,
       names_to = "resp"
@@ -21,7 +21,7 @@ plot_results <- function(data, means) {
     rename(Dilemma = dilemma)
   # prepare means for plotting
   means <-
-    means %>%
+    pilot1_means %>%
     mutate(
       type = ifelse(type == "IH", "Instrumental harm", "Impartial beneficence"),
       resp = factor(questions[resp], levels = questions),

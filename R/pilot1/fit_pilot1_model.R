@@ -1,5 +1,5 @@
 # fit model
-fit_model <- function(data) {
+fit_pilot1_model <- function(pilot1_data) {
   # generate formulas for brms
   formula <- " ~ 1 + order + (1 + order |i| id) + (1 + order |j| dilemma)"
   bf1 <- bf(as.formula(paste0("decision", formula)), family = cumulative)
@@ -8,7 +8,7 @@ fit_model <- function(data) {
   # fit model
   brm(
     formula = bf1 + bf2 + bf3 + set_rescor(FALSE),
-    data = data,
+    data = pilot1_data,
     prior = c(
       prior(normal(0, 1), class = b, resp = decision),
       prior(normal(0, 1), class = b, resp = confidence),

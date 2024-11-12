@@ -1,5 +1,5 @@
 # function to extract estimated means for each dilemma from the fitted model
-extract_means <- function(fit) {
+extract_pilot1_means <- function(pilot1_fit) {
   # IH and IB dilemmas
   IH_dilemmas <- c("Bomb", "Passcode", "EnemySpy", "Sniper", "Hostage")
   IB_dilemmas <- c("Volunteering", "Donation", "Exam", "Architect", "Marathon")
@@ -12,7 +12,7 @@ extract_means <- function(fit) {
   fun <- function(resp) {
     # get fitted values from the model
     f <- fitted(
-      object = fit,
+      object = pilot1_fit,
       newdata = d,
       re_formula = . ~ (1 + order | dilemma),
       resp = resp,
