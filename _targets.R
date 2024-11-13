@@ -1,5 +1,6 @@
 library(targets)
 library(tarchetypes)
+library(tidyverse)
 
 # set options for targets and source R functions
 tar_option_set(packages = c("brms", "cowplot", "ggsankey",
@@ -35,9 +36,28 @@ list(
   tar_target(pilot2_fit, fit_pilot2_model(pilot2_data)),
   # extract overall means
   tar_target(pilot2_overall_means, extract_overall_pilot2_means(pilot2_fit)),
-  # plot results
+  # extract means split by dilemma
+  tar_target(pilot2_dilemma_means, extract_pilot2_means_by_dilemma(pilot2_fit)),
+  # plot overall results
   tar_target(
     pilot2_plot_overall,
     plot_pilot2_overall_results(pilot2_data, pilot2_overall_means)
+    ),
+  # plot results by dilemma
+  tar_map(
+    values = tibble(
+      response = c("trust", "trustotherissues", "empathy", 
+                   "competency", "likelyhuman", "surprisedAI"),
+      colour_hex = c("#E69F00", "#56B4E9", "#009E73", 
+                     "#F0E442", "#CC79A7", "#D55E00"),
+      ylab = c("Trust", "Trust on other issues", "Empathy", "Competency",
+               "Human-likelihood", "AI-surprise")
+    ),
+    names = response,
+    tar_target(
+      pilot2_plot_by_dilemma,
+      plot_pilot2_results_by_dilemma(pilot2_data, pilot2_dilemma_means,
+                                     response, colour_hex, ylab)
     )
+  )
 )
