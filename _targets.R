@@ -2,7 +2,8 @@ library(targets)
 library(tarchetypes)
 
 # set options for targets and source R functions
-tar_option_set(packages = c("brms", "cowplot", "ggsankey", "tidyverse"))
+tar_option_set(packages = c("brms", "cowplot", "ggsankey",
+                            "patchwork", "tidyverse"))
 tar_source()
 
 # targets pipeline
@@ -31,5 +32,12 @@ list(
   # load data
   tar_target(pilot2_data, load_pilot2_data(pilot2_data_file)),
   # fit model
-  tar_target(pilot2_fit, fit_pilot2_model(pilot2_data))
+  tar_target(pilot2_fit, fit_pilot2_model(pilot2_data)),
+  # extract overall means
+  tar_target(pilot2_overall_means, extract_overall_pilot2_means(pilot2_fit)),
+  # plot results
+  tar_target(
+    pilot2_plot_overall,
+    plot_pilot2_overall_results(pilot2_data, pilot2_overall_means)
+    )
 )

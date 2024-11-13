@@ -46,7 +46,7 @@ issues?" from Not At All (1) to Very Much (7)
 do you think this advisor is?" from Not At All (1) to Very Much (7)
 - `competency` - numeric, 1-7 Likert scale, response to the question "How
 competent do you think this advisor is?" from Not At All (1) to Very Much (7)
-- `likey_human` - numeric, 1-7 Likert scale, response to the question "How
+- `likely_human` - numeric, 1-7 Likert scale, response to the question "How
 likely is this advisor to be AI or human?" from Very Likely To Be AI (1) to Very
 Likely To Be Human (7)
 - `surprised_AI` - numeric, 1-7 Likert scale, response to the question "How
