@@ -1,5 +1,5 @@
 # function to extract means split by dilemma
-extract_pilot2_means_by_dilemma <- function(pilot2_fit) {
+extract_pilot2_means_by_dilemma <- function(pilot2_fit1) {
   # new data
   d <- expand_grid(
     advisor_type = c("ConsistentlyDeontological", "ConsistentlyUtilitarian",
@@ -11,7 +11,7 @@ extract_pilot2_means_by_dilemma <- function(pilot2_fit) {
   fun <- function(resp) {
     # get fitted values from the model
     f <- fitted(
-      object = pilot2_fit,
+      object = pilot2_fit1,
       newdata = d,
       re_formula = ~ 1 + advisor_type + (1 + advisor_type | dilemma),
       resp = resp,

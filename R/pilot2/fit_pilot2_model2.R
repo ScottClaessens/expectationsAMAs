@@ -1,12 +1,13 @@
-# fit model
-fit_pilot2_model <- function(pilot2_data) {
+# fit model 2
+fit_pilot2_model2 <- function(pilot2_data) {
   # generate formulas for brms
   generate_formula <- function(resp) {
     bf(
       as.formula(
         paste0(
           resp,
-          " ~ 1 + advisor_type + (1 |i| id) + (1 + advisor_type |j| dilemma)"
+          " ~ 1 + dilemma_type*advisor_type + (1 |i| id)",
+          " + (1 + advisor_type |j| dilemma)"
           )
       ),
       family = cumulative

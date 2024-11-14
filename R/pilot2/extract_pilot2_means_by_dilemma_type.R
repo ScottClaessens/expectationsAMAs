@@ -1,15 +1,16 @@
-# function to extract overall means from fitted model
-extract_overall_pilot2_means <- function(pilot2_fit1) {
+# function to extract means split by dilemma type
+extract_pilot2_means_by_dilemma_type <- function(pilot2_fit2) {
   # new data
-  d <- tibble(
+  d <- expand_grid(
     advisor_type = c("ConsistentlyDeontological", "ConsistentlyUtilitarian",
-                     "NormativelySensitive", "NonNormativelySensitive")
-    )
+                     "NormativelySensitive", "NonNormativelySensitive"),
+    dilemma_type = c("InstrumentalHarm", "ImpartialBeneficence")
+  )
   # function to loop over outcome variables
   fun <- function(resp) {
     # get fitted values from the model
     f <- fitted(
-      object = pilot2_fit1,
+      object = pilot2_fit2,
       newdata = d,
       re_formula = NA,
       resp = resp,
