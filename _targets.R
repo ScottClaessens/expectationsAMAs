@@ -70,5 +70,21 @@ list(
       plot_pilot2_results_by_dilemma(pilot2_data, pilot2_dilemma_means,
                                      response, colour_hex, ylab)
     )
-  )
+  ),
+  
+  #### Pilot 3 ####
+  
+  # data file
+  tar_target(pilot3_data_file, "data/pilot3/pilot3_data_clean.csv", 
+             format = "file"),
+  # load data
+  tar_target(pilot3_data, load_pilot3_data(pilot3_data_file)),
+  # fit models
+  tar_target(pilot3_fit1, fit_pilot3_model1(pilot3_data)),
+  # extract overall means for between-subjects section of survey
+  tar_target(
+    pilot3_between_subjects_means,
+    extract_pilot3_between_subjects_means(pilot3_fit1)
+    )
+  
 )

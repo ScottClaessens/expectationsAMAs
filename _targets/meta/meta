@@ -3,19 +3,20 @@ extract_overall_pilot2_means|function|cdb347432af39c50|||||||||||||||
 extract_pilot1_means|function|6ed164c107d2c044|||||||||||||||
 extract_pilot2_means_by_dilemma|function|c8da017018c12ba1|||||||||||||||
 extract_pilot2_means_by_dilemma_type|function|63cf1d36f5d4a36f|||||||||||||||
+extract_pilot3_between_subjects_means|function|224659c6f494d125|||||||||||||||
 fit_pilot1_model|function|f90b10d6e1d7417d|||||||||||||||
-fit_pilot2_model|function|ecc4a977c5d00a0a|||||||||||||||
 fit_pilot2_model1|function|ecc4a977c5d00a0a|||||||||||||||
 fit_pilot2_model2|function|c88152cc521b511e|||||||||||||||
+fit_pilot3_model1|function|350fd26ab1cc773b|||||||||||||||
 load_pilot1_data|function|1e4b69e8cb87bf06|||||||||||||||
 load_pilot2_data|function|de1c9071c12ca5e7|||||||||||||||
+load_pilot3_data|function|27df1b6ad2b712c2|||||||||||||||
 pilot1_data|stem|62f9e8416950063f|6760592d2d95df33|f95d5dc2311612a2|-1768458770||t20039.550162037s|66c6be428d190ddb|14731|rds|local|vector|||0.406||
 pilot1_data_file|stem|9684653e961279fd|b2abd2bd17f45f3b|2c530c1562a7fbd1|1666482659|data/pilot1/pilot1_data_clean.csv|t20006.6089814815s|04d147e1ff67e41b|85588|file|local|vector|||6.297|package brms was built under R version 4.2.3. package Rcpp was built under R version 4.2.3. package tidyverse was built under R version 4.2.3. package ggplot2 was built under R version 4.2.3. package tibble was built under R version 4.2.3. package tidyr was built under R version 4.2.3. package readr was built under R version 4.2.3. package purrr was built under R version 4.2.3. package dplyr was built under R version 4.2.3. package stringr was built under R version 4.2.3. package forcats was built under R version 4.2.3. package lubridate was built under R version 4.2.3|
 pilot2_data|stem|78ffa80212c120b3|5e013cb4855d49c8|bba8a2a2d1541a83|-369823532||t20039.550162037s|337bc91d1972337e|5918|rds|local|vector|||0.047||
 pilot2_data_file|stem|e274ddb0ff5696b0|a59ffada8f8d479e|2c530c1562a7fbd1|1385964982|data/pilot2/pilot2_data_clean.csv|t20039.4696527778s|dcc2fd9a5e32e287|46437|file|local|vector|||3.11|package brms was built under R version 4.2.3. package Rcpp was built under R version 4.2.3. package tidyverse was built under R version 4.2.3. package ggplot2 was built under R version 4.2.3. package tibble was built under R version 4.2.3. package tidyr was built under R version 4.2.3. package readr was built under R version 4.2.3. package purrr was built under R version 4.2.3. package dplyr was built under R version 4.2.3. package stringr was built under R version 4.2.3. package forcats was built under R version 4.2.3. package lubridate was built under R version 4.2.3|
 pilot2_dilemma_means|stem|9a993c4bfc5846c4|759aa8e12c95eb95|c8a299e7c800a696|-1158518572||t20041.6118300129s|7e093ef1eae21246|3864|rds|local|vector|||17.78||
 pilot2_dilemma_type_means|stem|5ec6177166fe3b69|5b92b8e1dd53f73e|c4e02fa90b16c0bb|-1298651932||t20041.6128229751s|6dda4b9f4695f5e3|1609|rds|local|vector|||31.96||
-pilot2_fit|stem|302c83a725333338|6534d763a0bf9432|f529ea1133e4b69f|-284849900||t20040.6032407407s|5402eebf920b3594|171809438|rds|local|vector|||1806.921|There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
 pilot2_fit1|stem|da1ca66647b6d046|989c3b1d81b66e71|a02ecec674e9c217|-625140032||t20041.5870984483s|f05b136fa7535893|171996445|rds|local|vector|||881.97|There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
 pilot2_fit2|stem|d08d5f3cef72e49b|6cff2e1bf456372f|409f0bbd4b9aa740|-1998184648||t20041.5996380905s|db421191407793b0|173665762|rds|local|vector|||897.39|There were 8 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
 pilot2_overall_means|stem|d20e96866eefe579|0ab71248093949aa|1857055fc92bda85|-1902413424||t20041.6119170466s|d5dce24133ac4004|974|rds|local|vector|||7.47||
@@ -27,6 +28,10 @@ pilot2_plot_by_dilemma_trust|stem|0c2d8d166c7465b1|30941749dc468c54|04f87aa591a0
 pilot2_plot_by_dilemma_trustotherissues|stem|b558bbef54b4898d|7368c0cd9dc7122a|04f87aa591a0671e|-919567410||t20041.5874452373s|c3d0f05042b551dd|223907|rds|local|vector|||0.32||
 pilot2_plot_by_dilemma_type|stem|27634e3639f1ee33|4640c95790b2731b|fcc1095c1b0f36aa|-1129218345||t20041.6604745704s|35f57175e9304832|454280|rds|local|vector|||0.78||
 pilot2_plot_overall|stem|1b8fd65b2a5eb702|6b26db8990873062|df27cba2e54872a1|-1394660131||t20041.5874528633s|3893f52dacb12298|435715|rds|local|vector|||0.5||
+pilot3_between_subjects_means|stem|131255c7a3de2bcb|6722671c0ec9ff3d|21f00e235d9a87c5|-311896879||t20048.5606855617s|750ffc11a7b8c6e4|1390|rds|local|vector|||34.15||
+pilot3_data|stem|3295353f3db3f2a5|ec72fd6f17ac9c20|6c518a0272998370|582174883||t20047.8455242525s|55e0d4b46667aefe|11226|rds|local|vector|||1.59||
+pilot3_data_file|stem|f6b45703f3079d57|32a4ecd122631d9b|2c530c1562a7fbd1|-1833597776|data/pilot3/pilot3_data_clean.csv|t20047.8144024577s|56cff2130521aee3|95475|file|local|vector|||5.62||
+pilot3_fit1|stem|6dc77447eb1cbd7a|95cabe5dd2a0b0d6|c07587ed1858d790|-570664329||t20048.5063307288s|d920f453b5bd774e|456447872|rds|local|vector|||5737.48|Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
 plot_pilot1_results|function|3156ae879bdabf6f|||||||||||||||
 plot_pilot1_sankey|function|56c5483625c61a17|||||||||||||||
 plot_pilot1_sankey_individual|function|d7b0ce0a0e215c1d|||||||||||||||
