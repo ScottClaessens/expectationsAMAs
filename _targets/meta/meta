@@ -4,10 +4,12 @@ extract_pilot1_means|function|6ed164c107d2c044|||||||||||||||
 extract_pilot2_means_by_dilemma|function|c8da017018c12ba1|||||||||||||||
 extract_pilot2_means_by_dilemma_type|function|63cf1d36f5d4a36f|||||||||||||||
 extract_pilot3_between_subjects_means|function|224659c6f494d125|||||||||||||||
+extract_pilot3_comparison_means|function|2a2b58962f7e50fb|||||||||||||||
 fit_pilot1_model|function|f90b10d6e1d7417d|||||||||||||||
 fit_pilot2_model1|function|ecc4a977c5d00a0a|||||||||||||||
 fit_pilot2_model2|function|c88152cc521b511e|||||||||||||||
-fit_pilot3_model1|function|350fd26ab1cc773b|||||||||||||||
+fit_pilot3_model1|function|400f6be9ed7bd2dc|||||||||||||||
+fit_pilot3_model2|function|6c9183ac244ff34e|||||||||||||||
 load_pilot1_data|function|1e4b69e8cb87bf06|||||||||||||||
 load_pilot2_data|function|de1c9071c12ca5e7|||||||||||||||
 load_pilot3_data|function|27df1b6ad2b712c2|||||||||||||||
@@ -28,13 +30,23 @@ pilot2_plot_by_dilemma_trust|stem|0c2d8d166c7465b1|30941749dc468c54|04f87aa591a0
 pilot2_plot_by_dilemma_trustotherissues|stem|b558bbef54b4898d|7368c0cd9dc7122a|04f87aa591a0671e|-919567410||t20041.5874452373s|c3d0f05042b551dd|223907|rds|local|vector|||0.32||
 pilot2_plot_by_dilemma_type|stem|27634e3639f1ee33|4640c95790b2731b|fcc1095c1b0f36aa|-1129218345||t20041.6604745704s|35f57175e9304832|454280|rds|local|vector|||0.78||
 pilot2_plot_overall|stem|1b8fd65b2a5eb702|6b26db8990873062|df27cba2e54872a1|-1394660131||t20041.5874528633s|3893f52dacb12298|435715|rds|local|vector|||0.5||
-pilot3_between_subjects_means|stem|131255c7a3de2bcb|6722671c0ec9ff3d|21f00e235d9a87c5|-311896879||t20048.5606855617s|750ffc11a7b8c6e4|1390|rds|local|vector|||34.15||
+pilot3_between_subjects_means|stem|ef7d4869bc11fbfd|6722671c0ec9ff3d|6bab6a29d723c01b|-311896879||t20048.8840531193s|8b23a6810581152e|1388|rds|local|vector|||22||
+pilot3_comparison_means|stem|924515266d127c8a|4d5167d621c42d1c|a2c70079ab6896b7|2063373280||t20049.551772418s|1c4c3870c9f7e288|632|rds|local|vector|||5.45||
 pilot3_data|stem|3295353f3db3f2a5|ec72fd6f17ac9c20|6c518a0272998370|582174883||t20047.8455242525s|55e0d4b46667aefe|11226|rds|local|vector|||1.59||
 pilot3_data_file|stem|f6b45703f3079d57|32a4ecd122631d9b|2c530c1562a7fbd1|-1833597776|data/pilot3/pilot3_data_clean.csv|t20047.8144024577s|56cff2130521aee3|95475|file|local|vector|||5.62||
-pilot3_fit1|stem|6dc77447eb1cbd7a|95cabe5dd2a0b0d6|c07587ed1858d790|-570664329||t20048.5063307288s|d920f453b5bd774e|456447872|rds|local|vector|||5737.48|Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
+pilot3_fit1|stem|223a984fe4f1fa1a|95cabe5dd2a0b0d6|3ecd7904a1f22dfd|-570664329||t20048.8736892152s|d15c4a10ca13a52a|303574263|rds|local|vector|||1339.48|There were 2 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
+pilot3_fit2|stem|6d5523c640f38031|64c2855ac11ae46b|40e39bbe912586c9|812221945||t20049.4901769322s|7f6ce92755ad3479|80387172|rds|local|vector|||1323.45|Rows containing NAs were excluded from the model.. There were 4 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
+pilot3_plot_AI|stem|ee822c974ea3607a|b8dfc962a373d28e|7d763d6c9673ed2e|-765146500||t20049.4715477803s|e1a8fb555850e325|211637|rds|local|vector|||1.36||
+pilot3_plot_comparison|stem|09f967b6591cf5e7|0a61c00794ea7892|e2270bb684705a02|1517043555||t20049.5743934787s|ae8162b1ea71dad4|80606799|rds|local|vector|||0.27||
+pilot3_plot_perceptions|stem|8702a368348bfd4b|418ca51e3acbb246|2169c2bb6b372b09|829737463||t20048.8840685777s|1f21475f8cbe7ee7|219259|rds|local|vector|||1.22||
+pilot3_plot_ranking|stem|60c87be88b7a2ef5|d32fef7ae7815f1b|c462b66dd417fbe9|-1311851926||t20049.5775378823s|dfd5181638bbe3b1|80615400|rds|local|vector|||1.64||
 plot_pilot1_results|function|3156ae879bdabf6f|||||||||||||||
 plot_pilot1_sankey|function|56c5483625c61a17|||||||||||||||
 plot_pilot1_sankey_individual|function|d7b0ce0a0e215c1d|||||||||||||||
 plot_pilot2_overall_results|function|5f64de8c34c74830|||||||||||||||
 plot_pilot2_results_by_dilemma|function|a3fc95e8c2e141b8|||||||||||||||
 plot_pilot2_results_by_dilemma_type|function|ef7a44fe6cc77052|||||||||||||||
+plot_pilot3_between_subjects_AI|function|bb48242a8acb0c10|||||||||||||||
+plot_pilot3_between_subjects_perceptions|function|811a1bbf13e3e34f|||||||||||||||
+plot_pilot3_comparison|function|95bb1857b09fd3f1|||||||||||||||
+plot_pilot3_ranking|function|6f1bf852da4a4b14|||||||||||||||
