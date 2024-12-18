@@ -1,6 +1,6 @@
 # function to plot pilot 2 results by individual dilemma
 plot_pilot2_results_by_dilemma <- function(pilot2_data, pilot2_dilemma_means,
-                                           response = "likelyhuman",
+                                           response = "likely_human",
                                            colour_hex = "#CC79A7",
                                            ylab = "Human-likelihood") {
   # prepare advisor type variable for plotting
@@ -26,13 +26,6 @@ plot_pilot2_results_by_dilemma <- function(pilot2_data, pilot2_dilemma_means,
   pilot2_data$dilemma <- factor(pilot2_data$dilemma, levels = dilemmas)
   pilot2_dilemma_means$dilemma <- factor(pilot2_dilemma_means$dilemma, 
                                          levels = dilemmas)
-  # match dataset variables to fit output
-  pilot2_data <- rename(
-    pilot2_data,
-    trustotherissues = trust_other_issues,
-    likelyhuman = likely_human,
-    surprisedAI = surprised_AI
-  )
   # plot
   out <-
     ggplot() +

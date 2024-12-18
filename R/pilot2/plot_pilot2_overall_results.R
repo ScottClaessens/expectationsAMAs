@@ -17,13 +17,6 @@ plot_pilot2_overall_results <- function(pilot2_data, pilot2_overall_means) {
       advisor_types[pilot2_overall_means$advisor_type],
       levels = advisor_types
     )
-  # match dataset variables to fit output
-  pilot2_data <- rename(
-    pilot2_data,
-    trustotherissues = trust_other_issues,
-    likelyhuman = likely_human,
-    surprisedAI = surprised_AI
-  )
   # plotting function
   plot_fun <- function(response, colour_hex, remove_x, ylab) {
     out <-
@@ -63,12 +56,12 @@ plot_pilot2_overall_results <- function(pilot2_data, pilot2_overall_means) {
     }
   }
   # individual plots
-  pA <- plot_fun("trust",            "#E69F00", TRUE,  "Trust")
-  pB <- plot_fun("trustotherissues", "#56B4E9", TRUE,  "Trust on other issues")
-  pC <- plot_fun("empathy",          "#009E73", TRUE,  "Empathy")
-  pD <- plot_fun("competency",       "#F0E442", FALSE, "Competency")
-  pE <- plot_fun("likelyhuman",      "#CC79A7", FALSE, "Human-likelihood")
-  pF <- plot_fun("surprisedAI",      "#D55E00", FALSE, "AI-surprise")
+  pA <- plot_fun("trust",              "#E69F00", TRUE,  "Trust")
+  pB <- plot_fun("trust_other_issues", "#56B4E9", TRUE,  "Trust on other issues")
+  pC <- plot_fun("empathy",            "#009E73", TRUE,  "Empathy")
+  pD <- plot_fun("competency",         "#F0E442", FALSE, "Competency")
+  pE <- plot_fun("likely_human",       "#CC79A7", FALSE, "Human-likelihood")
+  pF <- plot_fun("surprised_AI",       "#D55E00", FALSE, "AI-surprise")
   # put together
   out <- 
     (pA + pB + pC) / plot_spacer() / (pD + pE + pF) + 

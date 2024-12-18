@@ -16,6 +16,7 @@ generate_new_data_pilot3 <- function(pilot3_fit1, n = 400) {
     posterior_predict(
       object = pilot3_fit1,
       newdata = d,
+      sample_new_levels = "gaussian",
       allow_new_levels = TRUE,
       ndraws = 1
     )
@@ -51,9 +52,12 @@ run_power_analysis_pilot3 <- function(pilot3_fit1, n = 100, sim_id = 1) {
         update(
           object = pilot3_fit1,
           newdata = data,
-          iter = 3000,
-          chains = 1,
-          cores = 1,
+          iter = 2000,
+          warmup = 1000,
+          chains = 2,
+          cores = 2,
+          init = 0,
+          threads = threading(2),
           seed = 2113
           )
         ),
@@ -77,7 +81,7 @@ run_power_analysis_pilot3 <- function(pilot3_fit1, n = 100, sim_id = 1) {
       diff_trust_NNS =
         list(
           post[["b_trustbaseline_advisor_typeConsistentlyUtilitarian"]] -
-          post[["b_trustbaseline_advisor_typeNormativelySensitive"]]
+          post[["b_trustbaseline_advisor_typeNonNormativelySensitive"]]
         ),
       # difference in human likelihood between CD and CU
       diff_human_CD =
@@ -92,16 +96,26 @@ run_power_analysis_pilot3 <- function(pilot3_fit1, n = 100, sim_id = 1) {
       diff_human_NNS =
         list(
           post[["b_likelyhuman_advisor_typeConsistentlyUtilitarian"]] -
-            post[["b_likelyhuman_advisor_typeNormativelySensitive"]]
-        ),
-      # do the 95% credible intervals for the differences exclude zero?
-      diff_trust_CD  = quantile(diff_trust_CD,  0.975) < 0,
-      diff_trust_NS  = quantile(diff_trust_NS,  0.975) < 0,
-      diff_trust_NNS = quantile(diff_trust_NNS, 0.975) < 0,
-      diff_human_CD  = quantile(diff_human_CD,  0.975) < 0,
-      diff_human_NS  = quantile(diff_human_NS,  0.975) < 0,
-      diff_human_NNS = quantile(diff_human_NNS, 0.975) < 0
+            post[["b_likelyhuman_advisor_typeNonNormativelySensitive"]]
+        )
       ) %>%
     # remove some columns
-    select(!c(fit, post))
+    select(!c(fit, post)) %>%
+    # pivot longer
+    pivot_longer(
+      cols = starts_with("diff_"),
+      names_to = "parameter",
+      values_to = "post"
+    ) %>%
+    rowwise() %>%
+    mutate(
+      # extract summary stats
+      Estimate = median(post),
+      `Q2.5`   = quantile(post, 0.025),
+      `Q97.5`  = quantile(post, 0.975),
+      # do the 95% credible intervals for the differences exclude zero?
+      sig = `Q97.5` < 0
+    ) %>%
+    # remove column
+    select(!post)
 }

@@ -61,8 +61,8 @@ list(
   # plot results by dilemma
   tar_map(
     values = tibble(
-      response = c("trust", "trustotherissues", "empathy", 
-                   "competency", "likelyhuman", "surprisedAI"),
+      response = c("trust", "trust_other_issues", "empathy", 
+                   "competency", "likely_human", "surprised_AI"),
       colour_hex = c("#E69F00", "#56B4E9", "#009E73", 
                      "#F0E442", "#CC79A7", "#D55E00"),
       ylab = c("Trust", "Trust on other issues", "Empathy", "Competency",
@@ -121,13 +121,13 @@ list(
     )
   ),
   # plot ranking probabilities
-  tar_target(pilot3_plot_ranking, plot_pilot3_ranking(pilot3_fit2)),
+  tar_target(pilot3_plot_ranking, plot_pilot3_ranking(pilot3_fit2))#,
   # run power analysis based on pilot 3 data
-  tar_target(power_id, 1:100),
-  tar_target(
-    power,
-    run_power_analysis_pilot3(pilot3_fit1, n = 500, power_id),
-    pattern = map(power_id),
-    deployment = "worker"
-    )
+  #tar_target(power_id, 1:100),
+  #tar_target(
+  #  power,
+  #  run_power_analysis_pilot3(pilot3_fit1, n = 500, power_id),
+  #  pattern = map(power_id),
+  #  deployment = "worker"
+  #  )
 )

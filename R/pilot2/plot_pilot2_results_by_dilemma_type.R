@@ -24,13 +24,6 @@ plot_pilot2_results_by_dilemma_type <- function(pilot2_data,
       advisor_type = factor(advisor_types[advisor_type], levels = advisor_types),
       dilemma_type = factor(dilemma_types[dilemma_type], levels = dilemma_types)
     )
-  # match dataset variables to fit output
-  pilot2_data <- rename(
-    pilot2_data,
-    trustotherissues = trust_other_issues,
-    likelyhuman = likely_human,
-    surprisedAI = surprised_AI
-  )
   # plotting function
   plot_fun <- function(response, remove_x, ylab) {
     out <-
@@ -74,12 +67,12 @@ plot_pilot2_results_by_dilemma_type <- function(pilot2_data,
     }
   }
   # individual plots
-  pA <- plot_fun("trust",            TRUE,  "Trust")
-  pB <- plot_fun("trustotherissues", TRUE,  "Trust on other issues")
-  pC <- plot_fun("empathy",          TRUE,  "Empathy")
-  pD <- plot_fun("competency",       FALSE, "Competency")
-  pE <- plot_fun("likelyhuman",      FALSE, "Human-likelihood")
-  pF <- plot_fun("surprisedAI",      FALSE, "AI-surprise")
+  pA <- plot_fun("trust",              TRUE,  "Trust")
+  pB <- plot_fun("trust_other_issues", TRUE,  "Trust on other issues")
+  pC <- plot_fun("empathy",            TRUE,  "Empathy")
+  pD <- plot_fun("competency",         FALSE, "Competency")
+  pE <- plot_fun("likely_human",       FALSE, "Human-likelihood")
+  pF <- plot_fun("surprised_AI",       FALSE, "AI-surprise")
   # put together
   out <- 
     (pA + pB + pC) / plot_spacer() / (pD + pE + pF) & 
