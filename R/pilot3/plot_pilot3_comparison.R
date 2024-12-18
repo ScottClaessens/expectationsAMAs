@@ -21,25 +21,20 @@ plot_pilot3_comparison <- function(pilot3_fit2, pilot3_comparison_means) {
       )
   # prepare response variables for plotting
   responses <- c(
-    "comparetrust" = "Trust",
-    "comparelikelyhuman" = "Human-likelihood"
+    "compare_trust" = "Trust",
+    "compare_likely_human" = "Human-likelihood"
   )
   # pivot data long
   data <-
     data %>%
-    pivot_longer(
-      cols = c(compare_trust, compare_likely_human),
-      names_to = "resp",
-      values_to = "rating"
-    ) %>%
     mutate(
-      resp = factor(responses[str_remove_all(resp, "_")], levels = responses)
+      resp = factor(responses[variable], levels = responses)
     ) %>%
-    select(advisor_type, resp, rating)
+    select(advisor_type, resp, value)
   # wrangle extracted means
   pilot3_comparison_means <-
     pilot3_comparison_means %>%
-    filter(resp %in% c("comparetrust", "comparelikelyhuman")) %>%
+    filter(resp %in% c("compare_trust", "compare_likely_human")) %>%
     mutate(resp = factor(responses[resp], levels = responses))
   # plot
   out <-
@@ -48,7 +43,7 @@ plot_pilot3_comparison <- function(pilot3_fit2, pilot3_comparison_means) {
       data = data,
       mapping = aes(
         x = advisor_type,
-        y = rating
+        y = value
       ),
       alpha = 0.02,
       size = 0.8,

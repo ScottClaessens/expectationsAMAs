@@ -53,9 +53,8 @@ plot_pilot3_between_subjects_perceptions <-
       filter(str_detect(resp, "baseline") | str_detect(resp, "overall")) %>%
       mutate(
         type = ifelse(str_detect(resp, "baseline"), "baseline", "overall"),
-        resp = str_remove(resp, "baseline"),
-        resp = str_remove(resp, "overall"),
-        resp = ifelse(resp == "trustotherissues", "trust_other_issues", resp)
+        resp = str_remove(resp, "_baseline"),
+        resp = str_remove(resp, "_overall")
         ) %>%
       select(advisor_type, type, resp, estimate, lower, upper) %>%
       mutate(

@@ -1,16 +1,16 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-.Random.seed|object|22518b64f7484589|||||||||||||||
+.Random.seed|object|ddfeaa4cda85471a|||||||||||||||
 extract_overall_pilot2_means|function|1705962ab8cbf91e|||||||||||||||
 extract_pilot1_means|function|6ed164c107d2c044|||||||||||||||
 extract_pilot2_means_by_dilemma|function|e9e479c4cd2fe4cf|||||||||||||||
 extract_pilot2_means_by_dilemma_type|function|eee98142fc4e5909|||||||||||||||
-extract_pilot3_between_subjects_means|function|224659c6f494d125|||||||||||||||
-extract_pilot3_comparison_means|function|2a2b58962f7e50fb|||||||||||||||
+extract_pilot3_between_subjects_means|function|7f6deb9874d3052f|||||||||||||||
+extract_pilot3_comparison_means|function|6c6c7ff6be1dc534|||||||||||||||
 fit_pilot1_model|function|f90b10d6e1d7417d|||||||||||||||
 fit_pilot2_model1|function|5eeb75ab6b73f538|||||||||||||||
 fit_pilot2_model2|function|35025ab3ef511db8|||||||||||||||
-fit_pilot3_model1|function|400f6be9ed7bd2dc|||||||||||||||
-fit_pilot3_model2|function|6c9183ac244ff34e|||||||||||||||
+fit_pilot3_model1|function|9a9f7387e2af9a80|||||||||||||||
+fit_pilot3_model2|function|188aff622c7248d8|||||||||||||||
 generate_new_data_pilot3|function|6ec6b69dca53bbd3|||||||||||||||
 load_pilot1_data|function|1e4b69e8cb87bf06|||||||||||||||
 load_pilot2_data|function|de1c9071c12ca5e7|||||||||||||||
@@ -35,15 +35,15 @@ pilot2_plot_by_dilemma_trust_other_issues|stem|a1c29c3cdf8460dc|0a6f001e2abd7bf4
 pilot2_plot_by_dilemma_trustotherissues|stem|205e7ce594884538|7368c0cd9dc7122a|4d8b08044b0da196|-919567410||t20074.9023505658s|1d7f26fdc714049a|223928|rds|local|vector|||0.187||
 pilot2_plot_by_dilemma_type|stem|21f54209d76364e1|4640c95790b2731b|068d6684e858dbed|-1129218345||t20075.492527839s|52f8d0249ff240df|453956|rds|local|vector|||0.672||
 pilot2_plot_overall|stem|ff501ae12ff93fd7|6b26db8990873062|b3d75c9aded2b450|-1394660131||t20075.487446451s|75c6e3bfe11c7a0f|435378|rds|local|vector|||0.656||
-pilot3_between_subjects_means|stem|ef7d4869bc11fbfd|6722671c0ec9ff3d|6bab6a29d723c01b|-311896879||t20048.8840531193s|8b23a6810581152e|1388|rds|local|vector|||22||
-pilot3_comparison_means|stem|924515266d127c8a|4d5167d621c42d1c|a2c70079ab6896b7|2063373280||t20049.551772418s|1c4c3870c9f7e288|632|rds|local|vector|||5.45||
+pilot3_between_subjects_means|stem|af2005a0cef058f4|6722671c0ec9ff3d|d56dc15cdfc6f77e|-311896879||t20075.6424085803s|681113fd266d37a0|1389|rds|local|vector|||0.75||
+pilot3_comparison_means|stem|835361a480dba83d|4d5167d621c42d1c|91620cd7c06643e9|2063373280||t20075.6435557959s|1bd547419bb9fdca|525|rds|local|vector|||0.578||
 pilot3_data|stem|3295353f3db3f2a5|ec72fd6f17ac9c20|6c518a0272998370|582174883||t20047.8455242525s|55e0d4b46667aefe|11226|rds|local|vector|||1.59||
 pilot3_data_file|stem|f6b45703f3079d57|32a4ecd122631d9b|2c530c1562a7fbd1|-1833597776|data/pilot3/pilot3_data_clean.csv|t20047.8144024577s|56cff2130521aee3|95475|file|local|vector|||5.62||
-pilot3_fit1|stem|223a984fe4f1fa1a|95cabe5dd2a0b0d6|3ecd7904a1f22dfd|-570664329||t20048.8736892152s|d15c4a10ca13a52a|303574263|rds|local|vector|||1339.48|There were 2 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
-pilot3_fit2|stem|6d5523c640f38031|64c2855ac11ae46b|40e39bbe912586c9|812221945||t20049.4901769322s|7f6ce92755ad3479|80387172|rds|local|vector|||1323.45|Rows containing NAs were excluded from the model.. There were 4 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
-pilot3_plot_AI|stem|ee822c974ea3607a|b8dfc962a373d28e|7d763d6c9673ed2e|-765146500||t20049.4715477803s|e1a8fb555850e325|211637|rds|local|vector|||1.36||
-pilot3_plot_comparison|stem|09f967b6591cf5e7|0a61c00794ea7892|e2270bb684705a02|1517043555||t20049.5743934787s|ae8162b1ea71dad4|80606799|rds|local|vector|||0.27||
-pilot3_plot_perceptions|stem|8702a368348bfd4b|418ca51e3acbb246|2169c2bb6b372b09|829737463||t20048.8840685777s|1f21475f8cbe7ee7|219259|rds|local|vector|||1.22||
+pilot3_fit1|stem|16839543db3b7410|95cabe5dd2a0b0d6|e435db405240a351|-570664329||t20075.5223881604s|e4d52ebe28039398|85087715|rds|local|vector|||2130.797|There were 13 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
+pilot3_fit2|stem|6fcc21b959922ac2|64c2855ac11ae46b|dc4bbfe192e29e5d|812221945||t20075.638105317s|89b6b73b70574576|52757208|rds|local|vector|||640.078|There were 2 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
+pilot3_plot_AI|stem|5cdb31469f0be6e7|b8dfc962a373d28e|7b99486b2e16cb5a|-765146500||t20075.6459449871s|2539c9b7a47f8552|211486|rds|local|vector|||0.422||
+pilot3_plot_comparison|stem|a644352d2e053aa9|0a61c00794ea7892|52002083ac1cd3e3|1517043555||t20075.6522489174s|4f56197efe5fa02c|52975361|rds|local|vector|||0.407||
+pilot3_plot_perceptions|stem|3693c0f26a9fcd44|418ca51e3acbb246|7e1fdaf2aced4d07|829737463||t20075.6489892819s|7567036cbfde4f09|219056|rds|local|vector|||0.375||
 pilot3_plot_ranking|stem|60c87be88b7a2ef5|d32fef7ae7815f1b|c462b66dd417fbe9|-1311851926||t20049.5775378823s|dfd5181638bbe3b1|80615400|rds|local|vector|||1.64||
 plot_pilot1_results|function|3156ae879bdabf6f|||||||||||||||
 plot_pilot1_sankey|function|56c5483625c61a17|||||||||||||||
@@ -51,9 +51,9 @@ plot_pilot1_sankey_individual|function|d7b0ce0a0e215c1d|||||||||||||||
 plot_pilot2_overall_results|function|c61c8f8bd6814112|||||||||||||||
 plot_pilot2_results_by_dilemma|function|3d478371a538237c|||||||||||||||
 plot_pilot2_results_by_dilemma_type|function|dbf4c604ca6b7448|||||||||||||||
-plot_pilot3_between_subjects_AI|function|bb48242a8acb0c10|||||||||||||||
-plot_pilot3_between_subjects_perceptions|function|811a1bbf13e3e34f|||||||||||||||
-plot_pilot3_comparison|function|95bb1857b09fd3f1|||||||||||||||
+plot_pilot3_between_subjects_AI|function|c0fbd33ef49d9164|||||||||||||||
+plot_pilot3_between_subjects_perceptions|function|e2f07ce6c1f21162|||||||||||||||
+plot_pilot3_comparison|function|b806de58d32e2bf1|||||||||||||||
 plot_pilot3_ranking|function|6f1bf852da4a4b14|||||||||||||||
 power|pattern|6329af777a59cf58|37809acd176a59d0||-1880636380||||415454|rds|local|vector||power_0385f29f65c1d576*power_d5f415f359c64237*power_a834426b99001efe*power_5eddf638bf7d96bf*power_09a765fd36b22f8e*power_23c7848682ee9758*power_05ec6c296a88183a*power_6d987a55af92a6fd*power_73cffa63b9c95790|28036.405||
 power_0385f29f65c1d576|branch|3ff912e9b1444d6c|37809acd176a59d0|410424b08c7cc600|-1647997160||t20066.594335033s|44b7bbc2d65123db|207988|rds|local|vector|power||17697.328|There were 6 warnings in mutate.The first warning wasℹ In argument fit  list....ℹ In row 1.Caused by warning There were 14 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.ℹ Run dplyrlast_dplyr_warnings to see the 5 remaining warnings.|

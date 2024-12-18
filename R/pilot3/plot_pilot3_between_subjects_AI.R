@@ -20,8 +20,8 @@ plot_pilot3_between_subjects_AI <-
       )
     # prepare response variables for plotting
     responses <- c(
-      "likelyhuman" = "Human-likelihood",
-      "surprisedAI" = "AI-surprise"
+      "likely_human" = "Human-likelihood",
+      "surprised_AI" = "AI-surprise"
     )
     # pivot data long
     pilot3_data <-
@@ -32,14 +32,14 @@ plot_pilot3_between_subjects_AI <-
         values_to = "rating"
       ) %>%
       mutate(
-        resp = factor(responses[str_remove(resp, "_")], levels = responses),
+        resp = factor(responses[resp], levels = responses),
         type = "Overall evaluation"
       ) %>%
       select(advisor_type, resp, type, rating)
     # wrangle extracted means
     pilot3_between_subjects_means <-
       pilot3_between_subjects_means %>%
-      filter(resp %in% c("likelyhuman", "surprisedAI")) %>%
+      filter(resp %in% c("likely_human", "surprised_AI")) %>%
       mutate(
         type = "Overall evaluation",
         resp = factor(responses[resp], levels = responses)

@@ -119,15 +119,5 @@ list(
       pilot3_fit2,
       pilot3_comparison_means
     )
-  ),
-  # plot ranking probabilities
-  tar_target(pilot3_plot_ranking, plot_pilot3_ranking(pilot3_fit2))#,
-  # run power analysis based on pilot 3 data
-  #tar_target(power_id, 1:100),
-  #tar_target(
-  #  power,
-  #  run_power_analysis_pilot3(pilot3_fit1, n = 500, power_id),
-  #  pattern = map(power_id),
-  #  deployment = "worker"
-  #  )
+  )
 )
