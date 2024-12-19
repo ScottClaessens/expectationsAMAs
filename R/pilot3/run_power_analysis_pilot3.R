@@ -4,13 +4,15 @@ generate_new_data_pilot3 <- function(pilot3_fit1, n = 400) {
   dilemmas <- c("Bomb", "EnemySpy", "Hostage")
   treatments <- c("ConsistentlyDeontological", "ConsistentlyUtilitarian",
                   "NormativelySensitive", "NonNormativelySensitive")
+  variables <- unique(pilot3_fit1$data$variable)
   d <- 
     tibble(
       id           = 1000 + 1:n, # new participants
       dilemma_type = "InstrumentalHarm",
       dilemma      = sample(dilemmas, n, replace = TRUE),
       advisor_type = sample(treatments, n, replace = TRUE)
-    )
+    ) %>%
+    expand_grid(variable = variables)
   # generate new outcome values from model 1
   p <-
     posterior_predict(
@@ -21,24 +23,30 @@ generate_new_data_pilot3 <- function(pilot3_fit1, n = 400) {
       ndraws = 1
     )
   # add to dataset
-  bind_cols(d, as_tibble(p[1, , ])) %>%
-    # rename columns to match original dataset
-    rename(
-      trust_baseline              = trustbaseline,
-      trust_other_issues_baseline = trustotherissuesbaseline,
-      empathy_baseline            = empathybaseline,
-      competency_baseline         = competencybaseline,
-      trust_overall               = trustoverall,
-      trust_other_issues_overall  = trustotherissuesoverall,
-      empathy_overall             = empathyoverall,
-      competency_overall          = competencyoverall,
-      likely_human                = likelyhuman,
-      surprised_AI                = surprisedAI
+  bind_cols(d, as_tibble(p[1, ]))
+}
+
+# get posterior difference from CU
+get_post_difference <- function(fit, variable, advisor_type) {
+  # get fitted values
+  f <- fitted(
+    object = fit,
+    newdata = data.frame(
+      variable = variable,
+      advisor_type = c("ConsistentlyUtilitarian", advisor_type)
+      ),
+    re_formula = NA,
+    summary = FALSE
     )
+  # convert from probabilities of each level to estimated means
+  means <- matrix(0, nrow = nrow(f), ncol = ncol(f))
+  for (i in 1:7) means <- means + (f[, , i] * i)
+  # return difference
+  as.numeric(means[,1] - means[,2])
 }
 
 # function to run power analysis based on pilot 3 results
-run_power_analysis_pilot3 <- function(pilot3_fit1, n = 100, sim_id = 1) {
+run_power_analysis_pilot3 <- function(pilot3_fit1, n = 50, sim_id = 1) {
   # for each simulation:
   tibble(sim_id = sim_id) %>%
     rowwise() %>%
@@ -52,59 +60,45 @@ run_power_analysis_pilot3 <- function(pilot3_fit1, n = 100, sim_id = 1) {
         update(
           object = pilot3_fit1,
           newdata = data,
-          iter = 2000,
-          warmup = 1000,
-          chains = 2,
-          cores = 2,
+          chains = 1,
+          cores = 1,
+          iter = 800,
           init = 0,
-          threads = threading(2),
           seed = 2113
           )
         ),
-      # 3. extract statistics from the fitted model
-      # maximum rhat value
-      max_rhat = max(rhat(fit), na.rm = TRUE),
-      # minimum neff ratio
-      min_neff_ratio = min(neff_ratio(fit), na.rm = TRUE),
-      # posterior samples
-      post = list(posterior_samples(fit)),
+      # 3. get posterior differences
       # difference in trust between CD and CU
-      diff_trust_CD =
-        list(post[["b_trustbaseline_advisor_typeConsistentlyUtilitarian"]]),
+      diff_trust_CD = list(
+        get_post_difference(fit, "trust_baseline", "ConsistentlyDeontological")
+        ),
       # difference in trust between NS and CU
-      diff_trust_NS =
-        list(
-          post[["b_trustbaseline_advisor_typeConsistentlyUtilitarian"]] -
-          post[["b_trustbaseline_advisor_typeNormativelySensitive"]]
-          ),
+      diff_trust_NS = list(
+        get_post_difference(fit, "trust_baseline", "NormativelySensitive")
+        ),
       # difference in trust between NNS and CU
-      diff_trust_NNS =
-        list(
-          post[["b_trustbaseline_advisor_typeConsistentlyUtilitarian"]] -
-          post[["b_trustbaseline_advisor_typeNonNormativelySensitive"]]
+      diff_trust_NNS = list(
+        get_post_difference(fit, "trust_baseline", "NonNormativelySensitive")
         ),
       # difference in human likelihood between CD and CU
-      diff_human_CD =
-        list(post[["b_likelyhuman_advisor_typeConsistentlyUtilitarian"]]),
+      diff_human_CD = list(
+        get_post_difference(fit, "likely_human", "ConsistentlyDeontological")
+        ),
       # difference in human likelihood between NS and CU
-      diff_human_NS =
-        list(
-          post[["b_likelyhuman_advisor_typeConsistentlyUtilitarian"]] -
-            post[["b_likelyhuman_advisor_typeNormativelySensitive"]]
+      diff_human_NS = list(
+        get_post_difference(fit, "likely_human", "NormativelySensitive")
         ),
       # difference in human likelihood between NNS and CU
-      diff_human_NNS =
-        list(
-          post[["b_likelyhuman_advisor_typeConsistentlyUtilitarian"]] -
-            post[["b_likelyhuman_advisor_typeNonNormativelySensitive"]]
+      diff_human_NNS = list(
+        get_post_difference(fit, "likely_human", "NonNormativelySensitive")
         )
       ) %>%
     # remove some columns
-    select(!c(fit, post)) %>%
+    select(!c(fit)) %>%
     # pivot longer
     pivot_longer(
       cols = starts_with("diff_"),
-      names_to = "parameter",
+      names_to = "comparison",
       values_to = "post"
     ) %>%
     rowwise() %>%
