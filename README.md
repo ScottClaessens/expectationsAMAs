@@ -1,4 +1,4 @@
-# Cross-cultural Artificial Moral Advisors
+# Expectations of Artificial Moral Advisors Across Cultures
 
 ## Getting Started
 
