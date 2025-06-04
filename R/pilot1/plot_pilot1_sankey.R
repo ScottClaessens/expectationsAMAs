@@ -63,13 +63,13 @@ plot_pilot1_sankey_individual <- function(pilot1_data, plot_dilemma) {
 plot_pilot1_sankey <- function(pilot1_data) {
   # get all dilemmas in correct order
   dilemmas <-
-    c(as.character(sort(unique(pilot1_data$dilemma[data$type == "IB"]))),
-      as.character(sort(unique(pilot1_data$dilemma[data$type == "IH"]))))
+    c(as.character(sort(unique(pilot1_data$dilemma[pilot1_data$type == "IB"]))),
+      as.character(sort(unique(pilot1_data$dilemma[pilot1_data$type == "IH"]))))
   # get list of plots
   plot_list <- list()
   for (i in 1:length(dilemmas)) {
     plot_list[[i]] <- 
-      plot_sankey_individual(pilot1_data, plot_dilemma = dilemmas[i])
+      plot_pilot1_sankey_individual(pilot1_data, plot_dilemma = dilemmas[i])
   }
   # put together
   p <- plot_grid(

@@ -40,7 +40,7 @@ plot_pilot1_results <- function(pilot1_data, pilot1_means) {
       ),
       position = position_jitterdodge(jitter.height = 0.4),
       alpha = 0.1,
-      size = 0.3
+      size = 0.5
     ) +
     geom_pointrange(
       data = means,
@@ -53,7 +53,7 @@ plot_pilot1_results <- function(pilot1_data, pilot1_means) {
         group = order
       ),
       position = position_dodge(width = 0.75),
-      size = 0.1
+      size = 0.3
     ) +
     facet_grid(
       resp ~ type,
@@ -68,13 +68,13 @@ plot_pilot1_results <- function(pilot1_data, pilot1_means) {
     theme_minimal() +
     theme(
       strip.placement = "outside",
-      strip.text.x = element_text(size = 9),
-      strip.text.y = element_text(size = 7),
+      strip.text.x = element_text(size = 12),
+      strip.text.y = element_text(size = 10),
       legend.title = element_blank(),
-      axis.title.x = element_text(size = 9),
+      axis.title.x = element_text(size = 12),
       axis.title.y = element_blank(),
-      axis.text.x = element_text(size = 7, angle = 45, hjust = 1),
-      axis.text.y = element_text(size = 6),
+      axis.text.x = element_text(size = 12, angle = 45, hjust = 1),
+      axis.text.y = element_text(size = 10),
       panel.grid.minor = element_blank(),
       panel.grid.major = element_line(linewidth = 0.3),
       panel.spacing.x = unit(1.0, "lines"),
@@ -84,8 +84,8 @@ plot_pilot1_results <- function(pilot1_data, pilot1_means) {
   ggsave(
     plot = p,
     filename = "plots/pilot1_results.pdf",
-    height = 4,
-    width = 5
+    height = 6,
+    width = 7.5
   )
   return(p)
 }

@@ -22,12 +22,12 @@ list(
   # load data
   tar_target(pilot1_data, load_pilot1_data(pilot1_data_file)),
   ## fit model
-  #tar_target(pilot1_fit, fit_pilot1_model(pilot1_data)),
+  tar_target(pilot1_fit, fit_pilot1_model(pilot1_data)),
   ## extract estimated means from the model
-  #tar_target(pilot1_means, extract_pilot1_means(pilot1_fit)),
+  tar_target(pilot1_means, extract_pilot1_means(pilot1_fit)),
   ## plot results
-  #tar_target(pilot1_plot1, plot_pilot1_results(pilot1_data, pilot1_means)),
-  #tar_target(pilot1_plot2, plot_pilot1_sankey(pilot1_data)),
+  tar_target(pilot1_plot1, plot_pilot1_results(pilot1_data, pilot1_means)),
+  tar_target(pilot1_plot2, plot_pilot1_sankey(pilot1_data)),
   
   #### Pilot 2 ####
   
@@ -128,5 +128,10 @@ list(
     pattern = map(power_id),
     deployment = "worker"
   ),
-  tar_target(plot_power, plot_power_analysis_pilot3(power))
+  tar_target(plot_power, plot_power_analysis_pilot3(power)),
+  
+  #### Summary of pilots ####
+  
+  tar_quarto(summary, "quarto/summary/summary.qmd")
+  
 )

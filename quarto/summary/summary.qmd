@@ -1,0 +1,173 @@
+---
+title: "Expectations and Trust in Moral Advisors"
+subtitle: "Summary of Pilot Studies"
+author: "Scott Claessens"
+date: "`{r} Sys.Date()`"
+format:
+  html:
+    html-table-processing: none
+    embed-resources: false
+toc: true
+execute:
+  echo: false
+  warning: false
+  error: false
+---
+
+```{r}
+library(targets)
+```
+
+This document summarises the results of three pilot studies exploring people's
+expectations about, and trust in, moral advisors. We vary how consistent the
+moral advisors are in the advice that they give, manipulating whether and how 
+they change the direction of their advice.
+
+For all pilots, participants were recruited on Prolific (pilot 1 _n_ = 300, 
+pilot 2 _n_ = 401, pilot 3 _n_ = 401).
+
+Data and code for these pilot studies can be found here:
+<https://github.com/ScottClaessens/expectationsAMAs>
+
+# Pilot 1
+
+The aim of our first pilot was to test the suitability of different moral 
+dilemmas. We included five impartial beneficence dilemmas (Architect, Donation, 
+Exam, Marathon, and Volunteering) and five instrumental harm dilemmas (Bomb, 
+Enemy Spy, Hostage, Passcode, and Sniper).
+
+Participants were presented with one random dilemma and answered several 
+questions about the dilemma: what they thought should be done, how confident 
+they were in their decision, and how easy the dilemma was to understand.
+Participants then saw the same dilemma again with the moral calculus updated so 
+that many more people could be saved/helped by the utilitarian decision (e.g., 
+instead of harming someone to save five people, the character must harm someone
+to save a thousand people). Participants answered the same questions about the
+updated dilemma. Participants then repeated this process with another random 
+dilemma of the other type (impartial beneficence or instrumental harm).
+
+```{r}
+#| label: fig-pilot1
+#| fig-cap: "Results from Pilot 1"
+#| fig-width: 7.5
+#| fig-height: 6
+
+tar_read(pilot1_plot1)
+```
+
+For all dilemmas, participants shifted their judgement to be more utilitarian
+after the moral calculus changed (Pre vs. Post). However, baseline judgements
+varied across the dilemmas. Participants were most confident in their responses
+for the Exam and Sniper dilemmas. All dilemmas were easy to understand, though
+understanding was slightly lower for the Passcode dilemma.
+
+From these results, we decided to retain the following dilemmas: Bomb, Hostage,
+Enemy Spy, Donation, Marathon, and Volunteer.
+
+# Pilot 2
+
+In the second pilot, we tested a between-subjects version of Study 3b from Myers
+& Everett (2025), employing the dilemmas we retained from the first pilot.
+
+We presented participants with a random moral dilemma and then, in a random 
+order, two variants of the dilemma where the focal decision was impacted either 
+by a morally-relevant change (e.g., a change in the number of people to be 
+saved) or a morally-irrelevant change (e.g., a change in the gender of the 
+person deciding). For each of these dilemma variants, participants saw moral 
+advice from a hypothetical moral advisor. The type of advisor was manipulated to
+be either:
+
+1. consistently non-utilitarian
+2. consistently utilitarian
+3. initially non-utilitarian but sensitive to the morally-relevant change 
+(normatively sensitive)
+4. initially non-utilitarian but sensitive to the morally-irrelevant change 
+(non-normatively sensitive)
+
+After reading the three dilemma variants and the respective advice for each, 
+participants were asked how much they trusted the advisor, how empathic and 
+competent they thought the advisor was, and how likely they thought it was that
+the advisor was human or an AI.
+
+```{r}
+#| label: fig-pilot2
+#| fig-cap: "Results from Pilot 2"
+#| fig-width: 7
+#| fig-height: 5
+
+tar_read(pilot2_plot_by_dilemma_type)
+```
+
+For both instrumental harm and impartial beneficence dilemmas, participants 
+rated the non-normatively sensitive advisor (the advisor that "changed their 
+mind" after seeing the morally-irrelevant change) as the least trustworthy, the 
+least empathic, and the least competent.
+
+Interestingly, however, levels of trust were similar for consistently 
+non-utilitarian and consistently utilitarian advisors, which seems to go against
+previous research that utilitarian decision-makers are trusted less. Perhaps the
+fact that these advisors were consistent in their advice, regardless of the 
+direction of the advice, suggested to participants that they were trustworthy 
+(i.e., they would provide reliable advice).
+
+The consistently non-utilitarian advisor was perceived as the most human-like. 
+In the case of instrumental harm, participants stated that they would be the 
+least surprised if the consistently utilitarian advisor was an AI.
+
+# Pilot 3
+
+In the third pilot, we replicated the previous design with two changes: (1) we 
+focused only on instrumental harm dilemmas, (2) we introduced baseline
+measures of trust, empathy, and competency before seeing the morally-relevant
+and morally-irrelevant variants of the dilemma, and (3) we asked participants
+to directly compare all four types of advisors at the end of the study.
+
+```{r}
+#| label: fig-pilot3-perceptions
+#| fig-cap: "Perceptions of the advisor in Pilot 3"
+#| fig-width: 6
+#| fig-height: 5
+
+tar_read(pilot3_plot_perceptions)
+```
+
+At baseline, before seeing the morally-relevant and morally-irrelevant variants
+of the dilemma, participants rated the consistently utilitarian advisor as less
+trustworthy, less empathic, and less competent. This makes sense, since all
+other advisor types gave non-utilitarian advice in this first dilemma. This 
+result aligns more with the literature on distrust in utilitarian
+decision-makers.
+
+After seeing all three dilemma variants, participants rate the non-normatively 
+sensitive advisor as the least trustworthy and the least competent.
+
+```{r}
+#| label: fig-pilot3-AI
+#| fig-cap: "Human-likelihood and AI-surprise in Pilot 3"
+#| fig-width: 5
+#| fig-height: 4
+
+tar_read(pilot3_plot_AI)
+```
+
+We asked questions about the human-likelihood and AI-surprise only after all
+three dilemmas. The results show a similar pattern to Myers and Everett (2025),
+although the credible intervals are wide.
+
+```{r}
+#| label: fig-pilot3-comparison
+#| fig-cap: "Direct comparisons of advisors in Pilot 3"
+#| fig-width: 6
+#| fig-height: 4
+
+tar_read(pilot3_plot_comparison)
+```
+
+Similar patterns emerged when we asked participants to directly compare the
+four different advisor types on trust and human-likelihood.
+
+# References
+
+Myers, S., & Everett, J. A. (2025). People expect artificial moral advisors to 
+be more utilitarian and distrust utilitarian moral advisors. _Cognition_, _256_, 
+106028.
