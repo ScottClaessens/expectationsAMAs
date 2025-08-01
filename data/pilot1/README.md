@@ -1,7 +1,7 @@
 # Data README file
 
 **Dataset title:** Clean data from pilot study for project on "Expectations of 
-Artificial Moral Advisors across Countries"
+Artificial Moral Advisors"
 
 **Principal investigator:** Dr. Scott Claessens (scott.claessens@gmail.com)
 

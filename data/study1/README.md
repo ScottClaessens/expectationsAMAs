@@ -1,6 +1,6 @@
 # Data README file
 
-**Dataset title:** Clean data from third pilot study for project on 
+**Dataset title:** Clean data from first main study for project on 
 "Expectations of Artificial Moral Advisors"
 
 **Principal investigator:** Dr. Scott Claessens (scott.claessens@gmail.com)
@@ -11,17 +11,18 @@
 
 **File format:** CSV file
 
-**File dimensions:** 401 rows x 34 columns
+**File dimensions:** 902 rows x 35 columns
 
-**Data collected on:** 19th November 2024
+**Data collected on:** 30th July 2025
 
 **Columns in the dataset:**
 
 - `id` - numeric, participant identification number
-- `dilemma_type` - character, type of dilemma presented to participant,
-always "InstrumentalHarm" in this pilot
+- `dilemma_type` - character, type of dilemma presented to participant, either 
+"InstrumentalHarm" or "ImpartialBeneficence"
 - `dilemma` - character, specific dilemma randomly presented to participant, 
-possible dilemmas were "Bomb", "Hostage", and "EnemySpy"
+possible dilemmas were "Bomb", "Hostage", "EnemySpy", "Donation", "Marathon", 
+and "Volunteer"
 - `advisor_type` - character, advisor type randomly presented to participant,
 possible advisor types were "ConsistentlyUtilitarian",
 "ConsistentlyDeontological", "NormativelySensitive", and 
@@ -34,6 +35,7 @@ labelled "Advisor A", second was labelled "Advisor B", third was labelled
 "Advisor C", fourth was labelled "Advisor D"
 - `age` - numeric, participant's self-reported age in years
 - `gender` - character, participant's self-reported gender identity
+- `captcha` - numeric, participant's Captcha score between 0 and 1
 - `attention` - character, response to the attention check question. The
 question was "When an important event is happening or is about to happen, many 
 people try to get informed about the development of the situation. In such 
@@ -49,7 +51,7 @@ saw the baseline dilemma
 - `empathy_baseline` - numeric, 1-7 Likert scale, response to the question "How
 empathic do you think this advisor is?" from Not At All (1) to Very Much (7),
 asked after participants saw the baseline dilemma
-- `competency_baseline` - numeric, 1-7 Likert scale, response to the question
+- `competence_baseline` - numeric, 1-7 Likert scale, response to the question
 "How competent do you think this advisor is?" from Not At All (1) to Very Much
 (7), asked after participants saw the baseline dilemma
 - `trust_overall` - numeric, 1-7 Likert scale, response to the question 
@@ -62,7 +64,7 @@ saw all dilemma variants
 - `empathy_overall` - numeric, 1-7 Likert scale, response to the question "How
 empathic do you think this advisor is?" from Not At All (1) to Very Much (7),
 asked after participants saw all dilemma variants
-- `competency_overall` - numeric, 1-7 Likert scale, response to the question
+- `competence_overall` - numeric, 1-7 Likert scale, response to the question
 "How competent do you think this advisor is?" from Not At All (1) to Very Much
 (7), asked after participants saw all dilemma variants
 - `likely_human` - numeric, 1-7 Likert scale, response to the question "How
