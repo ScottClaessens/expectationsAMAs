@@ -132,6 +132,23 @@ list(
   
   #### Summary of pilots ####
   
-  tar_quarto(summary, "quarto/summary/summary.qmd")
+  tar_quarto(summary, "quarto/summary/summary.qmd"),
   
+  #### Study 1 ####
+  
+  # data file
+  tar_target(study1_data_file, "data/study1/study1_data_clean.csv",
+             format = "file"),
+  # load data
+  tar_target(study1_data, load_study1_data(study1_data_file)),
+  # fit model 1
+  tar_map(
+    values = list(
+      outcome = c("trust", "trust_other_issues", "empathy", "competence")
+    ),
+    tar_target(study1_fit1, fit_study1_model1(study1_data, outcome)),
+    tar_target(study1_means1, extract_study1_means1(study1_fit1)),
+    tar_target(study1_plot1, plot_study1_model1(study1_data, study1_means1,
+                                                outcome))
+  )
 )

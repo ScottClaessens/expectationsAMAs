@@ -1,0 +1,80 @@
+# function to plot model 1 predictions from study 1
+plot_study1_model1 <- function(study1_data, study1_means1, outcome) {
+  # advisor and dilemma types
+  advisor_types <- c(
+    "ConsistentlyDeontological" = "Consistently\nDeontological",
+    "ConsistentlyUtilitarian"   = "Consistently\nUtilitarian",
+    "NormativelySensitive"      = "Normatively\nSensitive",
+    "NonNormativelySensitive"   = "Non-normatively\nSensitive"
+  )
+  dilemma_types <- c(
+    "InstrumentalHarm"     = "Instrumental harm",
+    "ImpartialBeneficence" = "Impartial beneficence"
+  )
+  # wrangle data
+  data <-
+    study1_data %>%
+    pivot_longer(
+      cols = trust_baseline:competence_overall,
+      names_pattern = "(.*)_(.*)",
+      names_to = c(".value", "time")
+    ) %>%
+    mutate(dilemma_type = dilemma_types[dilemma_type])
+  # plot
+  p <-
+    ggplot() +
+    geom_jitter(
+      data = data,
+      mapping = aes(
+        x = advisor_type,
+        y = !!sym(outcome),
+        colour = time
+      ),
+      position = position_jitterdodge(
+        jitter.width = 0.25,
+        jitter.height = 0.4
+      ),
+      alpha = 0.1,
+      size = 0.9
+    ) +
+    geom_pointrange(
+      data = mutate(study1_means1, dilemma_type = dilemma_types[dilemma_type]),
+      mapping = aes(
+        x = advisor_type,
+        y = estimate,
+        ymin = lower,
+        ymax = upper,
+        colour = time
+      ),
+      position = position_dodge(width = 0.75),
+      linewidth = 0.7
+    ) +
+    scale_y_continuous(
+      name = str_to_title(str_replace_all(outcome, "_", " ")),
+      labels = str_to_title,
+      limits = c(1, 7),
+      breaks = 1:7
+    ) +
+    scale_x_discrete(
+      name = "Advisor type",
+      labels = advisor_types
+    ) +
+    scale_colour_discrete(
+      name = "Time",
+      labels = str_to_title
+    ) +
+    facet_wrap(. ~ fct_rev(dilemma_type)) +
+    theme_classic() +
+    theme(
+      axis.text.x = element_text(size = 8),
+      legend.position = "bottom"
+    )
+  # save and return
+  ggsave(
+    plot = p,
+    filename = paste0("plots/study1_results_", outcome, ".pdf"),
+    width = 7,
+    height = 4
+  )
+  return(p)
+}
