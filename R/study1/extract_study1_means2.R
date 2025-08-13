@@ -1,15 +1,14 @@
-# function to extract means from model 1 in study 1
-extract_study1_means1 <- function(study1_fit1) {
+# function to extract means from model 2 in study 1
+extract_study1_means2 <- function(study1_fit2) {
   # new data
   d <- expand_grid(
     advisor_type = c("ConsistentlyDeontological", "ConsistentlyUtilitarian",
                      "NormativelySensitive", "NonNormativelySensitive"),
-    dilemma_type = c("InstrumentalHarm", "ImpartialBeneficence"),
-    time = c("baseline", "overall")
+    dilemma_type = c("InstrumentalHarm", "ImpartialBeneficence")
   )
   # get fitted values from the model
   f <- fitted(
-    object = study1_fit1,
+    object = study1_fit2,
     newdata = d,
     re_formula = NA,
     scale = "response",

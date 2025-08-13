@@ -141,7 +141,7 @@ list(
              format = "file"),
   # load data
   tar_target(study1_data, load_study1_data(study1_data_file)),
-  # fit model 1
+  # fit and plot model 1
   tar_map(
     values = list(
       outcome = c("trust", "trust_other_issues", "empathy", "competence")
@@ -149,6 +149,14 @@ list(
     tar_target(study1_fit1, fit_study1_model1(study1_data, outcome)),
     tar_target(study1_means1, extract_study1_means1(study1_fit1)),
     tar_target(study1_plot1, plot_study1_model1(study1_data, study1_means1,
+                                                outcome))
+  ),
+  # fit and plot model 2
+  tar_map(
+    values = list(outcome = c("likely_human", "surprised_AI")),
+    tar_target(study1_fit2, fit_study1_model2(study1_data, outcome)),
+    tar_target(study1_means2, extract_study1_means2(study1_fit2)),
+    tar_target(study1_plot2, plot_study1_model2(study1_data, study1_means2,
                                                 outcome))
   )
 )
