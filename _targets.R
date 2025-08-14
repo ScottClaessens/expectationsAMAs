@@ -158,5 +158,13 @@ list(
     tar_target(study1_means2, extract_study1_means2(study1_fit2)),
     tar_target(study1_plot2, plot_study1_model2(study1_data, study1_means2,
                                                 outcome))
+  ),
+  # fit and plot model 3
+  tar_map(
+    values = list(outcome = c("compare_trust", "compare_likely_human")),
+    tar_target(study1_fit3, fit_study1_model3(study1_data, outcome)),
+    tar_target(study1_means3, extract_study1_means3(study1_fit3)),
+    tar_target(study1_plot3, plot_study1_model3(study1_data, study1_means3,
+                                                outcome))
   )
 )

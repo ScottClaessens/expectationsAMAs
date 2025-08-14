@@ -24,6 +24,7 @@ fit_study1_model2 <- function(study1_data, outcome = "likely_human") {
     family = cumulative,
     prior = priors,
     control = list(adapt_delta = 0.99),
-    cores = 4
+    cores = 4,
+    seed = 2113
   )
 }

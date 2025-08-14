@@ -19,7 +19,10 @@ plot_study1_model1 <- function(study1_data, study1_means1, outcome) {
       names_pattern = "(.*)_(.*)",
       names_to = c(".value", "time")
     ) %>%
-    mutate(dilemma_type = dilemma_types[dilemma_type])
+    mutate(
+      dilemma_type = dilemma_types[dilemma_type],
+      advisor_type = factor(advisor_type, levels = names(advisor_types))
+    )
   # plot
   p <-
     ggplot() +
@@ -38,7 +41,11 @@ plot_study1_model1 <- function(study1_data, study1_means1, outcome) {
       size = 0.9
     ) +
     geom_pointrange(
-      data = mutate(study1_means1, dilemma_type = dilemma_types[dilemma_type]),
+      data = mutate(
+        study1_means1,
+        dilemma_type = dilemma_types[dilemma_type],
+        advisor_type = factor(advisor_type, levels = names(advisor_types))
+      ),
       mapping = aes(
         x = advisor_type,
         y = estimate,
@@ -60,8 +67,8 @@ plot_study1_model1 <- function(study1_data, study1_means1, outcome) {
       labels = advisor_types
     ) +
     scale_colour_discrete(
-      name = "Time",
-      labels = str_to_title
+      name = NULL,
+      labels = function(x) paste0(str_to_title(x), " evaluation")
     ) +
     facet_wrap(. ~ fct_rev(dilemma_type)) +
     theme_classic() +

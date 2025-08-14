@@ -1,5 +1,5 @@
-# function to plot model 2 predictions from study 1
-plot_study1_model2 <- function(study1_data, study1_means2, outcome) {
+# function to plot model 3 predictions from study 1
+plot_study1_model3 <- function(study1_data, study1_means3, outcome) {
   # advisor and dilemma types
   advisor_types <- c(
     "ConsistentlyDeontological" = "Consistently\nDeontological",
@@ -15,34 +15,22 @@ plot_study1_model2 <- function(study1_data, study1_means2, outcome) {
   p <-
     ggplot() +
     geom_jitter(
-      data = mutate(
-        study1_data,
-        dilemma_type = dilemma_types[dilemma_type],
-        advisor_type = factor(advisor_type, levels = names(advisor_types)),
-        type = "Overall evaluation"
-      ),
+      data = mutate(study1_data, dilemma_type = dilemma_types[dilemma_type]),
       mapping = aes(
         x = advisor_type,
-        y = !!sym(outcome),
-        colour = type
+        y = !!sym(outcome)
       ),
       width = 0.2,
       alpha = 0.1,
       size = 0.9
     ) +
     geom_pointrange(
-      data = mutate(
-        study1_means2,
-        dilemma_type = dilemma_types[dilemma_type],
-        advisor_type = factor(advisor_type, levels = names(advisor_types)),
-        type = "Overall evaluation"
-      ),
+      data = mutate(study1_means3, dilemma_type = dilemma_types[dilemma_type]),
       mapping = aes(
         x = advisor_type,
         y = estimate,
         ymin = lower,
-        ymax = upper,
-        colour = type
+        ymax = upper
       ),
       linewidth = 0.7
     ) +
@@ -55,10 +43,6 @@ plot_study1_model2 <- function(study1_data, study1_means2, outcome) {
     scale_x_discrete(
       name = "Advisor type",
       labels = advisor_types
-    ) +
-    scale_colour_manual(
-      name = NULL,
-      values = "#00BFC4"
     ) +
     facet_wrap(. ~ fct_rev(dilemma_type)) +
     theme_classic() +

@@ -31,6 +31,7 @@ fit_study1_model1 <- function(study1_data, outcome = "trust") {
     data = data,
     family = cumulative,
     prior = priors,
-    cores = 4
+    cores = 4,
+    seed = 2113
   )
 }
