@@ -141,7 +141,7 @@ list(
              format = "file"),
   # load data
   tar_target(study1_data, load_study1_data(study1_data_file)),
-  # fit and plot model 1 - between subjects perceptions
+  # fit and plot model 1 - between-subjects perceptions
   tar_map(
     values = list(
       outcome = c("trust", "trust_other_issues", "empathy", "competence")
@@ -151,7 +151,7 @@ list(
     tar_target(study1_plot1, plot_study1_model1(study1_data, study1_means1,
                                                 outcome))
   ),
-  # fit and plot model 2 - between subjects AI
+  # fit and plot model 2 - between-subjects AI
   tar_map(
     values = list(outcome = c("likely_human", "surprised_AI")),
     tar_target(study1_fit2, fit_study1_model2(study1_data, outcome)),
@@ -166,5 +166,9 @@ list(
     tar_target(study1_means3, extract_study1_means3(study1_fit3)),
     tar_target(study1_plot3, plot_study1_model3(study1_data, study1_means3,
                                                 outcome))
-  )
+  ),
+  # fit and plot model 4 - ranking
+  tar_target(study1_fit4, fit_study1_model4(study1_data)),
+  tar_target(study1_means4, extract_study1_means4(study1_fit4)),
+  tar_target(study1_plot4, plot_study1_model4(study1_fit4))
 )
