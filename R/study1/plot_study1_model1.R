@@ -58,7 +58,6 @@ plot_study1_model1 <- function(study1_data, study1_means1, outcome) {
     ) +
     scale_y_continuous(
       name = str_to_sentence(str_replace_all(outcome, "_", " ")),
-      labels = str_to_title,
       limits = c(1, 7),
       breaks = 1:7
     ) +

@@ -47,8 +47,7 @@ plot_study1_model2 <- function(study1_data, study1_means2, outcome) {
       linewidth = 0.7
     ) +
     scale_y_continuous(
-      name = str_to_sentence(str_replace_all(outcome, "_", " ")),
-      labels = str_to_title,
+      name = ifelse(outcome == "likely_human", "Likely human", "Surprised AI"),
       limits = c(1, 7),
       breaks = 1:7
     ) +
