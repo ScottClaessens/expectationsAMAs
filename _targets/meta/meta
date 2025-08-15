@@ -71,48 +71,13 @@ study1_plot1_trust_other_issues|stem|01e058d1483849ff|9ed83848e2882145|7444126ff
 study1_plot1_empathy|stem|fc5a97f05513bd06|7305abf025f2a973|3783324379c9248b|-388272299||t20314.6339618225s|s2740026b|2740026|rds|local|vector|||0.219|Removed 183 rows containing missing values or values outside the scale range (`geom_point()`).|
 study1_plot2_surprised_AI|stem|49668c56bfad77fc|8faa301574cf714c|33cc9c3928633007|1997214738||t20314.6378191278s|s1535705b|1535705|rds|local|vector|||0.219|Removed 187 rows containing missing values or values outside the scale range (`geom_point()`).|
 study1_plot2_likely_human|stem|bdd1117b67202541|c3cd07f34ff6b5b1|7b8ff23b641587a1|-1054001406||t20314.6378240342s|s1529066b|1529066|rds|local|vector|||0.219|Removed 103 rows containing missing values or values outside the scale range (`geom_point()`).|
+study1_fit3_compare_likely_human|stem|209ba676a75e72af|3387a49628afea55|a16145aeb4daebc3|-1456137150||t20315.323271914s|s56611987b|56611987|rds|local|vector|||586.64||
+study1_fit3_compare_trust|stem|07138384ca9aaaa4|026e32b201416952|a16145aeb4daebc3|-1402686801||t20315.3308099331s|s56766362b|56766362|rds|local|vector|||649.25|There were 3 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems . Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable. Running the chains for more iterations may help. See https://mc-stan.org/misc/warnings.html#bulk-ess. Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable. Running the chains for more iterations may help. See https://mc-stan.org/misc/warnings.html#tail-ess|
+study1_means3_compare_likely_human|stem|0f0b1902ea2e37b5|d6be35606161fc3d|223aa1b6f324c379|517220995||t20315.3308200098s|s236635b|236635|rds|local|vector|||0.422||
+study1_means3_compare_trust|stem|df4661484b237d2c|a00c8ea85393560f|476211a32c0530c5|762113775||t20315.3308292836s|s236594b|236594|rds|local|vector|||0.407||
 plot_pilot1_sankey_individual|function|d7b0ce0a0e215c1d
 extract_pilot3_between_subjects_means|function|7f6deb9874d3052f
-.Random.seed|object|748eee78e5197b0e
-plot_pilot2_results_by_dilemma|function|3d478371a538237c
-fit_study1_model1|function|10e7334097d7ee51
-plot_pilot2_results_by_dilemma_type|function|dbf4c604ca6b7448
-fit_study1_model2|function|4a399faa7b052c86
-fit_study1_model3|function|c51818ef0a84e9fe
-load_pilot3_data|function|27df1b6ad2b712c2
-extract_overall_pilot2_means|function|1705962ab8cbf91e
-extract_pilot3_comparison_means|function|6c6c7ff6be1dc534
-load_pilot1_data|function|1e4b69e8cb87bf06
-generate_new_data_pilot3|function|21cf2014e16b56fb
-get_post_difference|function|1c5a8b01464d35dd
-plot_pilot2_overall_results|function|c61c8f8bd6814112
-plot_pilot3_comparison|function|b806de58d32e2bf1
-plot_pilot3_between_subjects_perceptions|function|e2f07ce6c1f21162
-extract_study1_means1|function|e483a348fee2a8c9
-load_study1_data|function|1729eaba5a24957d
-extract_study1_means2|function|a5211aa0ec934197
-extract_pilot2_means_by_dilemma_type|function|eee98142fc4e5909
-extract_study1_means3|function|1adc1b7e298933f5
-plot_study1_model1|function|14eedc4d07f66a7f
-extract_pilot1_means|function|6ed164c107d2c044
-fit_pilot2_model1|function|5eeb75ab6b73f538
-plot_study1_model2|function|8cc1886117a8702f
-extract_pilot2_means_by_dilemma|function|e9e479c4cd2fe4cf
-plot_power_analysis_pilot3|function|94b3994818a8f5b6
-fit_pilot2_model2|function|35025ab3ef511db8
-plot_pilot1_results|function|bd195f6d86caccad
-plot_study1_model3|function|69aa1803cc965367
-fit_pilot1_model|function|f90b10d6e1d7417d
-load_pilot2_data|function|de1c9071c12ca5e7
-plot_pilot3_between_subjects_AI|function|c0fbd33ef49d9164
-fit_pilot3_model1|function|9a9f7387e2af9a80
-fit_pilot3_model2|function|188aff622c7248d8
-plot_pilot1_sankey|function|3b678fb0ed59f4d2
-run_power_analysis_pilot3|function|63890fe32a75c262
-study1_fit3_compare_likely_human|stem||3387a49628afea55|c57f1e5745962f3e|-1456137150||t20314.6292899389s||0|rds|local|vector|||0.078||The following variables can neither be found in 'data' nor in 'data2': 'dilemma_type'
-plot_pilot1_sankey_individual|function|d7b0ce0a0e215c1d
-extract_pilot3_between_subjects_means|function|7f6deb9874d3052f
-.Random.seed|object|ff3b94634d30a313
+.Random.seed|object|66d4202eae50efd8
 plot_pilot2_results_by_dilemma|function|3d478371a538237c
 fit_study1_model1|function|10e7334097d7ee51
 plot_pilot2_results_by_dilemma_type|function|dbf4c604ca6b7448
@@ -140,7 +105,7 @@ extract_pilot2_means_by_dilemma|function|e9e479c4cd2fe4cf
 plot_power_analysis_pilot3|function|94b3994818a8f5b6
 fit_pilot2_model2|function|35025ab3ef511db8
 plot_pilot1_results|function|bd195f6d86caccad
-plot_study1_model3|function|69aa1803cc965367
+plot_study1_model3|function|ab74f57ea8e233d3
 fit_pilot1_model|function|f90b10d6e1d7417d
 load_pilot2_data|function|de1c9071c12ca5e7
 plot_pilot3_between_subjects_AI|function|c0fbd33ef49d9164
@@ -148,3 +113,5 @@ fit_pilot3_model1|function|9a9f7387e2af9a80
 fit_pilot3_model2|function|188aff622c7248d8
 plot_pilot1_sankey|function|3b678fb0ed59f4d2
 run_power_analysis_pilot3|function|63890fe32a75c262
+study1_plot3_compare_likely_human|stem|2fc00a1bdd73a686|d641ccddd69f207e|8fcee0e78b54fbe0|-899718162||t20315.3550224648s|s1481650b|1481650|rds|local|vector|||0.579|Removed 448 rows containing missing values or values outside the scale range (`geom_point()`).|
+study1_plot3_compare_trust|stem|5abba3d18e8407be|cb997e6d68b896b8|d3fa26e3aa2d71f3|677172540||t20315.3550265152s|s1482241b|1482241|rds|local|vector|||0.188|Removed 397 rows containing missing values or values outside the scale range (`geom_point()`).|

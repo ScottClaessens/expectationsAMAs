@@ -1,6 +1,12 @@
 # function to plot model 3 predictions from study 1
 plot_study1_model3 <- function(study1_data, study1_means3, outcome) {
   # advisor and dilemma types
+  types <- c(
+    "cons_deon"  = "ConsistentlyDeontological",
+    "cons_util"  = "ConsistentlyUtilitarian",
+    "norm_sens1" = "NormativelySensitive",
+    "norm_sens2" = "NonNormativelySensitive"
+  )
   advisor_types <- c(
     "ConsistentlyDeontological" = "Consistently\nDeontological",
     "ConsistentlyUtilitarian"   = "Consistently\nUtilitarian",
@@ -11,21 +17,50 @@ plot_study1_model3 <- function(study1_data, study1_means3, outcome) {
     "InstrumentalHarm"     = "Instrumental harm",
     "ImpartialBeneficence" = "Impartial beneficence"
   )
+  # pivot data long
+  data <-
+    study1_data %>%
+    # naming of columns annoying for regex
+    rename(
+      # normatively sensitive = norm_sens_1
+      compare_trust_norm_sens1        = compare_trust_norm_sens,
+      compare_likely_human_norm_sens1 = compare_likely_human_norm_sens,
+      # non-normatively sensitive = norm_sens_2
+      compare_trust_norm_sens2        = compare_trust_non_norm_sens,
+      compare_likely_human_norm_sens2 = compare_likely_human_non_norm_sens
+    ) %>%
+    pivot_longer(
+      cols = starts_with("compare_"),
+      names_to = c(".value", "type"),
+      names_pattern = "^(.*)_(cons_deon|cons_util|norm_sens1|norm_sens2)$"
+    ) %>%
+    transmute(
+      id = id,
+      dilemma = dilemma,
+      dilemma_type = dilemma_types[dilemma_type],
+      advisor_type = factor(advisor_types[types[type]], levels = advisor_types),
+      compare_trust = compare_trust,
+      compare_likely_human = compare_likely_human
+    )
   # plot
   p <-
     ggplot() +
     geom_jitter(
-      data = mutate(study1_data, dilemma_type = dilemma_types[dilemma_type]),
+      data = data,
       mapping = aes(
         x = advisor_type,
         y = !!sym(outcome)
       ),
-      width = 0.2,
-      alpha = 0.1,
-      size = 0.9
+      width = 0.3,
+      alpha = 0.05,
+      size = 0.7
     ) +
     geom_pointrange(
-      data = mutate(study1_means3, dilemma_type = dilemma_types[dilemma_type]),
+      data = mutate(
+        study1_means3,
+        dilemma_type = dilemma_types[dilemma_type],
+        advisor_type = factor(advisor_types[advisor_type], levels = advisor_types)
+      ),
       mapping = aes(
         x = advisor_type,
         y = estimate,
@@ -35,8 +70,9 @@ plot_study1_model3 <- function(study1_data, study1_means3, outcome) {
       linewidth = 0.7
     ) +
     scale_y_continuous(
-      name = str_to_sentence(str_replace_all(outcome, "_", " ")),
-      labels = str_to_title,
+      name = str_to_sentence(
+        str_replace_all(str_remove(outcome, "compare_"), "_", " ")
+      ),
       limits = c(1, 7),
       breaks = 1:7
     ) +
@@ -45,6 +81,7 @@ plot_study1_model3 <- function(study1_data, study1_means3, outcome) {
       labels = advisor_types
     ) +
     facet_wrap(. ~ fct_rev(dilemma_type)) +
+    ggtitle("Directly comparing advisors") +
     theme_classic() +
     theme(
       axis.text.x = element_text(size = 8),
