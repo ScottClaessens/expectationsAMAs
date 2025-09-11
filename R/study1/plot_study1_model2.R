@@ -1,5 +1,6 @@
 # function to plot model 2 predictions from study 1
-plot_study1_model2 <- function(study1_data, study1_means2, outcome) {
+plot_study1_model2 <- function(study1_data, study1_means2, outcome,
+                               split_by_dilemma = FALSE) {
   # advisor and dilemma types
   advisor_types <- c(
     "ConsistentlyDeontological" = "Consistently\nDeontological",
@@ -11,16 +12,43 @@ plot_study1_model2 <- function(study1_data, study1_means2, outcome) {
     "InstrumentalHarm"     = "Instrumental harm",
     "ImpartialBeneficence" = "Impartial beneficence"
   )
+  # wrangle data
+  data <-
+    study1_data %>%
+    mutate(
+      dilemma_type = dilemma_types[dilemma_type],
+      advisor_type = factor(advisor_type, levels = names(advisor_types)),
+      type = "Overall evaluation",
+      dilemma = factor(
+        ifelse(dilemma == "EnemySpy", "Enemy spy", dilemma),
+        levels = c("Bomb", "Enemy spy", "Hostage", "Donation", "Marathon",
+                   "Volunteering")
+      )
+    )
+  # wrangle means
+  means <-
+    study1_means2 %>%
+    mutate(
+      dilemma_type = dilemma_types[dilemma_type],
+      advisor_type = factor(advisor_type, levels = names(advisor_types)),
+      type = "Overall evaluation"
+    )
+  if (split_by_dilemma) {
+    means <-
+      means %>%
+      mutate(
+        dilemma = factor(
+          ifelse(dilemma == "EnemySpy", "Enemy spy", dilemma),
+          levels = c("Bomb", "Enemy spy", "Hostage", "Donation", "Marathon",
+                     "Volunteering")
+        )
+      )
+  }
   # plot
   p <-
     ggplot() +
     geom_jitter(
-      data = mutate(
-        study1_data,
-        dilemma_type = dilemma_types[dilemma_type],
-        advisor_type = factor(advisor_type, levels = names(advisor_types)),
-        type = "Overall evaluation"
-      ),
+      data = data,
       mapping = aes(
         x = advisor_type,
         y = !!sym(outcome),
@@ -31,12 +59,7 @@ plot_study1_model2 <- function(study1_data, study1_means2, outcome) {
       size = 0.9
     ) +
     geom_pointrange(
-      data = mutate(
-        study1_means2,
-        dilemma_type = dilemma_types[dilemma_type],
-        advisor_type = factor(advisor_type, levels = names(advisor_types)),
-        type = "Overall evaluation"
-      ),
+      data = means,
       mapping = aes(
         x = advisor_type,
         y = estimate,
@@ -59,7 +82,13 @@ plot_study1_model2 <- function(study1_data, study1_means2, outcome) {
       name = NULL,
       values = "#00BFC4"
     ) +
-    facet_wrap(. ~ fct_rev(dilemma_type)) +
+    facet_wrap(
+      if (split_by_dilemma) {
+        . ~ dilemma
+      } else {
+        . ~ fct_rev(dilemma_type)
+      }
+    ) +
     theme_classic() +
     theme(
       axis.text.x = element_text(size = 8),
@@ -68,9 +97,14 @@ plot_study1_model2 <- function(study1_data, study1_means2, outcome) {
   # save and return
   ggsave(
     plot = p,
-    filename = paste0("plots/study1_results_", outcome, ".pdf"),
-    width = 7,
-    height = 4
+    filename = paste0(
+      "plots/study1_results_",
+      ifelse(split_by_dilemma, "by_dilemma_", ""),
+      outcome,
+      ".pdf"
+    ),
+    width = ifelse(split_by_dilemma, 9.5, 7),
+    height = ifelse(split_by_dilemma, 5.5, 4)
   )
   return(p)
 }

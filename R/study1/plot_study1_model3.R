@@ -1,5 +1,6 @@
 # function to plot model 3 predictions from study 1
-plot_study1_model3 <- function(study1_data, study1_means3, outcome) {
+plot_study1_model3 <- function(study1_data, study1_means3, outcome,
+                               split_by_dilemma = FALSE) {
   # advisor and dilemma types
   types <- c(
     "cons_deon"  = "ConsistentlyDeontological",
@@ -36,12 +37,34 @@ plot_study1_model3 <- function(study1_data, study1_means3, outcome) {
     ) %>%
     transmute(
       id = id,
-      dilemma = dilemma,
+      dilemma = factor(
+        ifelse(dilemma == "EnemySpy", "Enemy spy", dilemma),
+        levels = c("Bomb", "Enemy spy", "Hostage", "Donation", "Marathon",
+                   "Volunteering")
+      ),
       dilemma_type = dilemma_types[dilemma_type],
       advisor_type = factor(advisor_types[types[type]], levels = advisor_types),
       compare_trust = compare_trust,
       compare_likely_human = compare_likely_human
     )
+  # wrangle means
+  means <-
+    study1_means3 %>%
+    mutate(
+      dilemma_type = dilemma_types[dilemma_type],
+      advisor_type = factor(advisor_types[advisor_type], levels = advisor_types)
+    )
+  if (split_by_dilemma) {
+    means <-
+      means %>%
+      mutate(
+        dilemma = factor(
+          ifelse(dilemma == "EnemySpy", "Enemy spy", dilemma),
+          levels = c("Bomb", "Enemy spy", "Hostage", "Donation", "Marathon",
+                     "Volunteering")
+        )
+      )
+  }
   # plot
   p <-
     ggplot() +
@@ -56,11 +79,7 @@ plot_study1_model3 <- function(study1_data, study1_means3, outcome) {
       size = 0.7
     ) +
     geom_pointrange(
-      data = mutate(
-        study1_means3,
-        dilemma_type = dilemma_types[dilemma_type],
-        advisor_type = factor(advisor_types[advisor_type], levels = advisor_types)
-      ),
+      data = means,
       mapping = aes(
         x = advisor_type,
         y = estimate,
@@ -80,7 +99,13 @@ plot_study1_model3 <- function(study1_data, study1_means3, outcome) {
       name = "Advisor type",
       labels = advisor_types
     ) +
-    facet_wrap(. ~ fct_rev(dilemma_type)) +
+    facet_wrap(
+      if (split_by_dilemma) {
+        . ~ dilemma
+      } else {
+        . ~ fct_rev(dilemma_type)
+      }
+    ) +
     ggtitle("Directly comparing advisors") +
     theme_classic() +
     theme(
@@ -90,9 +115,14 @@ plot_study1_model3 <- function(study1_data, study1_means3, outcome) {
   # save and return
   ggsave(
     plot = p,
-    filename = paste0("plots/study1_results_", outcome, ".pdf"),
-    width = 7,
-    height = 4
+    filename = paste0(
+      "plots/study1_results_",
+      ifelse(split_by_dilemma, "by_dilemma_", ""),
+      outcome,
+      ".pdf"
+    ),
+    width = ifelse(split_by_dilemma, 9.5, 7),
+    height = ifelse(split_by_dilemma, 5.5, 4)
   )
   return(p)
 }

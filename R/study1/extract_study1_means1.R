@@ -1,17 +1,38 @@
 # function to extract means from model 1 in study 1
-extract_study1_means1 <- function(study1_fit1) {
+extract_study1_means1 <- function(study1_fit1, split_by_dilemma = FALSE) {
   # new data
-  d <- expand_grid(
-    advisor_type = c("ConsistentlyDeontological", "ConsistentlyUtilitarian",
-                     "NormativelySensitive", "NonNormativelySensitive"),
-    dilemma_type = c("InstrumentalHarm", "ImpartialBeneficence"),
-    time = c("baseline", "overall")
-  )
+  if (split_by_dilemma) {
+    d <- 
+      expand_grid(
+        advisor_type = c("ConsistentlyDeontological", "ConsistentlyUtilitarian",
+                         "NormativelySensitive", "NonNormativelySensitive"),
+        dilemma = c("Bomb", "EnemySpy", "Hostage", "Donation", "Marathon", 
+                    "Volunteering"),
+        time = c("baseline", "overall")
+      ) %>%
+      mutate(
+        dilemma_type = ifelse(
+          dilemma %in% c("Bomb", "EnemySpy", "Hostage"),
+          "InstrumentalHarm", "ImpartialBeneficence"
+        )
+      )
+  } else {
+    d <- expand_grid(
+      advisor_type = c("ConsistentlyDeontological", "ConsistentlyUtilitarian",
+                       "NormativelySensitive", "NonNormativelySensitive"),
+      dilemma_type = c("InstrumentalHarm", "ImpartialBeneficence"),
+      time = c("baseline", "overall")
+    )
+  }
   # get fitted values from the model
   f <- fitted(
     object = study1_fit1,
     newdata = d,
-    re_formula = NA,
+    re_formula = if (split_by_dilemma) {
+      ~ 1 + (1 + advisor_type * time | dilemma)
+    } else {
+      NA
+    },
     scale = "response",
     summary = FALSE
   )

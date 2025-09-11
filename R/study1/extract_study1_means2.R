@@ -1,16 +1,36 @@
 # function to extract means from model 2 in study 1
-extract_study1_means2 <- function(study1_fit2) {
+extract_study1_means2 <- function(study1_fit2, split_by_dilemma = FALSE) {
   # new data
-  d <- expand_grid(
-    advisor_type = c("ConsistentlyDeontological", "ConsistentlyUtilitarian",
-                     "NormativelySensitive", "NonNormativelySensitive"),
-    dilemma_type = c("InstrumentalHarm", "ImpartialBeneficence")
-  )
+  if (split_by_dilemma) {
+    d <- 
+      expand_grid(
+        advisor_type = c("ConsistentlyDeontological", "ConsistentlyUtilitarian",
+                         "NormativelySensitive", "NonNormativelySensitive"),
+        dilemma = c("Bomb", "EnemySpy", "Hostage", "Donation", "Marathon", 
+                    "Volunteering")
+      ) %>%
+      mutate(
+        dilemma_type = ifelse(
+          dilemma %in% c("Bomb", "EnemySpy", "Hostage"),
+          "InstrumentalHarm", "ImpartialBeneficence"
+        )
+      )
+  } else {
+    d <- expand_grid(
+      advisor_type = c("ConsistentlyDeontological", "ConsistentlyUtilitarian",
+                       "NormativelySensitive", "NonNormativelySensitive"),
+      dilemma_type = c("InstrumentalHarm", "ImpartialBeneficence")
+    )
+  }
   # get fitted values from the model
   f <- fitted(
     object = study1_fit2,
     newdata = d,
-    re_formula = NA,
+    re_formula = if (split_by_dilemma) {
+      ~ 1 + (1 + advisor_type | dilemma)
+    } else {
+      NA
+    },
     scale = "response",
     summary = FALSE
   )
