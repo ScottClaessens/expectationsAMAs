@@ -147,6 +147,7 @@ list(
       outcome = c("trust", "trust_other_issues", "empathy", "competence")
     ),
     tar_target(study1_fit1, fit_study1_model1(study1_data, outcome)),
+    tar_target(study1_table1, create_table_study1_model1(study1_fit1)),
     tar_target(study1_means1, extract_study1_means1(study1_fit1)),
     tar_target(study1_plot1, plot_study1_model1(study1_data, study1_means1,
                                                 outcome)),

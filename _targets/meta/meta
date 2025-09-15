@@ -96,9 +96,13 @@ study1_plot3_by_dilemma_compare_trust|stem|e0ef0dd0511470dc|90b0eaaf3636d134|2f6
 study1_plot3_compare_trust|stem|09a45c76d97229bd|cb997e6d68b896b8|0d28386e4c4dee0c|677172540||t20342.7138785291s|s1722151b|1722151|rds|local|vector|||0.375|Removed 397 rows containing missing values or values outside the scale range (`geom_point()`).|
 study1_plot3_by_dilemma_compare_likely_human|stem|c9091bde3549f8d6|c9d91516f3bc47fb|05f11f6465ec225e|2103344834||t20342.7138901564s|s4505032b|4505032|rds|local|vector|||0.438|Removed 425 rows containing missing values or values outside the scale range (`geom_point()`).|
 study1_plot3_compare_likely_human|stem|2d7630a9770c6103|d641ccddd69f207e|2329e4e1b21f4438|-899718162||t20342.7138985342s|s1721050b|1721050|rds|local|vector|||0.375|Removed 448 rows containing missing values or values outside the scale range (`geom_point()`).|
+study1_table1_trust_other_issues|stem|0019f5b0ab1fc85e|8225dca39a73c12f|34cc06d5d1506d1f|156281478||t20346.5871989867s|s564b|564|rds|local|vector|||2.953||
+study1_table1_trust|stem|f76bb68b65a9f23f|bfe792199079f09c|99d07fbbe2334fb5|-1163538876||t20346.5872390115s|s565b|565|rds|local|vector|||2.047||
+study1_table1_empathy|stem|a0d518acb1bfa106|547f22eb6d297280|778c3cc2229df346|-1795956194||t20346.5872788101s|s554b|554|rds|local|vector|||1.11||
+study1_table1_competence|stem|e411413bc96a3f04|c081e9420aaf3537|db7d8d4f33ec1be8|-350484713||t20346.5872986411s|s572b|572|rds|local|vector|||0.75||
 plot_pilot1_sankey_individual|function|d7b0ce0a0e215c1d
 extract_pilot3_between_subjects_means|function|7f6deb9874d3052f
-.Random.seed|object|b2cffb81ce960e9f
+.Random.seed|object|41f0744e7cd4c6c3
 plot_pilot2_results_by_dilemma|function|3d478371a538237c
 fit_study1_model1|function|10e7334097d7ee51
 plot_pilot2_results_by_dilemma_type|function|dbf4c604ca6b7448
@@ -116,6 +120,7 @@ plot_pilot3_comparison|function|b806de58d32e2bf1
 plot_pilot3_between_subjects_perceptions|function|e2f07ce6c1f21162
 extract_study1_means1|function|ce1941b918cf0774
 load_study1_data|function|1729eaba5a24957d
+create_table_study1_model1|function|031f7b5e86fa0453
 extract_study1_means2|function|254418c2793bc1c2
 extract_pilot2_means_by_dilemma_type|function|eee98142fc4e5909
 extract_study1_means3|function|bac1bc9f483cabf4
