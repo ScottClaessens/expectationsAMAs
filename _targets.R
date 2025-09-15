@@ -165,6 +165,7 @@ list(
   tar_map(
     values = list(outcome = c("likely_human", "surprised_AI")),
     tar_target(study1_fit2, fit_study1_model2(study1_data, outcome)),
+    tar_target(study1_table2, create_table_study1_model2(study1_fit2)),
     tar_target(study1_means2, extract_study1_means2(study1_fit2)),
     tar_target(study1_plot2, plot_study1_model2(study1_data, study1_means2,
                                                 outcome)),

@@ -1,15 +1,14 @@
-# table of pairwise comparisons from model 1
-create_table_study1_model1 <- function(study1_fit1) {
+# table of pairwise comparisons from model 2
+create_table_study1_model2 <- function(study1_fit2) {
   # new data
   d <- expand_grid(
     advisor_type = c("ConsistentlyDeontological", "ConsistentlyUtilitarian",
                      "NormativelySensitive", "NonNormativelySensitive"),
-    dilemma_type = c("InstrumentalHarm", "ImpartialBeneficence"),
-    time = c("baseline", "overall")
+    dilemma_type = c("InstrumentalHarm", "ImpartialBeneficence")
   )
   # fitted values
   f <- fitted(
-    object = study1_fit1,
+    object = study1_fit2,
     newdata = d,
     re_formula = NA,
     scale = "linear",
@@ -19,9 +18,9 @@ create_table_study1_model1 <- function(study1_fit1) {
   d$post <- lapply(seq_len(ncol(f)), function(i) f[,i])
   # get pairwise differences
   full_join(
-    unite(d, col = "var", dilemma_type, time),
-    unite(d, col = "var", dilemma_type, time),
-    by = "var",
+    d,
+    d,
+    by = "dilemma_type",
     suffix = c(".row1", ".row2"),
     relationship = "many-to-many"
   ) %>%
@@ -43,9 +42,9 @@ create_table_study1_model1 <- function(study1_fit1) {
         "]"
       )
     ) %>%
-    dplyr::select(pair, var, diff) %>%
+    dplyr::select(pair, dilemma_type, diff) %>%
     pivot_wider(
-      names_from = var,
+      names_from = dilemma_type,
       values_from = diff
     )
 }

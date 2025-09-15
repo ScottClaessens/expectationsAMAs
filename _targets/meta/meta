@@ -57,27 +57,21 @@ study1_fit1_trust|stem|0defd4edfcdd1724|54e71df3fdf920f9|90e5a6784e5604b8|-16117
 study1_fit1_competence|stem|5457cdeddfba97e9|29574e40a8317116|90e5a6784e5604b8|1091069971||t20314.6107809987s|s60723270b|60723270|rds|local|vector|||361.453|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
 study1_fit1_trust_other_issues|stem|f816523f38e3b6db|97f8ae87a57c4b9b|90e5a6784e5604b8|-2113711772||t20314.6155497748s|s60679244b|60679244|rds|local|vector|||409.953||
 study1_fit1_empathy|stem|25bee885048fca5e|fc65a2cbfcfde896|90e5a6784e5604b8|-1942467614||t20314.619345287s|s60716508b|60716508|rds|local|vector|||325.953|There were 8 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
-study1_fit2_surprised_AI|stem|1f809a14a3efe720|d10f447f51f8f8b4|0b126bb5c0a8f419|241232373||t20314.6233428966s|s57339346b|57339346|rds|local|vector|||343.468|There were 2 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems . Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable. Running the chains for more iterations may help. See https://mc-stan.org/misc/warnings.html#bulk-ess. Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable. Running the chains for more iterations may help. See https://mc-stan.org/misc/warnings.html#tail-ess|
-study1_fit2_likely_human|stem|8f55be6774dd2496|0779ff0199098962|0b126bb5c0a8f419|-1751338266||t20314.6271952667s|s57367712b|57367712|rds|local|vector|||330.844|Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable. Running the chains for more iterations may help. See https://mc-stan.org/misc/warnings.html#bulk-ess. Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable. Running the chains for more iterations may help. See https://mc-stan.org/misc/warnings.html#tail-ess|
 study1_fit3_compare_likely_human|stem|209ba676a75e72af|3387a49628afea55|a16145aeb4daebc3|-1456137150||t20315.323271914s|s56611987b|56611987|rds|local|vector|||586.64||
 study1_fit3_compare_trust|stem|07138384ca9aaaa4|026e32b201416952|a16145aeb4daebc3|-1402686801||t20315.3308099331s|s56766362b|56766362|rds|local|vector|||649.25|There were 3 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems . Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable. Running the chains for more iterations may help. See https://mc-stan.org/misc/warnings.html#bulk-ess. Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable. Running the chains for more iterations may help. See https://mc-stan.org/misc/warnings.html#tail-ess|
 study1_fit4|stem|72c03054d2ee3192|8badbc96b4d05258|84da5dd1ce45820e|-277308166||t20315.4013533458s|s56181280b|56181280|rds|local|vector|||645.375|Rows containing NAs were excluded from the model.|
 study1_plot4|stem|38e3fc943a2b47e8|8a13d24a760d89a1|c3a4bdd24321cdeb|-1285125076||t20315.4751244695s|s56330422b|56330422|rds|local|vector|||1.157||
 study1_means1_trust_other_issues|stem|e625dbec784e3f77|91184c67eb030621|9a5f74750700ead1|-657994824||t20342.681252039s|s472970b|472970|rds|local|vector|||1.203||
-study1_means2_likely_human|stem|edf0006eabf175d6|c1fb481a8f8ab144|9177639f3ef4fc78|704639948||t20342.6812685069s|s236960b|236960|rds|local|vector|||0.563||
 study1_means3_compare_likely_human|stem|0f0b1902ea2e37b5|d6be35606161fc3d|0565c92be10c8079|517220995||t20342.6812828068s|s236635b|236635|rds|local|vector|||0.282||
 study1_means1_trust|stem|51a33f990f664e64|86b418d56114efe7|7bd27c166c2ca959|-129568232||t20342.6813318048s|s472374b|472374|rds|local|vector|||2.64||
-study1_means2_surprised_AI|stem|7aa7912653a69df1|2e6d9445b3f2c5b1|0d0ddc90e1602968|37957243||t20342.6813779862s|s238123b|238123|rds|local|vector|||2.047||
 study1_means1_competence|stem|5a7c599e1aa65c00|daa32942f10d5bea|e2a6bf281437e164|-833570444||t20342.6814364983s|s472409b|472409|rds|local|vector|||3.015||
 study1_means3_compare_trust|stem|df4661484b237d2c|a00c8ea85393560f|4aefa5b664f773ae|762113775||t20342.6814833949s|s236594b|236594|rds|local|vector|||1.531||
 study1_means1_empathy|stem|eeda2667322d4d4c|25ad100be8532b3d|43a4ab20fb03a69c|-1407895785||t20342.681517392s|s470145b|470145|rds|local|vector|||0.719||
 study1_means4|stem|5efd3a594a96cf49|bd9c29977e6312de|f3e6c1e7a622ed71|-1470386601||t20342.6815337602s|s235583b|235583|rds|local|vector|||0.578||
 study1_means3_by_dilemma_compare_likely_human|stem|a2bca5688fe4a7f3|77cab723cfc7dade|0565c92be10c8079|-1457838906||t20342.6864891246s|s700840b|700840|rds|local|vector|||1.218||
 study1_means1_by_dilemma_empathy|stem|2ad910c6e9590c73|978c13ae27056513|43a4ab20fb03a69c|142476192||t20342.6865191443s|s1409121b|1409121|rds|local|vector|||1.656||
-study1_means2_by_dilemma_likely_human|stem|36f91ee3da8fe4bb|d721f4421f8ed21c|9177639f3ef4fc78|1651230718||t20342.6865500066s|s709146b|709146|rds|local|vector|||1.672||
 study1_means1_by_dilemma_trust_other_issues|stem|63c115ec0948330a|bdff3376a1c1eaca|9a5f74750700ead1|-184713985||t20342.6865804152s|s1413694b|1413694|rds|local|vector|||1.64||
 study1_means3_by_dilemma_compare_trust|stem|eeaff13f7ff80a38|aa5e6735295850c1|4aefa5b664f773ae|-817669904||t20342.6866052154s|s698910b|698910|rds|local|vector|||1.235||
-study1_means2_by_dilemma_surprised_AI|stem|72c449f601c7fc76|74545df470c1ff8d|0d0ddc90e1602968|1647723535||t20342.6866268954s|s711229b|711229|rds|local|vector|||0.609||
 study1_means1_by_dilemma_trust|stem|935987b5944943f6|e730888acd5e43a3|7bd27c166c2ca959|427802296||t20342.6866511284s|s1410232b|1410232|rds|local|vector|||0.937||
 study1_means1_by_dilemma_competence|stem|a1f674ca97e6ec2d|b6bead355fee9e8a|e2a6bf281437e164|-296805638||t20342.6866757928s|s1409590b|1409590|rds|local|vector|||1.266||
 study1_plot1_by_dilemma_trust_other_issues|stem|45ac86a3d5588629|2bfc92c55129aaa2|9d1f2d28675878cf|1126731299||t20342.6996671636s|s8870494b|8870494|rds|local|vector|||0.813|Removed 155 rows containing missing values or values outside the scale range (`geom_point()`).|
@@ -88,25 +82,21 @@ study1_plot1_by_dilemma_competence|stem|386dea7fd492c1ea|55fdacf2da623cff|f1ec8b
 study1_plot1_competence|stem|473e1a2918038d42|e36bb2e1df2b4e79|ed7d14031b599ff2|-1851145015||t20342.6997506352s|s3229303b|3229303|rds|local|vector|||0.453|Removed 150 rows containing missing values or values outside the scale range (`geom_point()`).|
 study1_plot1_trust|stem|52c3d04c43112c70|e4a1c1126a6a2cf2|43a5d3413aecf29b|2112408081||t20342.6997661493s|s3228662b|3228662|rds|local|vector|||0.796|Removed 130 rows containing missing values or values outside the scale range (`geom_point()`).|
 study1_plot1_by_dilemma_trust|stem|8cab5e11fb78b359|2dd1484ae48f69ca|e2746c27af54c19c|-234103707||t20342.6997859448s|s8858653b|8858653|rds|local|vector|||0.656|Removed 166 rows containing missing values or values outside the scale range (`geom_point()`).|
-study1_plot2_by_dilemma_likely_human|stem|606765e107881970|e572d840e438f57d|af53df26c8368277|1665173311||t20342.7061592528s|s4627301b|4627301|rds|local|vector|||0.516|Removed 100 rows containing missing values or values outside the scale range (`geom_point()`).|
-study1_plot2_likely_human|stem|2e8e22f5b3fbfab9|c3cd07f34ff6b5b1|e34e27ddb51c78e9|-1054001406||t20342.7061698647s|s1792727b|1792727|rds|local|vector|||0.375|Removed 103 rows containing missing values or values outside the scale range (`geom_point()`).|
-study1_plot2_by_dilemma_surprised_AI|stem|cb871c05d5c55e35|0b0f744f0b9cc1a5|7d7779700c4d18cb|2116107210||t20342.7061809323s|s4639212b|4639212|rds|local|vector|||0.359|Removed 181 rows containing missing values or values outside the scale range (`geom_point()`).|
-study1_plot2_surprised_AI|stem|902fa02d229c19b8|8faa301574cf714c|2fb4b03027e47ac9|1997214738||t20342.7061900356s|s1798034b|1798034|rds|local|vector|||0.297|Removed 187 rows containing missing values or values outside the scale range (`geom_point()`).|
 study1_plot3_by_dilemma_compare_trust|stem|e0ef0dd0511470dc|90b0eaaf3636d134|2f66142dd61d9fa8|1704536025||t20342.7138692906s|s4495670b|4495670|rds|local|vector|||0.468|Removed 438 rows containing missing values or values outside the scale range (`geom_point()`).|
 study1_plot3_compare_trust|stem|09a45c76d97229bd|cb997e6d68b896b8|0d28386e4c4dee0c|677172540||t20342.7138785291s|s1722151b|1722151|rds|local|vector|||0.375|Removed 397 rows containing missing values or values outside the scale range (`geom_point()`).|
 study1_plot3_by_dilemma_compare_likely_human|stem|c9091bde3549f8d6|c9d91516f3bc47fb|05f11f6465ec225e|2103344834||t20342.7138901564s|s4505032b|4505032|rds|local|vector|||0.438|Removed 425 rows containing missing values or values outside the scale range (`geom_point()`).|
 study1_plot3_compare_likely_human|stem|2d7630a9770c6103|d641ccddd69f207e|2329e4e1b21f4438|-899718162||t20342.7138985342s|s1721050b|1721050|rds|local|vector|||0.375|Removed 448 rows containing missing values or values outside the scale range (`geom_point()`).|
-study1_table1_trust_other_issues|stem|0019f5b0ab1fc85e|8225dca39a73c12f|34cc06d5d1506d1f|156281478||t20346.5871989867s|s564b|564|rds|local|vector|||2.953||
-study1_table1_trust|stem|f76bb68b65a9f23f|bfe792199079f09c|99d07fbbe2334fb5|-1163538876||t20346.5872390115s|s565b|565|rds|local|vector|||2.047||
-study1_table1_empathy|stem|a0d518acb1bfa106|547f22eb6d297280|778c3cc2229df346|-1795956194||t20346.5872788101s|s554b|554|rds|local|vector|||1.11||
-study1_table1_competence|stem|e411413bc96a3f04|c081e9420aaf3537|db7d8d4f33ec1be8|-350484713||t20346.5872986411s|s572b|572|rds|local|vector|||0.75||
+study1_table1_trust|stem|9bafb080698d113f|bfe792199079f09c|7951636da4571c0d|-1163538876||t20346.625509373s|s565b|565|rds|local|vector|||1.063||
+study1_table1_empathy|stem|626224fd2e493b78|547f22eb6d297280|eb96a35e17c161f5|-1795956194||t20346.625545071s|s553b|553|rds|local|vector|||1.578||
+study1_table1_competence|stem|aedd166ecd775048|c081e9420aaf3537|456d95e7d39f5a50|-350484713||t20346.6255776493s|s572b|572|rds|local|vector|||1.609||
+study1_table1_trust_other_issues|stem|0df070dd11e2b84e|8225dca39a73c12f|a9f66c67d9060958|156281478||t20346.6256476525s|s563b|563|rds|local|vector|||1.766||
 plot_pilot1_sankey_individual|function|d7b0ce0a0e215c1d
 extract_pilot3_between_subjects_means|function|7f6deb9874d3052f
-.Random.seed|object|41f0744e7cd4c6c3
+.Random.seed|object|91bbc0ec986e6a83
 plot_pilot2_results_by_dilemma|function|3d478371a538237c
 fit_study1_model1|function|10e7334097d7ee51
 plot_pilot2_results_by_dilemma_type|function|dbf4c604ca6b7448
-fit_study1_model2|function|4a399faa7b052c86
+fit_study1_model2|function|0df9a220b00aaee6
 fit_study1_model3|function|c580bee908cbc6e4
 fit_study1_model4|function|baa01a93de547749
 load_pilot3_data|function|27df1b6ad2b712c2
@@ -120,9 +110,10 @@ plot_pilot3_comparison|function|b806de58d32e2bf1
 plot_pilot3_between_subjects_perceptions|function|e2f07ce6c1f21162
 extract_study1_means1|function|ce1941b918cf0774
 load_study1_data|function|1729eaba5a24957d
-create_table_study1_model1|function|031f7b5e86fa0453
+create_table_study1_model1|function|75a17ab7069a9d02
 extract_study1_means2|function|254418c2793bc1c2
 extract_pilot2_means_by_dilemma_type|function|eee98142fc4e5909
+create_table_study1_model2|function|5dc0ed022db39e1b
 extract_study1_means3|function|bac1bc9f483cabf4
 extract_study1_means4|function|119cb90225f04307
 plot_study1_model1|function|3d41aa99f36b086b
@@ -134,11 +125,23 @@ plot_power_analysis_pilot3|function|94b3994818a8f5b6
 fit_pilot2_model2|function|35025ab3ef511db8
 plot_pilot1_results|function|bd195f6d86caccad
 plot_study1_model3|function|8f95fa64b619265a
-fit_pilot1_model|function|f90b10d6e1d7417d
 load_pilot2_data|function|de1c9071c12ca5e7
+fit_pilot1_model|function|f90b10d6e1d7417d
 plot_study1_model4|function|a50fb566f96e163f
 plot_pilot3_between_subjects_AI|function|c0fbd33ef49d9164
 fit_pilot3_model1|function|9a9f7387e2af9a80
 fit_pilot3_model2|function|188aff622c7248d8
 plot_pilot1_sankey|function|3b678fb0ed59f4d2
 run_power_analysis_pilot3|function|63890fe32a75c262
+study1_fit2_likely_human|stem|cf4699dd20e3c1dc|0779ff0199098962|d7ca1077fc0107b4|-1751338266||t20346.6528354904s|s4926004b|4926004|rds|local|vector|||478.031||
+study1_fit2_surprised_AI|stem|a5469b0ad9e586ad|d10f447f51f8f8b4|d7ca1077fc0107b4|241232373||t20346.6579968696s|s4956573b|4956573|rds|local|vector|||445.125|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+study1_means2_likely_human|stem|8b3ab8bb2fa47b99|c1fb481a8f8ab144|f3bf3bf2f2efd6dc|704639948||t20346.6580030843s|s236967b|236967|rds|local|vector|||0.297||
+study1_means2_by_dilemma_likely_human|stem|fd2d0fe82dbad8ba|d721f4421f8ed21c|f3bf3bf2f2efd6dc|1651230718||t20346.6580141383s|s708907b|708907|rds|local|vector|||0.687||
+study1_table2_likely_human|stem|ad8e61db3a1e737e|72736d25f000f3df|2f44d2886109c261|1141947368||t20346.6580203471s|s400b|400|rds|local|vector|||0.297||
+study1_table2_surprised_AI|stem|dd12b07feb622c6a|c400a00c1be4e7ec|89f71337ae7a9cbc|-1157586426||t20346.6580255404s|s402b|402|rds|local|vector|||0.203||
+study1_means2_by_dilemma_surprised_AI|stem|7c67c8d60d49bf58|74545df470c1ff8d|289adf5a77f932c0|1647723535||t20346.6580404386s|s710739b|710739|rds|local|vector|||0.75||
+study1_means2_surprised_AI|stem|8c259fbc4fce08c5|2e6d9445b3f2c5b1|289adf5a77f932c0|37957243||t20346.6580457436s|s237939b|237939|rds|local|vector|||0.235||
+study1_plot2_likely_human|stem|8a6e3892fbbfd08e|c3cd07f34ff6b5b1|bec6302eb80ecba0|-1054001406||t20346.6580572628s|s1792711b|1792711|rds|local|vector|||0.672|Removed 103 rows containing missing values or values outside the scale range (`geom_point()`).|
+study1_plot2_by_dilemma_likely_human|stem|ece25202b9c6f75e|e572d840e438f57d|7fe3f6ad16084a7d|1665173311||t20346.6580675572s|s4626609b|4626609|rds|local|vector|||0.438|Removed 100 rows containing missing values or values outside the scale range (`geom_point()`).|
+study1_plot2_by_dilemma_surprised_AI|stem|8c3f2796cc96f9d5|0b0f744f0b9cc1a5|6bb46e6e6e995458|2116107210||t20346.6580778902s|s4637625b|4637625|rds|local|vector|||0.344|Removed 181 rows containing missing values or values outside the scale range (`geom_point()`).|
+study1_plot2_surprised_AI|stem|4d886fce2eb69e8c|8faa301574cf714c|48b47468c44a49bd|1997214738||t20346.6580843822s|s1797341b|1797341|rds|local|vector|||0.234|Removed 187 rows containing missing values or values outside the scale range (`geom_point()`).|
