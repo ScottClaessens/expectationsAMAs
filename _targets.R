@@ -183,6 +183,7 @@ list(
   tar_map(
     values = list(outcome = c("compare_trust", "compare_likely_human")),
     tar_target(study1_fit3, fit_study1_model3(study1_data, outcome)),
+    tar_target(study1_table3, create_table_study1_model3(study1_fit3)),
     tar_target(study1_means3, extract_study1_means3(study1_fit3)),
     tar_target(study1_plot3, plot_study1_model3(study1_data, study1_means3,
                                                 outcome)),
