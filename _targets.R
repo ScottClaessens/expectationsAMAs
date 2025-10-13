@@ -14,10 +14,11 @@ tar_source()
 # targets pipeline
 list(
   # main pipelines
-  targets_pilot1,
-  targets_pilot2,
-  targets_pilot3,
-  targets_study1,
+  #targets_pilot1,
+  #targets_pilot2,
+  #targets_pilot3,
+  #targets_study1,
+  targets_within
   # summary of pilot studies
-  tar_quarto(summary, "quarto/summary/summary.qmd")
+  #tar_quarto(summary, "quarto/summary/summary.qmd")
 )
