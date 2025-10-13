@@ -2,16 +2,34 @@ name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iterat
 within_data_file|stem|f6894e773eb2fc27|3481f9ac29f3824f|2c530c1562a7fbd1|-1918333480|data/within-subjects/within_subjects_data_clean.csv|t20371.6577344841s|s167461b|167461|file|local|vector|||7.156|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3|
 within_data|stem|0c835042b1e65192|32050cccaff7ce7e|a9921c1215f4b22f|-439156842||t20374.4476603625s|s10719b|10719|rds|local|vector|||1.297||
 within_data_exclude|stem|ad0185a25758b678|09dca0ac4cac782a|d478554ac2b3f88d|1680947101||t20374.4594090607s|s10800b|10800|rds|local|vector|||0.032||
+within_fit1_trust|stem|9d4aa443b6358ca2|5fc4707853591d84|3cdee8964d7baa3b|-329792414||t20374.4812447214s|s22325837b|22325837|rds|local|vector|||351.234|There were 4 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+within_fit1_empathy|stem|e2bb08d397033ffa|e9eb8e0a7f46afdd|3cdee8964d7baa3b|1650469563||t20374.4838714177s|s22359276b|22359276|rds|local|vector|||225.546|There were 2 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+within_fit1_competent|stem|100be056a6c82cc5|8147c820b1e30d23|3cdee8964d7baa3b|109334886||t20374.4867655363s|s22444045b|22444045|rds|local|vector|||248.64|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+within_fit1_likely_AI|stem|917a436a5b9a437f|aa0d6586bd480b9f|3cdee8964d7baa3b|1590252957||t20374.4923763861s|s22394112b|22394112|rds|local|vector|||481.406|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+within_means1_trust|stem|95c1a762f0ab6762|1a17698cedbfdb15|b670ec5850f57568|-447453748||t20374.5141156214s|s234420b|234420|rds|local|vector|||0.75||
+within_means1_empathy|stem|0653033fd3e4ec1f|d49ffed3a4249fa0|369e9f4cc42b506d|-1831242952||t20374.514126471s|s234793b|234793|rds|local|vector|||0.563||
+within_means1_competent|stem|17acb39b741ba187|46d257e6e9efb8a3|13d7402a001f8d9c|-630079478||t20374.5141344424s|s235369b|235369|rds|local|vector|||0.312||
+within_means1_likely_AI|stem|30c0f87233d483d1|d7b318bfbcec7f18|9f88a3933910b797|1139542141||t20374.5141441861s|s235022b|235022|rds|local|vector|||0.297||
+within_table1_trust|stem|92dcd71c905733c1|7d70b9360c766376|97be274095901746|-1838953023||t20374.5192272694s|s415b|415|rds|local|vector|||1.312||
+within_table1_empathy|stem|af31008b6c26ebcf|097d8f6982ca07cd|fb0d1f0cf6e61067|-477020360||t20374.5192475065s|s410b|410|rds|local|vector|||0.515||
+within_table1_competent|stem|6731e0f5858eb410|bd6192d01bf3d2cc|e5423d026cdfa07f|-177863677||t20374.5192710095s|s411b|411|rds|local|vector|||1.172||
+within_table1_likely_AI|stem|5632c629cf3ccb86|f66a2e8d2df272d5|f795e16936c7bdaa|-702420882||t20374.5192914261s|s398b|398|rds|local|vector|||0.984||
+within_plot1_trust|stem|849b5ff7a3ddf1c5|aae71360d7e04811|f11f82346fb183a1|-840273560||t20374.5417358576s|s1686899b|1686899|rds|local|vector|||1.328|Removed 90 rows containing missing values or values outside the scale range (`geom_point()`).|
+within_plot1_empathy|stem|60a2ab59c9981d72|37b9eb2d90ecd903|57940b713848cedc|1565556285||t20374.5417573849s|s1689648b|1689648|rds|local|vector|||0.938|Removed 94 rows containing missing values or values outside the scale range (`geom_point()`).|
+within_plot1_competent|stem|a2da6a14fe679704|a9b786c0f66c0f81|816a1224705345dc|-641232589||t20374.5417714401s|s1693298b|1693298|rds|local|vector|||0.453|Removed 110 rows containing missing values or values outside the scale range (`geom_point()`).|
+within_plot1_likely_AI|stem|41262b165ffb841e|667193ca41b635c0|bcbb35377f55b948|1303695731||t20374.5417869968s|s1690968b|1690968|rds|local|vector|||0.61|Removed 113 rows containing missing values or values outside the scale range (`geom_point()`).|
 extract_pilot2_means_by_dilemma|function|e9e479c4cd2fe4cf
 extract_pilot2_means_by_dilemma_type|function|eee98142fc4e5909
 generate_new_data_pilot3|function|21cf2014e16b56fb
 get_post_difference|function|1c5a8b01464d35dd
 plot_pilot3_comparison|function|b806de58d32e2bf1
+plot_within_model1|function|7019d49e5b5c56fe
 plot_pilot2_overall_results|function|c61c8f8bd6814112
 extract_pilot3_comparison_means|function|6c6c7ff6be1dc534
 fit_pilot1_model|function|f90b10d6e1d7417d
+fit_within_model1|function|6772b34e415d1af1
 plot_pilot2_results_by_dilemma|function|3d478371a538237c
-.Random.seed|object|091c4d01b6e22e8e
+.Random.seed|object|6ea438077e5427d8
 plot_pilot1_sankey_individual|function|d7b0ce0a0e215c1d
 plot_study1_model1|function|3d41aa99f36b086b
 create_table_study1_model1|function|75a17ab7069a9d02
@@ -22,6 +40,7 @@ plot_power_analysis_pilot3|function|94b3994818a8f5b6
 create_table_study1_model3|function|385dddb18e10e90c
 plot_study1_model4|function|a50fb566f96e163f
 extract_study1_means1|function|ce1941b918cf0774
+create_table_within_model1|function|4a4fc49e700f5ac4
 fit_study1_model1|function|10e7334097d7ee51
 extract_study1_means2|function|254418c2793bc1c2
 fit_study1_model2|function|0df9a220b00aaee6
@@ -39,12 +58,13 @@ fit_pilot2_model2|function|35025ab3ef511db8
 plot_pilot1_results|function|bd195f6d86caccad
 extract_pilot3_between_subjects_means|function|7f6deb9874d3052f
 load_within_data|function|8304bab8f2abde92
+extract_within_means1|function|fe1b5e2ce4678cef
 extract_pilot1_means|function|6ed164c107d2c044
-plot_pilot3_between_subjects_AI|function|c0fbd33ef49d9164
-load_pilot2_data|function|de1c9071c12ca5e7
 load_pilot3_data|function|27df1b6ad2b712c2
-load_study1_data|function|1729eaba5a24957d
+load_pilot2_data|function|de1c9071c12ca5e7
+plot_pilot3_between_subjects_AI|function|c0fbd33ef49d9164
 load_pilot1_data|function|1e4b69e8cb87bf06
+load_study1_data|function|1729eaba5a24957d
 extract_overall_pilot2_means|function|1705962ab8cbf91e
 run_power_analysis_pilot3|function|63890fe32a75c262
 plot_pilot1_sankey|function|3b678fb0ed59f4d2
