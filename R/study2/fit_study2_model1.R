@@ -1,5 +1,5 @@
 # function to fit model 1 to data from within-subjects study
-fit_within_model1 <- function(within_data, outcome = "trust") {
+fit_study2_model1 <- function(study2_data, outcome = "trust") {
   # get formula
   formula <- bf(
     as.formula(
@@ -20,7 +20,7 @@ fit_within_model1 <- function(within_data, outcome = "trust") {
   # fit model
   brm(
     formula = formula,
-    data = within_data,
+    data = study2_data,
     family = cumulative,
     prior = priors,
     cores = 4,

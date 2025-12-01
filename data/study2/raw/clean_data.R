@@ -97,5 +97,5 @@ d |>
     names_pattern = "(.*)([1-4])"
   ) |>
   # write clean data to csv file
-  write_csv(file = "within_subjects_data_clean.csv")
+  write_csv(file = "study2_data_clean.csv")
   

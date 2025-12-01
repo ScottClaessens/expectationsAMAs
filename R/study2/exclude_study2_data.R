@@ -1,6 +1,6 @@
 # function to implement comprehension q exclusions from within-subjects data
-exclude_within_data <- function(within_data) {
-  within_data %>%
+exclude_study2_data <- function(study2_data) {
+  study2_data %>%
     # exclude cases with failed advisor checks
     filter(
       (advisor_type == "ConsistentlyDeontological" &

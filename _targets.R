@@ -17,8 +17,8 @@ list(
   #targets_pilot1,
   #targets_pilot2,
   #targets_pilot3,
-  #targets_study1,
-  targets_within
+  targets_study1,
+  targets_study2
   # summary of pilot studies
   #tar_quarto(summary, "quarto/summary/summary.qmd")
 )

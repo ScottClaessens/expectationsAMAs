@@ -1,5 +1,5 @@
 # function to plot model 1 predictions from within-subjects study
-plot_within_model1 <- function(within_data, within_means1, outcome,
+plot_study2_model1 <- function(study2_data, study2_means1, outcome,
                                split_by_dilemma = FALSE) {
   # advisor and dilemma types
   advisor_types <- c(
@@ -14,7 +14,7 @@ plot_within_model1 <- function(within_data, within_means1, outcome,
   )
   # wrangle data
   data <-
-    within_data %>%
+    study2_data %>%
     mutate(
       dilemma_type = dilemma_types[dilemma_type],
       advisor_type = factor(advisor_type, levels = names(advisor_types)),
@@ -26,7 +26,7 @@ plot_within_model1 <- function(within_data, within_means1, outcome,
     )
   # wrangle means
   means <-
-    within_means1 %>%
+    study2_means1 %>%
     mutate(
       dilemma_type = dilemma_types[dilemma_type],
       advisor_type = factor(advisor_type, levels = names(advisor_types))
@@ -91,7 +91,7 @@ plot_within_model1 <- function(within_data, within_means1, outcome,
   ggsave(
     plot = p,
     filename = paste0(
-      "plots/within_results_",
+      "plots/study2_results_",
       ifelse(split_by_dilemma, "by_dilemma_", ""),
       outcome,
       ".pdf"

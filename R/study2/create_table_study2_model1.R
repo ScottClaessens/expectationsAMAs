@@ -1,5 +1,5 @@
 # table of pairwise comparisons from model 1
-create_table_within_model1 <- function(within_fit1) {
+create_table_study2_model1 <- function(study2_fit1) {
   # new data
   d <- expand_grid(
     advisor_type = c("ConsistentlyDeontological", "ConsistentlyUtilitarian",
@@ -8,7 +8,7 @@ create_table_within_model1 <- function(within_fit1) {
   )
   # fitted values
   f <- fitted(
-    object = within_fit1,
+    object = study2_fit1,
     newdata = d,
     re_formula = NA,
     scale = "linear",

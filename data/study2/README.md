@@ -1,6 +1,6 @@
 # Data README file
 
-**Dataset title:** Clean data from within-subjects pilot study for project on 
+**Dataset title:** Clean data from second main study for project on 
 "Expectations of Artificial Moral Advisors"
 
 **Principal investigator:** Dr. Scott Claessens (scott.claessens@gmail.com)

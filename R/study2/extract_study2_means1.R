@@ -1,5 +1,5 @@
 # function to extract means from model 1 (within-subjects)
-extract_within_means1 <- function(within_fit1, split_by_dilemma = FALSE) {
+extract_study2_means1 <- function(study2_fit1, split_by_dilemma = FALSE) {
   # new data
   if (split_by_dilemma) {
     d <- 
@@ -24,7 +24,7 @@ extract_within_means1 <- function(within_fit1, split_by_dilemma = FALSE) {
   }
   # get fitted values from the model
   f <- fitted(
-    object = within_fit1,
+    object = study2_fit1,
     newdata = d,
     re_formula = if (split_by_dilemma) {
       ~ 1 + (1 + advisor_type | dilemma)
