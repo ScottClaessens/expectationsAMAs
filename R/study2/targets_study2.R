@@ -17,6 +17,15 @@ targets_study2 <-
       tar_target(study2_table1, create_table_study2_model1(study2_fit1)),
       tar_target(study2_means1, extract_study2_means1(study2_fit1)),
       tar_target(study2_plot1, plot_study2_model1(study2_data, study2_means1,
-                                                  outcome))
+                                                  outcome)),
+      tar_target(
+        study2_means1_by_dilemma,
+        extract_study2_means1(study2_fit1, split_by_dilemma = TRUE)
+      ),
+      tar_target(
+        study2_plot1_by_dilemma,
+        plot_study2_model1(study2_data, study2_means1_by_dilemma, outcome,
+                           split_by_dilemma = TRUE)
+      )
     )
   )
