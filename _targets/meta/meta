@@ -71,19 +71,11 @@ study2_means1_by_dilemma_competent|stem|fd3a475e6b09a3c1|d6e475e4f1809851|1b4bc3
 study2_means1_by_dilemma_empathy|stem|9deccc00b6457a0b|6a09172b83edb463|49139c8e0e0a06e8|1002361444||t20425.4082291954s|s701663b|701663|rds|local|vector|||1.063||
 study2_means1_by_dilemma_likely_AI|stem|32474923d269731e|4103e63860d7d0f9|0e57f2db11867334|205865824||t20425.408251136s|s702650b|702650|rds|local|vector|||1.125||
 study2_means1_by_dilemma_trust|stem|3bd37338d56da9be|588cf74c1e608931|3ab61b358824102a|-253353836||t20425.4082730225s|s700277b|700277|rds|local|vector|||1.265||
-study2_plot1_by_dilemma_competent|stem|fa10681d16b064c9|5b2a9f7bd2108b8e|6d86d20f73b17e20|-597650675||t20425.6620542199s|s4499605b|4499605|rds|local|vector|||3.719|Removed 104 rows containing missing values or values outside the scale range (`geom_point()`).|
-study2_plot1_competent|stem|b6310773a49291ee|0b76f1e0fc4b21a5|60a57c41c21c4305|-1869531742||t20425.6620693494s|s1693614b|1693614|rds|local|vector|||0.375|Removed 98 rows containing missing values or values outside the scale range (`geom_point()`).|
-study2_plot1_by_dilemma_empathy|stem|569b0304a96d0559|d13139ff5a9818ab|d1517ed77f7b2e9c|-1463767322||t20425.6620835572s|s4491845b|4491845|rds|local|vector|||0.36|Removed 107 rows containing missing values or values outside the scale range (`geom_point()`).|
-study2_plot1_empathy|stem|5ba0b813bd3a29f0|d78b3480565ed408|045060f7d6dbc2f6|-2091665936||t20425.6620923324s|s1690028b|1690028|rds|local|vector|||0.313|Removed 106 rows containing missing values or values outside the scale range (`geom_point()`).|
-study2_plot1_likely_AI|stem|29adf960d2f59b33|be9a009909cbcb28|26d7506b72a40e77|948108229||t20425.6621021271s|s1691369b|1691369|rds|local|vector|||0.391|Removed 110 rows containing missing values or values outside the scale range (`geom_point()`).|
-study2_plot1_by_dilemma_likely_AI|stem|0a186a9b923281dd|326ff56b4a08c82c|833d20cbf31504ad|-2032340546||t20425.6621158029s|s4497524b|4497524|rds|local|vector|||0.453|Removed 115 rows containing missing values or values outside the scale range (`geom_point()`).|
-study2_plot1_by_dilemma_trust|stem|d1c7fc883f7bc13a|0ca58dbb2c6474e1|034b919e7b605faf|-1764240545||t20425.6621313882s|s4481755b|4481755|rds|local|vector|||0.547|Removed 76 rows containing missing values or values outside the scale range (`geom_point()`).|
-study2_plot1_trust|stem|96af057be4e75f65|9178909fc7b51abe|75020d117ed7de76|-674770980||t20425.662140922s|s1687277b|1687277|rds|local|vector|||0.313|Removed 97 rows containing missing values or values outside the scale range (`geom_point()`).|
 extract_pilot2_means_by_dilemma|function|e9e479c4cd2fe4cf
 extract_pilot2_means_by_dilemma_type|function|eee98142fc4e5909
 generate_new_data_pilot3|function|21cf2014e16b56fb
 get_post_difference|function|1c5a8b01464d35dd
-plot_study2_model1|function|86a3d58a9cd3bc5c
+plot_study2_model1|function|874bf5f6c1cf104c
 create_table_study2_model1|function|d41bd479d825c277
 plot_pilot3_comparison|function|b806de58d32e2bf1
 plot_pilot2_overall_results|function|c61c8f8bd6814112
@@ -91,7 +83,7 @@ extract_pilot3_comparison_means|function|6c6c7ff6be1dc534
 fit_pilot1_model|function|f90b10d6e1d7417d
 fit_study2_model1|function|601bff2227d24a50
 plot_pilot2_results_by_dilemma|function|3d478371a538237c
-.Random.seed|object|5cd954bd4fe68fb1
+.Random.seed|object|bc7ed5bc8d4eac7d
 plot_pilot1_sankey_individual|function|d7b0ce0a0e215c1d
 plot_study1_model1|function|3d41aa99f36b086b
 extract_study2_means1|function|dac1be06b30107cb
@@ -129,3 +121,11 @@ load_study1_data|function|1729eaba5a24957d
 extract_overall_pilot2_means|function|1705962ab8cbf91e
 run_power_analysis_pilot3|function|63890fe32a75c262
 plot_pilot1_sankey|function|3b678fb0ed59f4d2
+study2_plot1_by_dilemma_competent|stem|8f9f128d59ccddde|5b2a9f7bd2108b8e|a8e808050a400440|-597650675||t20431.4455812644s|s4506284b|4506284|rds|local|vector|||4.188|Removed 104 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_competent|stem|b31e65b242717d9a|0b76f1e0fc4b21a5|9054fcbbcfb6176a|-1869531742||t20431.4456178624s|s1702257b|1702257|rds|local|vector|||1.781|Removed 98 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_by_dilemma_empathy|stem|9c7e9dfc37b0d066|d13139ff5a9818ab|38b9457e3ff757a5|-1463767322||t20431.4456668349s|s4497998b|4497998|rds|local|vector|||1.781|Removed 107 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_empathy|stem|0d317d677bd8cba8|d78b3480565ed408|a7cffb993e0925f5|-2091665936||t20431.445695255s|s1696487b|1696487|rds|local|vector|||1.25|Removed 106 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_likely_AI|stem|084a5a5b1e398926|be9a009909cbcb28|40c57fd08219a8a0|948108229||t20431.4457233003s|s1697802b|1697802|rds|local|vector|||1.032|Removed 110 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_by_dilemma_likely_AI|stem|8deb63197de88d99|326ff56b4a08c82c|ffc3c9a8a80dc539|-2032340546||t20431.445771486s|s4504000b|4504000|rds|local|vector|||2.093|Removed 115 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_by_dilemma_trust|stem|bbd95ddceeab0c45|0ca58dbb2c6474e1|f6b0a446c293e943|-1764240545||t20431.4458247821s|s4490027b|4490027|rds|local|vector|||2.375|Removed 76 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_trust|stem|d25362370f31cdb2|9178909fc7b51abe|f09fb3aa289a21c9|-674770980||t20431.4458548039s|s1694262b|1694262|rds|local|vector|||1.312|Removed 97 rows containing missing values or values outside the scale range (`geom_point()`).|

@@ -18,6 +18,7 @@ plot_study2_model1 <- function(study2_data, study2_means1, outcome,
     mutate(
       dilemma_type = dilemma_types[dilemma_type],
       advisor_type = factor(advisor_type, levels = names(advisor_types)),
+      type = "Overall evaluation",
       dilemma = factor(
         ifelse(dilemma == "EnemySpy", "Enemy spy", dilemma),
         levels = c("Bomb", "Enemy spy", "Hostage", "Donation", "Marathon",
@@ -29,7 +30,8 @@ plot_study2_model1 <- function(study2_data, study2_means1, outcome,
     study2_means1 %>%
     mutate(
       dilemma_type = dilemma_types[dilemma_type],
-      advisor_type = factor(advisor_type, levels = names(advisor_types))
+      advisor_type = factor(advisor_type, levels = names(advisor_types)),
+      type = "Overall evaluation"
     )
   if (split_by_dilemma) {
     means <-
@@ -49,7 +51,8 @@ plot_study2_model1 <- function(study2_data, study2_means1, outcome,
       data = data,
       mapping = aes(
         x = advisor_type,
-        y = !!sym(outcome)
+        y = !!sym(outcome),
+        colour = type
       ),
       width = 0.25,
       height = 0.4,
@@ -62,7 +65,8 @@ plot_study2_model1 <- function(study2_data, study2_means1, outcome,
         x = advisor_type,
         y = estimate,
         ymin = lower,
-        ymax = upper
+        ymax = upper,
+        colour = type
       ),
       linewidth = 0.7
     ) +
@@ -78,6 +82,10 @@ plot_study2_model1 <- function(study2_data, study2_means1, outcome,
     scale_x_discrete(
       name = "Advisor type",
       labels = advisor_types
+    ) +
+    scale_colour_manual(
+      name = NULL,
+      values = "#00BFC4"
     ) +
     facet_wrap(
       if (split_by_dilemma) {
