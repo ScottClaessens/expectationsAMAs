@@ -43,12 +43,12 @@ targets_pilot3 <-
       )
     ),
     # run power analysis based on pilot 3 data
-    tar_target(power_id, 1:100),
+    tar_target(power_id_pilot3, 1:100),
     tar_target(
-      power,
-      run_power_analysis_pilot3(pilot3_fit1, n = 400, power_id),
-      pattern = map(power_id),
+      power_pilot3,
+      run_power_analysis_pilot3(pilot3_fit1, n = 400, power_id_pilot3),
+      pattern = map(power_id_pilot3),
       deployment = "worker"
     ),
-    tar_target(plot_power, plot_power_analysis_pilot3(power))
+    tar_target(plot_power_pilot3, plot_power_analysis_pilot3(power_pilot3))
   )

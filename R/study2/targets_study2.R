@@ -27,5 +27,22 @@ targets_study2 <-
         plot_study2_model1(study2_data, study2_means1_by_dilemma, outcome,
                            split_by_dilemma = TRUE)
       )
+    ),
+    # run power analysis based on study 2 data
+    tar_target(power_id_study2, 1:100),
+    tar_target(
+      power_model_study2,
+      update(
+        object = study2_fit1_trust,
+        chains = 0,
+        backend = "cmdstanr" # compile with cmdstanr for speed gains
+      )
+    ),
+    tar_target(
+      power_study2,
+      run_power_analysis_study2(study2_fit1_trust, power_model_study2,
+                                n = 750, power_id_study2),
+      pattern = map(power_id_study2),
+      deployment = "worker"
     )
   )

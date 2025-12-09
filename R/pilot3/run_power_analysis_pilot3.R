@@ -27,7 +27,7 @@ generate_new_data_pilot3 <- function(pilot3_fit1, n = 400) {
 }
 
 # get posterior difference from CU
-get_post_difference <- function(fit, variable, advisor_type) {
+get_post_difference_pilot3 <- function(fit, variable, advisor_type) {
   # get fitted values
   f <- fitted(
     object = fit,
@@ -70,29 +70,41 @@ run_power_analysis_pilot3 <- function(pilot3_fit1, n = 50, sim_id = 1) {
       # 3. get posterior differences
       # difference in trust between CD and CU
       diff_trust_CD = list(
-        get_post_difference(fit, "trust_baseline", "ConsistentlyDeontological")
-        ),
+        get_post_difference_pilot3(
+          fit, "trust_baseline", "ConsistentlyDeontological"
+        )
+      ),
       # difference in trust between NS and CU
       diff_trust_NS = list(
-        get_post_difference(fit, "trust_baseline", "NormativelySensitive")
-        ),
+        get_post_difference_pilot3(
+          fit, "trust_baseline", "NormativelySensitive"
+        )
+      ),
       # difference in trust between NNS and CU
       diff_trust_NNS = list(
-        get_post_difference(fit, "trust_baseline", "NonNormativelySensitive")
-        ),
+        get_post_difference_pilot3(
+          fit, "trust_baseline", "NonNormativelySensitive"
+        )
+      ),
       # difference in human likelihood between CD and CU
       diff_human_CD = list(
-        get_post_difference(fit, "likely_human", "ConsistentlyDeontological")
-        ),
+        get_post_difference_pilot3(
+          fit, "likely_human", "ConsistentlyDeontological"
+        )
+      ),
       # difference in human likelihood between NS and CU
       diff_human_NS = list(
-        get_post_difference(fit, "likely_human", "NormativelySensitive")
-        ),
+        get_post_difference_pilot3(
+          fit, "likely_human", "NormativelySensitive"
+        )
+      ),
       # difference in human likelihood between NNS and CU
       diff_human_NNS = list(
-        get_post_difference(fit, "likely_human", "NonNormativelySensitive")
+        get_post_difference_pilot3(
+          fit, "likely_human", "NonNormativelySensitive"
         )
-      ) %>%
+      )
+    ) %>%
     # remove some columns
     select(!c(fit)) %>%
     # pivot longer

@@ -6,9 +6,9 @@ library(tidyverse)
 # set options for targets and source R functions
 tar_option_set(
   packages = c("brms", "cowplot", "ggsankey", "patchwork", "tidyverse"),
-  controller = crew_controller_local(workers = 2),
+  controller = crew_controller_local(workers = 8),
   deployment = "main"
-  )
+)
 tar_source()
 
 # targets pipeline
