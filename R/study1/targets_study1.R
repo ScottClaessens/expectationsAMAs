@@ -5,6 +5,8 @@ targets_study1 <-
                format = "file"),
     # load data
     tar_target(study1_data, load_study1_data(study1_data_file)),
+    # plot judgements
+    tar_target(study1_plot_judgements, plot_own_judgements_study1(study1_data)),
     # fit and plot model 1 - between-subjects perceptions
     tar_map(
       values = list(

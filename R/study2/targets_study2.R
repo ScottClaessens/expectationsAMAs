@@ -10,6 +10,8 @@ targets_study2 <-
     tar_target(study2_data, load_study2_data(study2_data_file)),
     # exclude comprehension failures
     tar_target(study2_data_exclude, exclude_study2_data(study2_data)),
+    # plot judgements
+    tar_target(study2_plot_judgements, plot_own_judgements_study2(study2_data)),
     # fit model 1
     tar_map(
       values = list(outcome = c("trust", "empathy", "competent", "likely_AI")),
