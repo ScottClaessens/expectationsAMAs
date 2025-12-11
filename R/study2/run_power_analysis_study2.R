@@ -34,15 +34,16 @@ generate_new_data_study2 <- function(study2_fit1_trust, n) {
 }
 
 # get posterior difference in trust between advisor types
-get_post_difference_study2 <- function(fit, advisor1, advisor2) {
+get_post_difference_study2 <- function(fit, advisor1, advisor2, dilemma) {
   # get fitted values
   f <- fitted(
     object = fit,
     newdata = data.frame(
       dilemma_type = "InstrumentalHarm",
-      advisor_type = c(advisor1, advisor2)
+      advisor_type = c(advisor1, advisor2),
+      dilemma = dilemma
     ),
-    re_formula = NA,
+    re_formula = ~ 1 + (1 + advisor_type | dilemma),
     summary = FALSE
   )
   # convert from probabilities of each level to estimated means
@@ -74,22 +75,59 @@ run_power_analysis_study2 <- function(study2_fit1_trust, power_model_study2,
         )
       ),
       # 3. get posterior differences
-      # difference in trust between CD and CU
-      diff_CD_CU = list(
+      # difference in trust between CD and CU in Bomb dilemma
+      diff_Bomb_CD_CU = list(
         get_post_difference_study2(
-          fit, "ConsistentlyDeontological", "ConsistentlyUtilitarian"
+          fit, "ConsistentlyDeontological", "ConsistentlyUtilitarian", "Bomb"
         )
       ),
-      # difference in trust between CD and NS
-      diff_CD_NS = list(
+      # difference in trust between CD and NS in Bomb dilemma
+      diff_Bomb_CD_NS = list(
         get_post_difference_study2(
-          fit, "ConsistentlyDeontological", "NormativelySensitive"
+          fit, "ConsistentlyDeontological", "NormativelySensitive", "Bomb"
         )
       ),
-      # difference in trust between CU and NS
-      diff_CU_NS = list(
+      # difference in trust between CU and NS in Bomb dilemma
+      diff_Bomb_CU_NS = list(
         get_post_difference_study2(
-          fit, "ConsistentlyUtilitarian", "NormativelySensitive"
+          fit, "ConsistentlyUtilitarian", "NormativelySensitive", "Bomb"
+        )
+      ),
+      # difference in trust between CD and CU in EnemySpy dilemma
+      diff_EnemySpy_CD_CU = list(
+        get_post_difference_study2(
+          fit, "ConsistentlyDeontological", "ConsistentlyUtilitarian", 
+          "EnemySpy"
+        )
+      ),
+      # difference in trust between CD and NS in EnemySpy dilemma
+      diff_EnemySpy_CD_NS = list(
+        get_post_difference_study2(
+          fit, "ConsistentlyDeontological", "NormativelySensitive", "EnemySpy"
+        )
+      ),
+      # difference in trust between CU and NS in EnemySpy dilemma
+      diff_EnemySpy_CU_NS = list(
+        get_post_difference_study2(
+          fit, "ConsistentlyUtilitarian", "NormativelySensitive", "EnemySpy"
+        )
+      ),
+      # difference in trust between CD and CU in Hostage dilemma
+      diff_Hostage_CD_CU = list(
+        get_post_difference_study2(
+          fit, "ConsistentlyDeontological", "ConsistentlyUtilitarian", "Hostage"
+        )
+      ),
+      # difference in trust between CD and NS in Hostage dilemma
+      diff_Hostage_CD_NS = list(
+        get_post_difference_study2(
+          fit, "ConsistentlyDeontological", "NormativelySensitive", "Hostage"
+        )
+      ),
+      # difference in trust between CU and NS in Hostage dilemma
+      diff_Hostage_CU_NS = list(
+        get_post_difference_study2(
+          fit, "ConsistentlyUtilitarian", "NormativelySensitive", "Hostage"
         )
       )
     ) %>%
