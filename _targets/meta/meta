@@ -1,8 +1,6 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
 study1_data_file|stem|f0e76cf96745eb4b|324175eab99ca905|2c530c1562a7fbd1|-1398507996|data/study1/study1_data_clean.csv|t20301.5032472997s|s221974b|221974|file|local|vector|||8|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3|
-study2_data_file|stem|f6894e773eb2fc27|e45f33fd84dcd429|2c530c1562a7fbd1|-1996020836|data/study2/study2_data_clean.csv|t20371.6577344841s|s167461b|167461|file|local|vector|||0||
 study1_data|stem|b78238d6f980f150|d12e985251ba76e3|28f7e61cfb95feef|210452844||t20423.4434832488s|s24553b|24553|rds|local|vector|||1.906||
-study2_data|stem|0c835042b1e65192|44886367f8a96b76|cb161ae4ff51f129|-177392398||t20423.4434881213s|s10719b|10719|rds|local|vector|||0.265||
 study1_fit1_competence|stem|09ab524645f5efab|29574e40a8317116|90e5a6784e5604b8|1091069971||t20423.4601999723s|s60684546b|60684546|rds|local|vector|||1232.203|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
 study1_fit2_surprised_AI|stem|e51a0afd7232b115|d10f447f51f8f8b4|d7ca1077fc0107b4|241232373||t20423.4714394141s|s4953631b|4953631|rds|local|vector|||970.172|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
 study1_fit3_compare_likely_human|stem|de8f07cf398fd0db|3387a49628afea55|a16145aeb4daebc3|-1456137150||t20423.4854446634s|s56674383b|56674383|rds|local|vector|||1207.156||
@@ -92,61 +90,6 @@ power_study2_6d7eb93ab8847a6d|branch|27d508bee5002532|b7f76283c2a38408|6bef168cd
 power_study2_51369bcba230a320|branch|f82854c5b588dd52|b7f76283c2a38408|6bef168cd4a5493d|120707222||t20432.5246799648s|s651b|651|rds|local|vector|power_study2||1552.844|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'tidyverse' was built under R version 4.4.3. package 'ggplot2' was built under R version 4.4.3|
 power_study2_c7926c3bf90cedc3|branch|195fd0cb252a93d1|b7f76283c2a38408|6bef168cd4a5493d|1389626690||t20432.5246797278s|s648b|648|rds|local|vector|power_study2||1612.203|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'tidyverse' was built under R version 4.4.3. package 'ggplot2' was built under R version 4.4.3|
 power_study2_3afbf8a2e60b5f34|branch|4ccae4c448087a45|b7f76283c2a38408|6bef168cd4a5493d|1334333020||t20432.5255248716s|s648b|648|rds|local|vector|power_study2||1689.578|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'tidyverse' was built under R version 4.4.3. package 'ggplot2' was built under R version 4.4.3|
-extract_pilot2_means_by_dilemma|function|e9e479c4cd2fe4cf
-extract_pilot2_means_by_dilemma_type|function|eee98142fc4e5909
-generate_new_data_pilot3|function|21cf2014e16b56fb
-get_post_difference_pilot3|function|1c5a8b01464d35dd
-plot_study2_model1|function|874bf5f6c1cf104c
-create_table_study2_model1|function|d41bd479d825c277
-plot_pilot3_comparison|function|b806de58d32e2bf1
-plot_pilot2_overall_results|function|c61c8f8bd6814112
-extract_pilot3_comparison_means|function|6c6c7ff6be1dc534
-fit_pilot1_model|function|f90b10d6e1d7417d
-fit_study2_model1|function|601bff2227d24a50
-plot_pilot2_results_by_dilemma|function|3d478371a538237c
-.Random.seed|object|c366d7d0a9dd6733
-plot_pilot1_sankey_individual|function|d7b0ce0a0e215c1d
-plot_study1_model1|function|3d41aa99f36b086b
-extract_study2_means1|function|dac1be06b30107cb
-create_table_study1_model1|function|75a17ab7069a9d02
-plot_study1_model2|function|fff0552766a3e84d
-create_table_study1_model2|function|5dc0ed022db39e1b
-plot_study1_model3|function|8f95fa64b619265a
-plot_power_analysis_pilot3|function|94b3994818a8f5b6
-create_table_study1_model3|function|385dddb18e10e90c
-plot_study1_model4|function|a50fb566f96e163f
-plot_own_judgements_study1|function|bf3dfd47403b0476
-plot_own_judgements_study2|function|babcd2834cfb7670
-extract_study1_means1|function|ce1941b918cf0774
-fit_study1_model1|function|10e7334097d7ee51
-extract_study1_means2|function|254418c2793bc1c2
-fit_study1_model2|function|0df9a220b00aaee6
-extract_study1_means3|function|bac1bc9f483cabf4
-plot_pilot3_between_subjects_perceptions|function|e2f07ce6c1f21162
-fit_study1_model3|function|c580bee908cbc6e4
-extract_study1_means4|function|119cb90225f04307
-fit_study1_model4|function|baa01a93de547749
-fit_pilot3_model1|function|9a9f7387e2af9a80
-fit_pilot2_model1|function|5eeb75ab6b73f538
-exclude_study2_data|function|fad0234eb5f72aad
-plot_pilot2_results_by_dilemma_type|function|dbf4c604ca6b7448
-fit_pilot3_model2|function|188aff622c7248d8
-fit_pilot2_model2|function|35025ab3ef511db8
-plot_pilot1_results|function|bd195f6d86caccad
-extract_pilot3_between_subjects_means|function|7f6deb9874d3052f
-get_post_difference_study2|function|36c37a417ee928e6
-generate_new_data_study2|function|a5442668f705c31a
-extract_pilot1_means|function|6ed164c107d2c044
-load_pilot3_data|function|27df1b6ad2b712c2
-load_pilot2_data|function|de1c9071c12ca5e7
-plot_pilot3_between_subjects_AI|function|c0fbd33ef49d9164
-load_study2_data|function|a35a164772fc4921
-load_pilot1_data|function|1e4b69e8cb87bf06
-load_study1_data|function|1729eaba5a24957d
-extract_overall_pilot2_means|function|1705962ab8cbf91e
-run_power_analysis_pilot3|function|fbb86b15a81e2950
-plot_pilot1_sankey|function|3b678fb0ed59f4d2
-run_power_analysis_study2|function|3dafe4235b52f957
 power_study2_589a963fa56faa0c|branch|983f9555a69de30c|b7f76283c2a38408|6bef168cd4a5493d|-617310325||t20432.7406530534s|s651b|651|rds|local|vector|power_study2||391.469|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'tidyverse' was built under R version 4.4.3. package 'ggplot2' was built under R version 4.4.3|
 power_study2_5897e146ce48fc7f|branch|eec0fd9d924aa605|b7f76283c2a38408|6bef168cd4a5493d|524006793||t20432.7407982821s|s648b|648|rds|local|vector|power_study2||398.578|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'tidyverse' was built under R version 4.4.3. package 'ggplot2' was built under R version 4.4.3|
 power_study2_b92ec7052ddf0967|branch|7084ebc12f5a5427|b7f76283c2a38408|6bef168cd4a5493d|-801036407||t20432.7408814088s|s650b|650|rds|local|vector|power_study2||399.781|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'tidyverse' was built under R version 4.4.3. package 'ggplot2' was built under R version 4.4.3|
@@ -240,3 +183,67 @@ power_study2_a5ab49a13bbca9e3|branch|73f7c9d381230b9d|b7f76283c2a38408|6bef168cd
 power_study2_c836392277d87c61|branch|0d522eb966584130|b7f76283c2a38408|6bef168cd4a5493d|365738270||t20432.7699780341s|s649b|649|rds|local|vector|power_study2||218.828|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'tidyverse' was built under R version 4.4.3. package 'ggplot2' was built under R version 4.4.3|
 power_study2_72eb222d77652e3b|branch|dfc7ce03053275ea|b7f76283c2a38408|6bef168cd4a5493d|795839780||t20432.7699801285s|s646b|646|rds|local|vector|power_study2||203.36|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'tidyverse' was built under R version 4.4.3. package 'ggplot2' was built under R version 4.4.3|
 power_study2|pattern|5ca19ad7702f9ebf|b7f76283c2a38408||-1826380112||||59749|rds|local|vector||power_study2_6d7eb93ab8847a6d*power_study2_8b21f587ca6bb043*power_study2_006bf913bfff2940*power_study2_3afbf8a2e60b5f34*power_study2_fd3a7602c0bb7d19*power_study2_c7926c3bf90cedc3*power_study2_35416ba7dfa57dbf*power_study2_51369bcba230a320*power_study2_d1bd57b902ed7732*power_study2_f6448d9c4f1affc2*power_study2_9f533a98f6143dfe*power_study2_589a963fa56faa0c*power_study2_7e6c56d0df9547e4*power_study2_5897e146ce48fc7f*power_study2_1e45cd232b8e9faf*power_study2_b92ec7052ddf0967*power_study2_6a6b4b7f036507de*power_study2_b9761363fbfeef7b*power_study2_c620b5fec68e018b*power_study2_0c1c6e4f0d7e71d4*power_study2_bfd1eb92206f74ff*power_study2_6aef34608c178664*power_study2_c60580501ee821dc*power_study2_71819ed72fec10fd*power_study2_3f1a519e51856652*power_study2_6aff0709a96778fc*power_study2_1763f2e4f8a0fba4*power_study2_427975fac7175ac1*power_study2_b60c8f2d8e693fa8*power_study2_466ddcf13765adf6*power_study2_c2bbd1cec6f8a9a4*power_study2_8a216a6aa2c8b8d2*power_study2_be798fd37d71d6af*power_study2_8246f7634cfb270b*power_study2_2827b9fa2a65cec4*power_study2_6dda7cfc07fd5b67*power_study2_a2b8583bac39a872*power_study2_25ec48143e000018*power_study2_19e12901f1a1282e*power_study2_f331c44205128cde*power_study2_80ac47b27c9c51c7*power_study2_b49062400894b37e*power_study2_ffc36cae3150c7cd*power_study2_a9bd17cda22a6a69*power_study2_3ebd4d680fba820f*power_study2_36cfe7fa9c94b0d8*power_study2_f7ecacfabed6997c*power_study2_7e95441eb6b2c583*power_study2_7a150d07d1fd6671*power_study2_3001daa1f006926a*power_study2_10a36fabfbf4e7d6*power_study2_1f0e088ae72e41f9*power_study2_6ce09ccad2d26ea2*power_study2_d6242d498b86eb52*power_study2_ef411e2ed3b62f9c*power_study2_e3d3c73dcfb963cf*power_study2_bdd71093daf26366*power_study2_2111c9128d1cef5b*power_study2_50b60f2f1798cb2a*power_study2_f92f66b92e9067e4*power_study2_d5542ee3cc45ecda*power_study2_a3e562ae085ace2d*power_study2_655f34816b2854d0*power_study2_a33d64a61120e759*power_study2_be47346c6ca5ba3d*power_study2_19fa359312321e41*power_study2_a0a50f15b79c129f*power_study2_d931a7da8846e313*power_study2_24977e05832bebcd*power_study2_7e6c2660e5ed72df*power_study2_dfa4499c5fe7177c*power_study2_badc669fe56668fa*power_study2_5e7fdc7b17137772*power_study2_e6e5f896fa055256*power_study2_3a20c7b37e5b59f1*power_study2_11d449e6298c179d*power_study2_00851a717e268168*power_study2_33c7939bd09541f5*power_study2_1704691f83f03487*power_study2_84fe054c3f6d6126*power_study2_2238b19e55a0c227*power_study2_4fe9efb57aec7678*power_study2_799303411cc226c5*power_study2_c8d2a671cdc92c0c*power_study2_9a74bf2be7575504*power_study2_58baec6325b3bb0d*power_study2_8c8cc17747622ffd*power_study2_b45fa82c61dc8e21*power_study2_a2f0075780139532*power_study2_d67e2d7f4efd252a*power_study2_333e26f501e565ba*power_study2_e4b1ace4db61061b*power_study2_2ccbd1b8319c40db*power_study2_fcd5530e06c3ba98*power_study2_92770d8f769671b1*power_study2_c68a5f62dc59a91a*power_study2_b5dedd989c26b975*power_study2_a5ab49a13bbca9e3*power_study2_c836392277d87c61*power_study2_72eb222d77652e3b|22538.497||
+study2_data_file|stem|a4bd5bef2486fbea|e45f33fd84dcd429|2c530c1562a7fbd1|-1996020836|data/study2/study2_data_clean.csv|t20438.5276286713s|s174704b|174704|file|local|vector|||4.344|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3|
+study2_data|stem|73bf3714706a534b|44886367f8a96b76|8b75200940e2e9bd|-177392398||t20438.5361894501s|s11627b|11627|rds|local|vector|||1.422||
+study3_data_file|stem|ed8e3e6983eb5fe0|705b09924d52cfd3|2c530c1562a7fbd1|42815231|data/study3/study3_data_clean.csv|t20438.5257255241s|s1230833b|1230833|file|local|vector|||6.062|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3|
+study3_data|stem|03a19713ae241c88|68a4968e90d0789a|657ad810836c04ea|1958037105||t20438.5470237563s|s58348b|58348|rds|local|vector|||1.109||
+study3_plot_judgements|stem|e0b1f7f74a7cacc8|99c0247734c8160a|76c6ab54cf087a5c|-1606599016||t20438.5470401487s|s255184b|255184|rds|local|vector|||1.188||
+create_table_study1_model3|function|385dddb18e10e90c
+plot_study1_model3|function|8f95fa64b619265a
+extract_pilot2_means_by_dilemma|function|e9e479c4cd2fe4cf
+plot_study1_model4|function|a50fb566f96e163f
+load_study3_data|function|591613f2d830e233
+get_post_difference_pilot3|function|1c5a8b01464d35dd
+load_pilot3_data|function|27df1b6ad2b712c2
+plot_pilot3_between_subjects_AI|function|c0fbd33ef49d9164
+plot_own_judgements_study1|function|bf3dfd47403b0476
+plot_own_judgements_study2|function|babcd2834cfb7670
+fit_pilot1_model|function|f90b10d6e1d7417d
+plot_own_judgements_study3|function|b1c9762c664f5e65
+extract_study2_means1|function|dac1be06b30107cb
+load_study1_data|function|1729eaba5a24957d
+generate_new_data_pilot3|function|21cf2014e16b56fb
+load_pilot1_data|function|1e4b69e8cb87bf06
+load_study2_data|function|a35a164772fc4921
+extract_overall_pilot2_means|function|1705962ab8cbf91e
+.Random.seed|object|d7b93e9f92ef84c8
+load_pilot2_data|function|de1c9071c12ca5e7
+extract_pilot1_means|function|6ed164c107d2c044
+extract_study1_means1|function|ce1941b918cf0774
+exclude_study2_data|function|fad0234eb5f72aad
+extract_study1_means2|function|254418c2793bc1c2
+plot_pilot2_overall_results|function|c61c8f8bd6814112
+extract_study1_means3|function|bac1bc9f483cabf4
+plot_pilot2_results_by_dilemma|function|3d478371a538237c
+extract_study1_means4|function|119cb90225f04307
+exclude_study3_data|function|bf4422c16e1b8d00
+get_post_difference_study2|function|36c37a417ee928e6
+fit_pilot3_model1|function|9a9f7387e2af9a80
+fit_pilot3_model2|function|188aff622c7248d8
+generate_new_data_study2|function|a5442668f705c31a
+extract_pilot3_between_subjects_means|function|7f6deb9874d3052f
+plot_pilot3_comparison|function|b806de58d32e2bf1
+fit_study2_model1|function|601bff2227d24a50
+extract_pilot2_means_by_dilemma_type|function|eee98142fc4e5909
+extract_pilot3_comparison_means|function|6c6c7ff6be1dc534
+create_table_study2_model1|function|d41bd479d825c277
+plot_study2_model1|function|874bf5f6c1cf104c
+plot_pilot1_results|function|bd195f6d86caccad
+fit_pilot2_model1|function|5eeb75ab6b73f538
+fit_pilot2_model2|function|35025ab3ef511db8
+fit_study1_model1|function|10e7334097d7ee51
+fit_study1_model2|function|0df9a220b00aaee6
+fit_study1_model3|function|c580bee908cbc6e4
+plot_pilot3_between_subjects_perceptions|function|e2f07ce6c1f21162
+plot_pilot2_results_by_dilemma_type|function|dbf4c604ca6b7448
+fit_study1_model4|function|baa01a93de547749
+plot_pilot1_sankey_individual|function|d7b0ce0a0e215c1d
+plot_power_analysis_pilot3|function|94b3994818a8f5b6
+create_table_study1_model1|function|75a17ab7069a9d02
+plot_study1_model1|function|3d41aa99f36b086b
+create_table_study1_model2|function|5dc0ed022db39e1b
+plot_study1_model2|function|fff0552766a3e84d
+run_power_analysis_pilot3|function|fbb86b15a81e2950
+run_power_analysis_study2|function|3dafe4235b52f957
+plot_pilot1_sankey|function|3b678fb0ed59f4d2
+study3_data_exclude|stem|3dbe000cad22759d|64320d71d6094625|16861fa4d2e7d3de|-1548399722||t20438.5473075964s|s48592b|48592|rds|local|vector|||0.031||
