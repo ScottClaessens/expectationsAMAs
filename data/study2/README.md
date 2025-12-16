@@ -11,7 +11,7 @@
 
 **File format:** CSV file
 
-**File dimensions:** 1200 rows x 24 columns
+**File dimensions:** 1200 rows x 27 columns
 
 **Data collected on:** 10th October 2025
 
@@ -50,6 +50,15 @@ to Neutral (4) to Right (7)
 - `religiosity` - numeric, 1-7 Likert, response to the question "How religious
 are you?" ranging from Not At All Religious (1) to Somewhat Religious (4) to
 Very Religious (7)
+- `ai_familiarity` - numeric, 1-7 Likert, response to the question "How familiar
+are you with AI tools like ChatGPT?" ranging from Extremely Unfamiliar (1) to
+Extremely Familiar (7)
+- `ai_frequency` - numeric, 1-5 Likert, response to the question "How frequently
+do you use AI tools like ChatGPT?", possible responses include Never (1),
+Rarely (2), Occasionally (3), Frequently (4), and Very Frequently (5)
+- `ai_trustworthy` - numeric, 1-7 Likert, response to the question "How 
+trustworthy do you think AI tools like ChatGPT are?" ranging from Extremely
+Untrustworthy (1) to Extremely Trustworthy (7)
 - `own_judgement_baseline` - numeric, 1-7 Likert scale, participant's own
 judgement regarding the baseline dilemma, response to the question "Do you think
 that [person] should [utilitarian option]?" from Definitely No (1) to Definitely
