@@ -36,5 +36,12 @@ targets_study3 <-
         plot_study3_model1(study3_data, study3_means1_by_dilemma, outcome,
                            split_by_dilemma = TRUE)
       )
+    ),
+    # fit model 2
+    tar_target(study3_fit2, fit_study3_model2(study3_data)),
+    tar_target(study3_plot2, plot_study3_model2(study3_fit2)),
+    tar_target(
+      study3_plot2_by_dilemma,
+      plot_study3_model2(study3_fit2, split_by_dilemma = TRUE)
     )
   )
