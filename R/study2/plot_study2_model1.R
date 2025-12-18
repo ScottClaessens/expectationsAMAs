@@ -1,6 +1,6 @@
 # function to plot model 1 predictions from within-subjects study
 plot_study2_model1 <- function(study2_data, study2_means1, outcome,
-                               split_by_dilemma = FALSE) {
+                               include, split_by_dilemma = FALSE) {
   # advisor and dilemma types
   advisor_types <- c(
     "ConsistentlyDeontological" = "Consistently\nDeontological",
@@ -103,7 +103,9 @@ plot_study2_model1 <- function(study2_data, study2_means1, outcome,
   ggsave(
     plot = p,
     filename = paste0(
-      "plots/study2/study2_results_",
+      "plots/study2/",
+      include,
+      "/study2_results_",
       ifelse(split_by_dilemma, "by_dilemma_", ""),
       outcome,
       ".pdf"

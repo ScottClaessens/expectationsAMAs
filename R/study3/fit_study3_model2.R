@@ -1,5 +1,9 @@
 # function to fit model 2 to data from study 3
-fit_study3_model2 <- function(study3_data) {
+fit_study3_model2 <- function(study3_data, include) {
+  # exclude data
+  if (include == "with_exclusions") {
+    study3_data <- exclude_study3_data(study3_data)
+  }
   # one participant per row
   study3_data <-
     study3_data |>

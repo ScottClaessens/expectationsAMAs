@@ -1,5 +1,9 @@
 # function to fit model 1 to data from within-subjects study
-fit_study2_model1 <- function(study2_data, outcome = "trust") {
+fit_study2_model1 <- function(study2_data, outcome = "trust", include) {
+  # exclude data
+  if (include == "with_exclusions") {
+    study2_data <- exclude_study2_data(study2_data)
+  }
   # get formula
   formula <- bf(
     as.formula(

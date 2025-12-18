@@ -35,41 +35,22 @@ study1_means2_by_dilemma_likely_human|stem|fd2d0fe82dbad8ba|d721f4421f8ed21c|a79
 study1_means3_compare_trust|stem|df4661484b237d2c|a00c8ea85393560f|730c249f27067b29|762113775||t20423.5804487507s|s236594b|236594|rds|local|vector|||1.016||
 study1_table3_compare_trust|stem|79c58a2e3f0734b4|dd3515242c655250|2aca9a82ba68b52b|986031531||t20423.580478479s|s411b|411|rds|local|vector|||0.969||
 study1_means3_by_dilemma_compare_trust|stem|eeaff13f7ff80a38|aa5e6735295850c1|730c249f27067b29|-817669904||t20423.5805257185s|s698910b|698910|rds|local|vector|||2.328||
-get_post_difference|function|1c5a8b01464d35dd
 power_id_study2|stem|fc51b9bc666522b7|3abebb0a1b0e4d88|2c530c1562a7fbd1|-1645750012||t20431.5640855299s|s99b|99|rds|local|vector||power_id_study2_6e95f3b2b5476d92*power_id_study2_b3a2147ad240fae3*power_id_study2_f5968f8186dadba0*power_id_study2_50003b5d5254d75e*power_id_study2_5105e1ee401f4beb*power_id_study2_943cd151fa74649e*power_id_study2_a7098e9b959e7c27*power_id_study2_3a45cb041330bd5a*power_id_study2_0c0522beb9e90953*power_id_study2_4b8caeb2425c3113*power_id_study2_446319f78fcec68d*power_id_study2_934bc55ab3ad8d0c*power_id_study2_1e1a3fb3163a2222*power_id_study2_ec4f2cdc06cb2c22*power_id_study2_fc68b7f7b40cc54f*power_id_study2_aa31f84bf184361f*power_id_study2_c0916aa2dc6b5b30*power_id_study2_8dbc37444e6cc69e*power_id_study2_0e110383a26da0ff*power_id_study2_d290306a6450b2e2*power_id_study2_cf3685ce3c1b1db3*power_id_study2_fba517401b549c1d*power_id_study2_052c076623c9f2e6*power_id_study2_6617b11a7c66ee8e*power_id_study2_57ea5c9c96396452*power_id_study2_4096769dbafa7591*power_id_study2_b56c360f0ffdd258*power_id_study2_f4790d2d3ff0d60b*power_id_study2_2bf19d16ecd4fca2*power_id_study2_73b794877cd9a999*power_id_study2_390042d89b95c071*power_id_study2_6f5918b501ae94a9*power_id_study2_ccae4213e7317059*power_id_study2_4697e9e2e1e77429*power_id_study2_5cfbe16edc625093*power_id_study2_e34a4d8ce615fd55*power_id_study2_2a6a6e8a59010ac9*power_id_study2_9cb515848a8969e0*power_id_study2_d816299a36bd45e9*power_id_study2_f921c7fe6601d901*power_id_study2_874665cac837130a*power_id_study2_4ecf115f732c7c9a*power_id_study2_b37368a70ac5a51d*power_id_study2_3a1e4d66bb801280*power_id_study2_6a8b3b844aea3de7*power_id_study2_7e85b9da730d3d18*power_id_study2_362959c4a751329a*power_id_study2_9aebbc06a1860a4b*power_id_study2_df20842d11968c74*power_id_study2_8c7f19e1fdb50010*power_id_study2_6b4bf7afec387560*power_id_study2_09afe80fbb52a14b*power_id_study2_5c857f7ad9397ed5*power_id_study2_1a9b425b423a82b2*power_id_study2_84110764bcc16fa7*power_id_study2_c7d53f663d4fc301*power_id_study2_76da64c4a1d19a70*power_id_study2_f1134f793624d4ba*power_id_study2_d61364f98d35b5eb*power_id_study2_159a550eb78a4ed9*power_id_study2_b9d5fc4e30709931*power_id_study2_ee67d605dd762071*power_id_study2_a740cd3205cb75fd*power_id_study2_4c606f1b684b37f8*power_id_study2_caa4dcfc75ff2741*power_id_study2_e16f68a1045081e1*power_id_study2_6563c6ec8026e9ee*power_id_study2_cb8bf8267c9b20da*power_id_study2_9a6365f1d73bcc18*power_id_study2_669981af69be3b8e*power_id_study2_202e872936dcd2f9*power_id_study2_1d4ba1a29c79c520*power_id_study2_b2a753abfa7b3316*power_id_study2_4d5c47d156588dbd*power_id_study2_dc75472c180bfea9*power_id_study2_c21b978e9d49b408*power_id_study2_d3f0074c7ff43204*power_id_study2_10ed620c37a0bd6c*power_id_study2_a689d739199c9c0f*power_id_study2_d84e2b5777f49c9d*power_id_study2_8401d9a9e1d0d076*power_id_study2_f0f99e7b7b793e88*power_id_study2_43946c55ae6b14b3*power_id_study2_24e4086ee904f632*power_id_study2_c49cf688cde6098a*power_id_study2_af7cfe67cf6899bc*power_id_study2_d2eb281b10ce64ca*power_id_study2_1c9916ece05b0e5e*power_id_study2_01b1fa268e90f081*power_id_study2_0776f79891492548*power_id_study2_fbdc68aec745e4fc*power_id_study2_42df26c120ebda33*power_id_study2_da1ddc8d31ceef20*power_id_study2_2be474e0f668b46b*power_id_study2_da2a6afc2a1bf8e1*power_id_study2_a4e1202258cd6272*power_id_study2_597e86070a061d54*power_id_study2_0f818682e9a5f691*power_id_study2_2a42aa3a874e5f8f*power_id_study2_58da83568b77e4fd|7.625|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3|
 power_study2|pattern|5ca19ad7702f9ebf|b7f76283c2a38408||-1826380112||||59749|rds|local|vector||power_study2_6d7eb93ab8847a6d*power_study2_8b21f587ca6bb043*power_study2_006bf913bfff2940*power_study2_3afbf8a2e60b5f34*power_study2_fd3a7602c0bb7d19*power_study2_c7926c3bf90cedc3*power_study2_35416ba7dfa57dbf*power_study2_51369bcba230a320*power_study2_d1bd57b902ed7732*power_study2_f6448d9c4f1affc2*power_study2_9f533a98f6143dfe*power_study2_589a963fa56faa0c*power_study2_7e6c56d0df9547e4*power_study2_5897e146ce48fc7f*power_study2_1e45cd232b8e9faf*power_study2_b92ec7052ddf0967*power_study2_6a6b4b7f036507de*power_study2_b9761363fbfeef7b*power_study2_c620b5fec68e018b*power_study2_0c1c6e4f0d7e71d4*power_study2_bfd1eb92206f74ff*power_study2_6aef34608c178664*power_study2_c60580501ee821dc*power_study2_71819ed72fec10fd*power_study2_3f1a519e51856652*power_study2_6aff0709a96778fc*power_study2_1763f2e4f8a0fba4*power_study2_427975fac7175ac1*power_study2_b60c8f2d8e693fa8*power_study2_466ddcf13765adf6*power_study2_c2bbd1cec6f8a9a4*power_study2_8a216a6aa2c8b8d2*power_study2_be798fd37d71d6af*power_study2_8246f7634cfb270b*power_study2_2827b9fa2a65cec4*power_study2_6dda7cfc07fd5b67*power_study2_a2b8583bac39a872*power_study2_25ec48143e000018*power_study2_19e12901f1a1282e*power_study2_f331c44205128cde*power_study2_80ac47b27c9c51c7*power_study2_b49062400894b37e*power_study2_ffc36cae3150c7cd*power_study2_a9bd17cda22a6a69*power_study2_3ebd4d680fba820f*power_study2_36cfe7fa9c94b0d8*power_study2_f7ecacfabed6997c*power_study2_7e95441eb6b2c583*power_study2_7a150d07d1fd6671*power_study2_3001daa1f006926a*power_study2_10a36fabfbf4e7d6*power_study2_1f0e088ae72e41f9*power_study2_6ce09ccad2d26ea2*power_study2_d6242d498b86eb52*power_study2_ef411e2ed3b62f9c*power_study2_e3d3c73dcfb963cf*power_study2_bdd71093daf26366*power_study2_2111c9128d1cef5b*power_study2_50b60f2f1798cb2a*power_study2_f92f66b92e9067e4*power_study2_d5542ee3cc45ecda*power_study2_a3e562ae085ace2d*power_study2_655f34816b2854d0*power_study2_a33d64a61120e759*power_study2_be47346c6ca5ba3d*power_study2_19fa359312321e41*power_study2_a0a50f15b79c129f*power_study2_d931a7da8846e313*power_study2_24977e05832bebcd*power_study2_7e6c2660e5ed72df*power_study2_dfa4499c5fe7177c*power_study2_badc669fe56668fa*power_study2_5e7fdc7b17137772*power_study2_e6e5f896fa055256*power_study2_3a20c7b37e5b59f1*power_study2_11d449e6298c179d*power_study2_00851a717e268168*power_study2_33c7939bd09541f5*power_study2_1704691f83f03487*power_study2_84fe054c3f6d6126*power_study2_2238b19e55a0c227*power_study2_4fe9efb57aec7678*power_study2_799303411cc226c5*power_study2_c8d2a671cdc92c0c*power_study2_9a74bf2be7575504*power_study2_58baec6325b3bb0d*power_study2_8c8cc17747622ffd*power_study2_b45fa82c61dc8e21*power_study2_a2f0075780139532*power_study2_d67e2d7f4efd252a*power_study2_333e26f501e565ba*power_study2_e4b1ace4db61061b*power_study2_2ccbd1b8319c40db*power_study2_fcd5530e06c3ba98*power_study2_92770d8f769671b1*power_study2_c68a5f62dc59a91a*power_study2_b5dedd989c26b975*power_study2_a5ab49a13bbca9e3*power_study2_c836392277d87c61*power_study2_72eb222d77652e3b|22538.497||
 study2_data_file|stem|a4bd5bef2486fbea|e45f33fd84dcd429|2c530c1562a7fbd1|-1996020836|data/study2/study2_data_clean.csv|t20438.5276286713s|s174704b|174704|file|local|vector|||4.344|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3|
 study2_data|stem|73bf3714706a534b|44886367f8a96b76|8b75200940e2e9bd|-177392398||t20438.5361894501s|s11627b|11627|rds|local|vector|||1.422||
 study3_data_file|stem|ed8e3e6983eb5fe0|705b09924d52cfd3|2c530c1562a7fbd1|42815231|data/study3/study3_data_clean.csv|t20438.5257255241s|s1230833b|1230833|file|local|vector|||6.062|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3|
 study3_data|stem|03a19713ae241c88|68a4968e90d0789a|657ad810836c04ea|1958037105||t20438.5470237563s|s58348b|58348|rds|local|vector|||1.109||
-study3_data_exclude|stem|3dbe000cad22759d|64320d71d6094625|16861fa4d2e7d3de|-1548399722||t20438.5473075964s|s48592b|48592|rds|local|vector|||0.031||
 study3_fit1_competent|stem|32c842164fb44d6f|d6aa0541fc90c0ed|0b2be4a09dce3c71|-1392825369||t20438.6964452107s|s102696762b|102696762|rds|local|vector|||1870.375|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
 study3_means1_competent|stem|ed0d4fa76a0bcb94|c7ab7c49a3434730|20bc823c5ceb423d|-571490446||t20438.7031160992s|s471035b|471035|rds|local|vector|||0.766||
 study3_means1_by_dilemma_competent|stem|9d483fb86883fbb1|8089a77004988df3|20bc823c5ceb423d|1565521||t20438.7046222006s|s1393355b|1393355|rds|local|vector|||2||
 study3_fit1_empathy|stem|4e5970c1ed7cbb1d|8991dcf902149df2|0b2be4a09dce3c71|-271272054||t20438.7388916656s|s102547829b|102547829|rds|local|vector|||1211.204|There were 2 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
 study3_fit1_trust|stem|9b66c4d0aa160a6c|53ee7aafe76f1de8|0b2be4a09dce3c71|308206386||t20438.7518845323s|s102733609b|102733609|rds|local|vector|||1119.359|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
-study2_fit1_likely_AI|stem|3897f8b6b17dfa3f|e279f3eb2c05d52e|238f1b03188a0e2e|-2056827732||t20438.7543600827s|s22367190b|22367190|rds|local|vector|||212.125|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
-study2_fit1_empathy|stem|b8706b5d7635e23f|07a94b6a4005c13c|238f1b03188a0e2e|2080125571||t20438.7564219914s|s22421229b|22421229|rds|local|vector|||177.188|There were 2 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
-study2_fit1_trust|stem|57afbfbe3dec4520|4df094716758b6a5|238f1b03188a0e2e|796628791||t20438.7583114213s|s22448057b|22448057|rds|local|vector|||162.344|There were 4 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
-study2_fit1_competent|stem|1272fe986829d029|d453228347560c23|238f1b03188a0e2e|1154659231||t20438.7606267158s|s22531555b|22531555|rds|local|vector|||199.157|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
-study2_data_exclude|stem|ab85e037652b7597|37e3efc508b90bcf|29ac051ebe949fd7|1815704416||t20438.7606275208s|s11764b|11764|rds|local|vector|||0.016||
 study3_means1_by_dilemma_empathy|stem|9b2479edd7634eed|7fa8490eb972b6ea|ae66b48977f05b55|-781789826||t20438.7606427679s|s1398470b|1398470|rds|local|vector|||0.641||
 study3_means1_empathy|stem|976ca5459fa1d4ee|c054d478697ece5d|ae66b48977f05b55|-956663479||t20438.7606556668s|s471668b|471668|rds|local|vector|||0.297||
 study3_means1_by_dilemma_trust|stem|eb13eef017be1dfb|88c0eb1ec6108e67|a2cc7f83930fcc51|1765499884||t20438.7606726987s|s1392529b|1392529|rds|local|vector|||0.829||
 study3_means1_trust|stem|71f7af92fed90bcb|b5935f4e7975de2f|a2cc7f83930fcc51|222919190||t20438.7677014017s|s469730b|469730|rds|local|vector|||1.203||
-study2_table1_likely_AI|stem|5632c629cf3ccb86|5a56fdc3483ffa7d|47dd103df0675dc1|-473734601||t20438.7677118123s|s398b|398|rds|local|vector|||0.547||
-study2_means1_by_dilemma_likely_AI|stem|32474923d269731e|4103e63860d7d0f9|8144eea679087456|205865824||t20438.7677247473s|s702650b|702650|rds|local|vector|||0.734||
-study2_means1_likely_AI|stem|30c0f87233d483d1|6223eedcc8776e19|8144eea679087456|1222614992||t20438.7677324202s|s235022b|235022|rds|local|vector|||0.329||
-study2_table1_empathy|stem|af31008b6c26ebcf|87510aa240e79f1a|253caa7a1ff26cd5|-1504517503||t20438.7677398233s|s410b|410|rds|local|vector|||0.313||
-study2_means1_empathy|stem|0653033fd3e4ec1f|5291a5c79eb94585|69b1da68393c14cb|1376274499||t20438.767747461s|s234793b|234793|rds|local|vector|||0.312||
-study2_means1_by_dilemma_empathy|stem|9deccc00b6457a0b|6a09172b83edb463|69b1da68393c14cb|1002361444||t20438.7677590624s|s701663b|701663|rds|local|vector|||0.64||
 power_model_study2|stem|5dd794087595afff|3fa6c18a338533a8|b201775acc789881|1322150558||t20438.7685599406s|s56622b|56622|rds|local|vector|||46.719|E-BFMI not computed because it is undefined for posterior chains of length less than 3.|
-study2_means1_by_dilemma_trust|stem|3bd37338d56da9be|588cf74c1e608931|0ac2f435cc2bfab4|-253353836||t20438.7685703236s|s700277b|700277|rds|local|vector|||0.625||
-study2_table1_trust|stem|92dcd71c905733c1|2209c50fa91066ce|5159599ca5c209e2|-1126662163||t20438.7685776496s|s415b|415|rds|local|vector|||0.359||
-study2_means1_trust|stem|95c1a762f0ab6762|df7dd422ab9b5223|0ac2f435cc2bfab4|-1996847322||t20438.7685843762s|s234420b|234420|rds|local|vector|||0.36||
-study2_means1_by_dilemma_competent|stem|fd3a475e6b09a3c1|d6e475e4f1809851|575ff887c163301e|-1096766544||t20438.768594134s|s703127b|703127|rds|local|vector|||0.547||
-study2_table1_competent|stem|6731e0f5858eb410|7315175846e2f34a|b02adf3220d26829|996531459||t20438.7686008082s|s411b|411|rds|local|vector|||0.343||
-study2_means1_competent|stem|17acb39b741ba187|73f17e71b0dcb024|575ff887c163301e|-901210979||t20438.7686076904s|s235369b|235369|rds|local|vector|||0.375||
 power_study2_fd3a7602c0bb7d19|branch|5fd532ac9f0da323|b7f76283c2a38408|63e553f83acac43a|173549467||t20438.7701392801s|s651b|651|rds|local|vector|power_study2||118.187|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'tidyverse' was built under R version 4.4.3. package 'ggplot2' was built under R version 4.4.3|
 power_study2_35416ba7dfa57dbf|branch|69f7376362adc2cf|b7f76283c2a38408|63e553f83acac43a|9345484||t20438.7704200334s|s652b|652|rds|local|vector|power_study2||140.672|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'tidyverse' was built under R version 4.4.3. package 'ggplot2' was built under R version 4.4.3|
 power_study2_8b21f587ca6bb043|branch|79e4a574ca17f88c|b7f76283c2a38408|63e553f83acac43a|1965508589||t20438.7704508925s|s651b|651|rds|local|vector|power_study2||149.219|package 'brms' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'tidyverse' was built under R version 4.4.3. package 'ggplot2' was built under R version 4.4.3|
@@ -177,71 +158,6 @@ study3_table1_advisor_empathy|stem|8e6e8f810b85cbef|7bfed05fd5c4e774|bb08c3eee14
 study3_table1_advisor_competent|stem|68fdc11de3ac09d9|5171d86fe8ddabca|ffffd72591ac9df7|-1213626329||t20439.5191010535s|s558b|558|rds|local|vector|||0.281||
 study3_table1_advisor_trust|stem|dbbe3d621269b4dd|9dabacf69d07e2cf|f8dee238650f5f4a|1994357054||t20439.5191131912s|s554b|554|rds|local|vector|||0.453||
 study3_fit2|stem|c946f54d1de65785|96532c70709b1fbe|d7d5f2daa01ef96c|158964869||t20439.616523266s|s5388675b|5388675|rds|local|vector|||398.688|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
-create_table_study1_model3|function|385dddb18e10e90c
-plot_study1_model3|function|1ade3fbbe700245b
-extract_pilot2_means_by_dilemma|function|e9e479c4cd2fe4cf
-plot_study1_model4|function|c8264c14ecce4715
-load_study3_data|function|591613f2d830e233
-get_post_difference_pilot3|function|1c5a8b01464d35dd
-load_pilot3_data|function|27df1b6ad2b712c2
-plot_pilot3_between_subjects_AI|function|cdfc78f24683f54d
-plot_own_judgements_study1|function|907cea2f7fa25612
-plot_own_judgements_study2|function|b79ea9ddd93a1828
-fit_pilot1_model|function|f90b10d6e1d7417d
-plot_own_judgements_study3|function|948b38891aa691a3
-extract_study2_means1|function|dac1be06b30107cb
-load_study1_data|function|1729eaba5a24957d
-generate_new_data_pilot3|function|21cf2014e16b56fb
-load_pilot1_data|function|1e4b69e8cb87bf06
-load_study2_data|function|a35a164772fc4921
-extract_overall_pilot2_means|function|1705962ab8cbf91e
-.Random.seed|object|c22acffabbf4119a
-load_pilot2_data|function|de1c9071c12ca5e7
-extract_pilot1_means|function|6ed164c107d2c044
-extract_study1_means1|function|ce1941b918cf0774
-exclude_study2_data|function|fad0234eb5f72aad
-extract_study1_means2|function|254418c2793bc1c2
-fit_study3_model1|function|50fe691ee7334693
-plot_pilot2_overall_results|function|8f1f2c090c8654a5
-extract_study1_means3|function|bac1bc9f483cabf4
-fit_study3_model2|function|2409a1a4cd4baf9b
-plot_pilot2_results_by_dilemma|function|36cdb49a2a0f9b5a
-extract_study1_means4|function|119cb90225f04307
-exclude_study3_data|function|bf4422c16e1b8d00
-get_post_difference_study2|function|36c37a417ee928e6
-plot_study3_model1|function|1d84ebe6bceee9c8
-plot_study3_model2|function|b2136df140f745b5
-fit_pilot3_model1|function|9a9f7387e2af9a80
-fit_pilot3_model2|function|188aff622c7248d8
-generate_new_data_study2|function|a5442668f705c31a
-extract_pilot3_between_subjects_means|function|7f6deb9874d3052f
-plot_pilot3_comparison|function|5f6677e65140319a
-fit_study2_model1|function|601bff2227d24a50
-extract_pilot2_means_by_dilemma_type|function|eee98142fc4e5909
-extract_pilot3_comparison_means|function|6c6c7ff6be1dc534
-create_table_study2_model1|function|d41bd479d825c277
-plot_study2_model1|function|9ff4afcaa7fe2580
-plot_pilot1_results|function|fc5c36980fe0746a
-fit_pilot2_model1|function|5eeb75ab6b73f538
-fit_pilot2_model2|function|35025ab3ef511db8
-extract_study3_means1|function|2a5375ceb6fb16a5
-fit_study1_model1|function|10e7334097d7ee51
-fit_study1_model2|function|0df9a220b00aaee6
-fit_study1_model3|function|c580bee908cbc6e4
-plot_pilot3_between_subjects_perceptions|function|406e22ca6814ee00
-create_table_advisor_study3_model1|function|59691e8f439f7ae8
-plot_pilot2_results_by_dilemma_type|function|69c15cb5be146fce
-fit_study1_model4|function|baa01a93de547749
-plot_pilot1_sankey_individual|function|d7b0ce0a0e215c1d
-plot_power_analysis_pilot3|function|091cbe5f5cc35917
-plot_study1_model1|function|e37e283a63e0be04
-create_table_study1_model1|function|75a17ab7069a9d02
-create_table_condition_study3_model1|function|bf297b2c797478fc
-plot_study1_model2|function|5ee9d74c42508661
-create_table_study1_model2|function|5dc0ed022db39e1b
-run_power_analysis_pilot3|function|fbb86b15a81e2950
-run_power_analysis_study2|function|3dafe4235b52f957
-plot_pilot1_sankey|function|8ef04cf3982e671a
 study1_plot_judgements|stem|70e11dcb4ea0ca04|571730826423170e|484757cee7c5100f|-1411510348||t20440.418430216s|s219393b|219393|rds|local|vector|||1.172||
 study3_plot_judgements|stem|fe6694e8c1eeddcd|99c0247734c8160a|d5de4ea5119f29a4|-1606599016||t20440.418438149s|s255748b|255748|rds|local|vector|||0.422||
 study2_plot_judgements|stem|c9bf89c343418b0d|3e94183d833e6eb9|7098836be7adc427|1495395261||t20440.4184451223s|s205772b|205772|rds|local|vector|||0.406||
@@ -270,11 +186,164 @@ study3_plot1_by_dilemma_trust|stem|4efb7c32a0e779ed|f9d543ac7ceacc17|c130ce6d55e
 study3_plot1_trust|stem|3912a5da7e8416fd|40e139134e6a46c6|2b8ac28bb87e267d|-525039960||t20440.4187955473s|s3391682b|3391682|rds|local|vector|||0.406|Removed 586 rows containing missing values or values outside the scale range (`geom_point()`).|
 study3_plot1_competent|stem|847b3979b1749701|aa716bd59906e04d|d931ff2f3cb71191|1939702586||t20440.4188059792s|s3403837b|3403837|rds|local|vector|||0.344|Removed 625 rows containing missing values or values outside the scale range (`geom_point()`).|
 study3_plot1_by_dilemma_competent|stem|73ab0f03d002bf9b|8e0d9715bb7ebb9b|bde31391900cd880|996158043||t20440.418823604s|s8940140b|8940140|rds|local|vector|||0.547|Removed 632 rows containing missing values or values outside the scale range (`geom_point()`).|
-study2_plot1_empathy|stem|982bc68aa5aa5d49|d78b3480565ed408|645d717de643b335|-2091665936||t20440.4188293803s|s1701937b|1701937|rds|local|vector|||0.218|Removed 106 rows containing missing values or values outside the scale range (`geom_point()`).|
-study2_plot1_by_dilemma_empathy|stem|9e65dfc2af4a8ac9|d13139ff5a9818ab|c277ddf61df069c9|-1463767322||t20440.4188389639s|s4503518b|4503518|rds|local|vector|||0.313|Removed 107 rows containing missing values or values outside the scale range (`geom_point()`).|
-study2_plot1_competent|stem|b428a51508ac586a|0b76f1e0fc4b21a5|3257ffc7037d1e3f|-1869531742||t20440.4188445631s|s1707848b|1707848|rds|local|vector|||0.203|Removed 98 rows containing missing values or values outside the scale range (`geom_point()`).|
-study2_plot1_by_dilemma_competent|stem|762d5dadd4e8b167|5b2a9f7bd2108b8e|56199b09e07d76a8|-597650675||t20440.4188571255s|s4511976b|4511976|rds|local|vector|||0.328|Removed 104 rows containing missing values or values outside the scale range (`geom_point()`).|
-study2_plot1_trust|stem|a1c33bb182c28dbe|9178909fc7b51abe|195d6ca94a341893|-674770980||t20440.4188664701s|s1700075b|1700075|rds|local|vector|||0.203|Removed 97 rows containing missing values or values outside the scale range (`geom_point()`).|
-study2_plot1_by_dilemma_trust|stem|9fe010f01dcd2cbb|0ca58dbb2c6474e1|c8157b74a1fb4577|-1764240545||t20440.4188759868s|s4495880b|4495880|rds|local|vector|||0.328|Removed 76 rows containing missing values or values outside the scale range (`geom_point()`).|
-study2_plot1_by_dilemma_likely_AI|stem|c8b63b448cea01f6|326ff56b4a08c82c|befdef790b745176|-2032340546||t20440.4188874546s|s4509606b|4509606|rds|local|vector|||0.359|Removed 115 rows containing missing values or values outside the scale range (`geom_point()`).|
-study2_plot1_likely_AI|stem|faf33e979a47334b|be9a009909cbcb28|238ce3d4689b7b68|948108229||t20440.418893797s|s1703376b|1703376|rds|local|vector|||0.219|Removed 110 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_fit1_likely_AI_all_participants|stem|ac3f379ac9d8be6c|6f68047d258c86b3|14f91610c81d2259|1068238382||t20440.4366821071s|s22306097b|22306097|rds|local|vector|||338.766|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+study2_fit1_empathy_with_exclusions|stem|c9e9931ce5341ec4|f1ab27fddb218bec|14f91610c81d2259|-248103593||t20440.4393087737s|s22264290b|22264290|rds|local|vector|||225.578|There were 30 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems . Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable. Running the chains for more iterations may help. See https://mc-stan.org/misc/warnings.html#tail-ess|
+study2_fit1_competent_with_exclusions|stem|5b66937f1d5dbfc9|9d7d5cb268697b36|14f91610c81d2259|423714728||t20440.4422763749s|s22354564b|22354564|rds|local|vector|||254.907||
+study2_fit1_likely_AI_with_exclusions|stem|5fc8b308cb76ea80|63fe477c76bfba55|14f91610c81d2259|2032891867||t20440.4465053153s|s22446607b|22446607|rds|local|vector|||364|There were 2 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+study2_fit1_trust_with_exclusions|stem|ce485c0c00129c98|996582edb1d577d7|14f91610c81d2259|-533096718||t20440.4493948828s|s22489087b|22489087|rds|local|vector|||248.297|There were 4 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+study2_fit1_empathy_all_participants|stem|17d3864205819dfa|883ec429a63678d2|14f91610c81d2259|-613246957||t20440.4520229063s|s22486755b|22486755|rds|local|vector|||225.39|There were 2 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+study2_fit1_competent_all_participants|stem|27283e973d5cf205|f8d62be9b19599cc|14f91610c81d2259|-2028531113||t20440.4593980573s|s22565185b|22565185|rds|local|vector|||635.797|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+study2_fit1_trust_all_participants|stem|0b85e9ae69f4ffba|3c80efb750c29fbd|14f91610c81d2259|1932570048||t20440.4619475391s|s22547836b|22547836|rds|local|vector|||218.797|There were 4 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+study2_table1_likely_AI_all_participants|stem|5632c629cf3ccb86|1126879705d0d7d3|9e37695ceb62318a|1142379388||t20440.4619591359s|s398b|398|rds|local|vector|||0.641||
+study2_means1_likely_AI_all_participants|stem|30c0f87233d483d1|e6df4b69ae2bef30|86f126f314cf9efe|424988154||t20440.461966531s|s235022b|235022|rds|local|vector|||0.297||
+study2_means1_by_dilemma_likely_AI_all_participants|stem|32474923d269731e|2fc9388d3d8df2c9|86f126f314cf9efe|-1012207043||t20440.4619776979s|s702650b|702650|rds|local|vector|||0.609||
+study2_table1_empathy_with_exclusions|stem|cbfe03da59714737|b50b5115030d1a12|8173c2482055ae14|1341359166||t20440.4619889669s|s409b|409|rds|local|vector|||0.593||
+study2_means1_by_dilemma_empathy_with_exclusions|stem|a74a243981ad6f77|9465d5298dc818ab|201cd92dbb537004|-1716695906||t20440.4619996827s|s695201b|695201|rds|local|vector|||0.563||
+study2_means1_empathy_with_exclusions|stem|49ba81ab99d5a319|387ac03f17f2def4|201cd92dbb537004|1152353089||t20440.4620098839s|s232609b|232609|rds|local|vector|||0.547||
+study2_means1_by_dilemma_competent_with_exclusions|stem|381d2fa61c46537e|243dfc62a18337ec|b76cdd3a9a5024d0|-370507164||t20440.4620246039s|s702508b|702508|rds|local|vector|||0.86||
+study2_means1_competent_with_exclusions|stem|87cb5c8e6fab29c1|37c8f4c8644a1c2c|b76cdd3a9a5024d0|-344608071||t20440.4620319697s|s235301b|235301|rds|local|vector|||0.266||
+study2_table1_competent_with_exclusions|stem|b4101ed87d26d307|64aa5ffae545537b|92c66a87d8c83d4c|-1720245292||t20440.462039009s|s410b|410|rds|local|vector|||0.281||
+study2_means1_likely_AI_with_exclusions|stem|0526f11498748d0f|af8820698307282c|b9a99bc6f5483d69|1610243930||t20440.462049235s|s235250b|235250|rds|local|vector|||0.25||
+study2_means1_by_dilemma_likely_AI_with_exclusions|stem|2259424e5b81a31f|1517fd271572d588|b9a99bc6f5483d69|782281554||t20440.4620600505s|s703203b|703203|rds|local|vector|||0.578||
+study2_table1_likely_AI_with_exclusions|stem|a10868f51106ce9b|edd5fed54952db38|3113006d3092b2ad|106431810||t20440.462067363s|s401b|401|rds|local|vector|||0.265||
+study2_means1_by_dilemma_trust_with_exclusions|stem|d5d53e2a011c1c38|bf73c28f24009c86|f02a600483d2a00e|-2032132845||t20440.4620790037s|s702404b|702404|rds|local|vector|||0.594||
+study2_means1_trust_with_exclusions|stem|16520f1f8d3ca187|9510db1d22d2b83a|f02a600483d2a00e|991327675||t20440.462089908s|s235308b|235308|rds|local|vector|||0.531||
+study2_table1_trust_with_exclusions|stem|e83d2da66ca1290f|843e2b0c0788ec8b|2b00dcf4cb432501|-607607188||t20440.462097125s|s411b|411|rds|local|vector|||0.265||
+study2_means1_by_dilemma_empathy_all_participants|stem|9deccc00b6457a0b|902b95b5ffa5114d|bc4929640a87a1a0|-1469660707||t20440.4621100184s|s701663b|701663|rds|local|vector|||0.563||
+study2_table1_empathy_all_participants|stem|af31008b6c26ebcf|69addaf2bfd84a04|d22dd1a826f08a05|-286061881||t20440.4621176968s|s410b|410|rds|local|vector|||0.297||
+study2_means1_empathy_all_participants|stem|0653033fd3e4ec1f|b9d5faa78a7388e2|bc4929640a87a1a0|1036847509||t20440.4621294137s|s234793b|234793|rds|local|vector|||0.625||
+study2_means1_by_dilemma_competent_all_participants|stem|fd3a475e6b09a3c1|907302cac792fd8c|896452931c7e513d|-684533220||t20440.4621414107s|s703127b|703127|rds|local|vector|||0.61||
+study2_table1_competent_all_participants|stem|6731e0f5858eb410|043e33c932b088ff|2702b259c0354849|429127265||t20440.4621527979s|s411b|411|rds|local|vector|||0.546||
+study2_means1_competent_all_participants|stem|17acb39b741ba187|224f1ac05b49c4c4|896452931c7e513d|-272784378||t20440.4621606673s|s235369b|235369|rds|local|vector|||0.266||
+study2_table1_trust_all_participants|stem|92dcd71c905733c1|07061307c36037f6|36748f58abce1d72|-1592140098||t20440.4621680284s|s415b|415|rds|local|vector|||0.25||
+study2_means1_by_dilemma_trust_all_participants|stem|3bd37338d56da9be|c794ce6578a39643|1e0972bbd62a2cf1|542514445||t20440.463809207s|s700277b|700277|rds|local|vector|||1.063||
+study2_means1_trust_all_participants|stem|95c1a762f0ab6762|d2fd80780555296f|1e0972bbd62a2cf1|1040891526||t20440.4638209157s|s234420b|234420|rds|local|vector|||0.516||
+study2_plot1_by_dilemma_empathy_all_participants|stem|6ea9d51122e0fd23|a8deb98fac567fc6|ea569789f17b8840|-605232841||t20440.4638413322s|s4503638b|4503638|rds|local|vector|||1.235|Removed 107 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_empathy_all_participants|stem|c7e47606c4c44cc3|20eb15eebf641815|23691ec7f382c3d3|-899063998||t20440.4638475533s|s1702053b|1702053|rds|local|vector|||0.281|Removed 86 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_by_dilemma_likely_AI_with_exclusions|stem|9feb9b3fe69744af|ea881c7fdebad079|5b8dc06f4b7b3749|1985069129||t20440.4638568537s|s4515080b|4515080|rds|local|vector|||0.297|Removed 110 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_likely_AI_with_exclusions|stem|2ff30fc8aabcd2f7|cddd59da5bc0c1e4|ec6ce5d1a414cda4|1627789505||t20440.463862251s|s1704648b|1704648|rds|local|vector|||0.203|Removed 116 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_by_dilemma_trust_all_participants|stem|954cfa7de0cbf66d|4d441e96b4296fab|5f5bd1bb0d654b75|1658188058||t20440.4638720914s|s4496062b|4496062|rds|local|vector|||0.297|Removed 93 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_trust_all_participants|stem|a56183b8a0ad7de1|6de88b599e15fbbe|6abe3051edf6e962|1372745255||t20440.4638778674s|s1700183b|1700183|rds|local|vector|||0.203|Removed 85 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_by_dilemma_competent_with_exclusions|stem|b33f3cde1f5c5d4c|21f04576938562bc|014d385a7c29560a|1808869464||t20440.4638869731s|s4508030b|4508030|rds|local|vector|||0.313|Removed 118 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_competent_with_exclusions|stem|a6d8e43c85b34693|5806ad10104418de|a9f32e83d52c08da|1824255569||t20440.4638925287s|s1707500b|1707500|rds|local|vector|||0.187|Removed 99 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_trust_with_exclusions|stem|311f08b7d4aeb341|81483d79366675fc|3f687bbc4e42d2be|-145222762||t20440.4638987308s|s1705352b|1705352|rds|local|vector|||0.25|Removed 105 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_by_dilemma_trust_with_exclusions|stem|e8bd2e465a2b5d16|4d8c711cfa95278a|19cd7a0bb08715d6|868980211||t20440.4639079456s|s4509220b|4509220|rds|local|vector|||0.328|Removed 88 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_competent_all_participants|stem|1af66a5b0b7453f0|60c4688a8a98d6aa|595949aa752ced20|-1945022268||t20440.4639133913s|s1707970b|1707970|rds|local|vector|||0.219|Removed 106 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_by_dilemma_competent_all_participants|stem|9254cb7e69777698|165605946d9ece76|94362e8a1c77e256|1413330786||t20440.4639226536s|s4512131b|4512131|rds|local|vector|||0.297|Removed 92 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_by_dilemma_likely_AI_all_participants|stem|52be0d6e99edcb8d|1d3a05935957ac7b|a8d859de3a77f94d|-536279350||t20440.4639316868s|s4509735b|4509735|rds|local|vector|||0.281|Removed 112 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_likely_AI_all_participants|stem|5c7cfa487d2f2357|0e1f86c1b8b30296|fbbd99ab3d83eb9c|-1154481259||t20440.4639369143s|s1703491b|1703491|rds|local|vector|||0.187|Removed 107 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_empathy_with_exclusions|stem|9055801189619e53|a12d5e52e4600a45|f25ee55ff672590c|1047635237||t20440.4639421724s|s1688969b|1688969|rds|local|vector|||0.187|Removed 101 rows containing missing values or values outside the scale range (`geom_point()`).|
+study2_plot1_by_dilemma_empathy_with_exclusions|stem|5f4b00c249798189|fa7bd7f9d93b12b8|9554011923ed6e4c|1734763318||t20440.4639510062s|s4468855b|4468855|rds|local|vector|||0.297|Removed 102 rows containing missing values or values outside the scale range (`geom_point()`).|
+study3_fit1_competent_with_exclusions|stem|7534681d8e295372|4da6a688191a9c6e|f557494777f64128|1896214011||t20440.4975492383s|s85155076b|85155076|rds|local|vector|||2683.781|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+study3_fit1_empathy_with_exclusions|stem|508fd53409eac9b0|4f4e484f217642b3|f557494777f64128|-180622399||t20440.5152899571s|s85160587b|85160587|rds|local|vector|||1528.265||
+study3_fit1_trust_with_exclusions|stem|8ac31823ae0c078e|ede274821899cee1|f557494777f64128|884150538||t20440.5299797962s|s85310874b|85310874|rds|local|vector|||1264.907|There were 5 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+study3_fit1_competent_all_participants|stem|564e821c9513a982|86d0c033d75fc99d|f557494777f64128|1095651244||t20440.5488162965s|s102787041b|102787041|rds|local|vector|||1622.422|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+study3_fit1_empathy_all_participants|stem|f1077ea088d72cfb|583427c9a8af82e3|f557494777f64128|-892585565||t20440.5666718058s|s102679048b|102679048|rds|local|vector|||1537.844|There were 2 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+study3_fit1_trust_all_participants|stem|20cc6e0a331a6f01|848a86a1c47c7b57|f557494777f64128|763211038||t20440.5831102777s|s102869085b|102869085|rds|local|vector|||1415.406|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+study3_fit2_with_exclusions|stem|fc3cbab74c1df0a6|0e266dcf81c5d047|d10e160416e6e054|-1119850194||t20440.5876569801s|s5584188b|5584188|rds|local|vector|||391.984|There were 2 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+study3_fit2_all_participants|stem|80662dadbf3d4e5f|7347f9c954fe5660|d10e160416e6e054|64691571||t20440.5904825174s|s5611220b|5611220|rds|local|vector|||243.281|There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+study3_table1_condition_competent_with_exclusions|stem|78793bee6c9c5b5a|3955d1bcf6087eb0|e9661d19fc1e375e|1268847969||t20440.5905044014s|s343b|343|rds|local|vector|||0.937||
+study3_table1_advisor_competent_with_exclusions|stem|54f5f61cc8f7973e|6d523599bf756ea2|ac5608297da15060|632965242||t20440.5905245233s|s558b|558|rds|local|vector|||0.859||
+study3_means1_competent_with_exclusions|stem|f5fccb974fa7623d|932fb7b7beb715a0|24e25eed22f41b1f|-44450082||t20440.5905403651s|s471499b|471499|rds|local|vector|||0.547||
+study3_means1_by_dilemma_competent_with_exclusions|stem|a482ecb3e74779c6|65675b6d119c2cc3|24e25eed22f41b1f|1566401260||t20440.5905650697s|s1397240b|1397240|rds|local|vector|||0.906||
+study3_means1_by_dilemma_empathy_with_exclusions|stem|89ef9e43865390ba|1841411d64693a41|d58a2fc4408e391f|-1193431633||t20440.5905918766s|s1402434b|1402434|rds|local|vector|||1.328||
+study3_table1_advisor_empathy_with_exclusions|stem|b0b9aee0d39f5a9c|57b12b0566963a07|d0407af328b3efba|-1081328159||t20440.5906096833s|s554b|554|rds|local|vector|||0.406||
+study3_table1_condition_empathy_with_exclusions|stem|d2a122bf0c1d254d|f2cf615864515464|74f2495bd6f306d1|-1463637621||t20440.5906286901s|s339b|339|rds|local|vector|||0.812||
+study3_means1_empathy_with_exclusions|stem|180f94192f80ed21|e5e9dc4546b36634|d58a2fc4408e391f|1540387374||t20440.5906482452s|s471993b|471993|rds|local|vector|||0.859||
+study3_table1_advisor_trust_with_exclusions|stem|2aeb95e6bdef498b|df1395e13c0a15bf|3a0e9874bee1edfa|131705093||t20440.5906685644s|s559b|559|rds|local|vector|||0.907||
+study3_means1_by_dilemma_trust_with_exclusions|stem|2bb5136d19974885|038c1e2923f95afb|fc9be97cea031919|690418435||t20440.5906939415s|s1394502b|1394502|rds|local|vector|||1.266||
+study3_table1_condition_trust_with_exclusions|stem|0049d84afc911e1f|9e3e2c13c6a15156|208f4e5f9f7c0562|-1037991876||t20440.5907131894s|s345b|345|rds|local|vector|||0.797||
+study3_means1_trust_with_exclusions|stem|1fdec42c6e89facb|74418cba9f24effe|fc9be97cea031919|-1661830322||t20440.590734467s|s469826b|469826|rds|local|vector|||0.954||
+study3_means1_by_dilemma_competent_all_participants|stem|9d483fb86883fbb1|6829de2c59ff4c26|1694dd288568be5a|75104355||t20440.590763257s|s1393355b|1393355|rds|local|vector|||1.312||
+study3_means1_competent_all_participants|stem|ed0d4fa76a0bcb94|dbccd43b5c401f13|1694dd288568be5a|-1812042434||t20440.5907848237s|s471035b|471035|rds|local|vector|||0.859||
+study3_table1_condition_competent_all_participants|stem|9d59c2d383d0e6c6|00b8bcd12823e485|afe2ce79526d1f6d|1148810473||t20440.590806492s|s341b|341|rds|local|vector|||0.844||
+study3_table1_advisor_competent_all_participants|stem|68fdc11de3ac09d9|056a93732124101e|fdbb5f77f959ca04|1736419226||t20440.5908281977s|s558b|558|rds|local|vector|||0.875||
+study3_means1_by_dilemma_empathy_all_participants|stem|9b2479edd7634eed|141e0634bcbc20c1|1eb3eca4a8f701a3|-627801300||t20440.5908597528s|s1398470b|1398470|rds|local|vector|||1.61||
+study3_table1_advisor_empathy_all_participants|stem|8e6e8f810b85cbef|96f574f581ccccf7|c66b2d0e19703fa4|-501586595||t20440.5908806602s|s556b|556|rds|local|vector|||0.797||
+study3_table1_condition_empathy_all_participants|stem|59e0e494eb67d878|8dd81a42a806411b|aee98cc29ac57e5e|-1123564935||t20440.5909010575s|s341b|341|rds|local|vector|||0.796||
+study3_means1_empathy_all_participants|stem|976ca5459fa1d4ee|7499196a54a3fa30|1eb3eca4a8f701a3|-596700737||t20440.590922184s|s471668b|471668|rds|local|vector|||0.781||
+study3_means1_trust_all_participants|stem|71f7af92fed90bcb|69dee4e8b3c6c0ab|1e0cd6637f73be5d|-1185865493||t20440.5909449643s|s469730b|469730|rds|local|vector|||0.906||
+study3_means1_by_dilemma_trust_all_participants|stem|eb13eef017be1dfb|7f3adc78fd2ab3a0|1e0cd6637f73be5d|-542809593||t20440.5909745091s|s1392529b|1392529|rds|local|vector|||1.469||
+study3_table1_advisor_trust_all_participants|stem|dbbe3d621269b4dd|a02157192bbf8967|6c640fb8ca50b134|700220042||t20440.5909951166s|s554b|554|rds|local|vector|||0.796||
+study3_table1_condition_trust_all_participants|stem|cb3b1402dc6390ea|57eba47dd333c7f2|a99a8e6d850367da|893871571||t20440.5910162247s|s342b|342|rds|local|vector|||0.844||
+study3_plot2_with_exclusions|stem|9338fd4208bc766c|017fadda561508a5|fae8db0964c3640c|1473623602||t20440.6234002721s|s150413b|150413|rds|local|vector|||4.172||
+study3_plot2_by_dilemma_with_exclusions|stem|fd591cc137cae1cc|1d1740771000d8be|fae8db0964c3640c|847107854||t20440.6234717912s|s153683b|153683|rds|local|vector|||5.141||
+study3_plot2_by_dilemma_all_participants|stem|ac67a34477350240|1cdd7b885b0f0444|b7f47ac451496348|-332823720||t20440.6235353118s|s153689b|153689|rds|local|vector|||4.422||
+study3_plot2_all_participants|stem|550d1e5256123bbc|1edafcadd1a65e15|b7f47ac451496348|-1969162607||t20440.6235717639s|s150416b|150416|rds|local|vector|||2.125||
+study3_plot1_competent_with_exclusions|stem|fc2c23e96cd2f681|f2ecce678eb322e9|9ded4ff84b1d66fa|1906568402||t20440.6236051342s|s3404590b|3404590|rds|local|vector|||1.391|Removed 634 rows containing missing values or values outside the scale range (`geom_point()`).|
+study3_plot1_by_dilemma_competent_with_exclusions|stem|e2768a781c6e4911|b345470fa8884611|0b6f3712946e6b32|1790776054||t20440.623659105s|s8966238b|8966238|rds|local|vector|||1.875|Removed 649 rows containing missing values or values outside the scale range (`geom_point()`).|
+study3_plot1_by_dilemma_empathy_with_exclusions|stem|b020bebbcf459e8e|a8c5b0272f292ea4|f9bfb93e66b1a149|-295479854||t20440.6237124444s|s8992547b|8992547|rds|local|vector|||1.813|Removed 653 rows containing missing values or values outside the scale range (`geom_point()`).|
+study3_plot1_empathy_with_exclusions|stem|c4074f9ccd3bc8ad|541375e8d13ffe3a|761446c9fd84a0f7|-1603810715||t20440.6237434193s|s3410707b|3410707|rds|local|vector|||1.266|Removed 662 rows containing missing values or values outside the scale range (`geom_point()`).|
+study3_plot1_by_dilemma_trust_with_exclusions|stem|4986b6901317b99d|8820ebf14ac18559|249e57591dc27ba7|-2072802087||t20440.6237995514s|s8948892b|8948892|rds|local|vector|||1.828|Removed 576 rows containing missing values or values outside the scale range (`geom_point()`).|
+study3_plot1_trust_with_exclusions|stem|427ee5035da3f577|c1b153c0c38b710e|3c54fa47290e6665|1360802582||t20440.6238313166s|s3396489b|3396489|rds|local|vector|||1.235|Removed 595 rows containing missing values or values outside the scale range (`geom_point()`).|
+study3_plot1_by_dilemma_competent_all_participants|stem|081555474652375e|f425d62e26bed9d2|eb77b865c7a50464|835102241||t20440.6238852555s|s8940282b|8940282|rds|local|vector|||1.734|Removed 638 rows containing missing values or values outside the scale range (`geom_point()`).|
+study3_plot1_competent_all_participants|stem|8acd8c3f53d3a6e2|7c711511d57bb36e|387fe760916f7d98|-1476695361||t20440.6239162775s|s3403928b|3403928|rds|local|vector|||1.156|Removed 628 rows containing missing values or values outside the scale range (`geom_point()`).|
+study3_plot1_by_dilemma_empathy_all_participants|stem|7a96f365613dc2a8|1151acf01a55499c|f9a56546b9b470f2|-796998051||t20440.6239708276s|s8967996b|8967996|rds|local|vector|||1.828|Removed 678 rows containing missing values or values outside the scale range (`geom_point()`).|
+study3_plot1_empathy_all_participants|stem|ee257facb10883b9|733a9b7c4e552f09|ffec06be7769a5c1|-1754917560||t20440.6239997693s|s3408888b|3408888|rds|local|vector|||1.109|Removed 677 rows containing missing values or values outside the scale range (`geom_point()`).|
+study3_plot1_trust_all_participants|stem|71ac0fb3ae29fbf4|52ce898d46378ce0|c8c44003f92febf5|-1684743187||t20440.6240304122s|s3391802b|3391802|rds|local|vector|||1.203|Removed 617 rows containing missing values or values outside the scale range (`geom_point()`).|
+study3_plot1_by_dilemma_trust_all_participants|stem|0d83a7590c71d4d7|eec1b8a65fa704d8|119110e517fda2db|1504194067||t20440.6240846412s|s8934795b|8934795|rds|local|vector|||1.703|Removed 587 rows containing missing values or values outside the scale range (`geom_point()`).|
+create_table_study1_model3|function|385dddb18e10e90c
+plot_study1_model3|function|1ade3fbbe700245b
+extract_pilot2_means_by_dilemma|function|e9e479c4cd2fe4cf
+plot_study1_model4|function|c8264c14ecce4715
+load_study3_data|function|591613f2d830e233
+get_post_difference_pilot3|function|1c5a8b01464d35dd
+load_pilot3_data|function|27df1b6ad2b712c2
+plot_pilot3_between_subjects_AI|function|cdfc78f24683f54d
+plot_own_judgements_study1|function|907cea2f7fa25612
+plot_own_judgements_study2|function|b79ea9ddd93a1828
+fit_pilot1_model|function|f90b10d6e1d7417d
+plot_own_judgements_study3|function|948b38891aa691a3
+extract_study2_means1|function|dac1be06b30107cb
+load_study1_data|function|1729eaba5a24957d
+generate_new_data_pilot3|function|21cf2014e16b56fb
+load_pilot1_data|function|1e4b69e8cb87bf06
+load_study2_data|function|a35a164772fc4921
+extract_overall_pilot2_means|function|1705962ab8cbf91e
+.Random.seed|object|cde2b737557d5717
+load_pilot2_data|function|de1c9071c12ca5e7
+extract_pilot1_means|function|6ed164c107d2c044
+extract_study1_means1|function|ce1941b918cf0774
+exclude_study2_data|function|fad0234eb5f72aad
+extract_study1_means2|function|254418c2793bc1c2
+exclude_study3_data|function|bf4422c16e1b8d00
+plot_pilot2_overall_results|function|8f1f2c090c8654a5
+extract_study1_means3|function|bac1bc9f483cabf4
+plot_pilot2_results_by_dilemma|function|36cdb49a2a0f9b5a
+extract_study1_means4|function|119cb90225f04307
+get_post_difference_study2|function|36c37a417ee928e6
+plot_study3_model1|function|92d88f52d56cb2bf
+plot_study3_model2|function|b951471ef286e416
+fit_pilot3_model1|function|9a9f7387e2af9a80
+fit_pilot3_model2|function|188aff622c7248d8
+generate_new_data_study2|function|a5442668f705c31a
+extract_pilot3_between_subjects_means|function|7f6deb9874d3052f
+plot_pilot3_comparison|function|5f6677e65140319a
+extract_pilot2_means_by_dilemma_type|function|eee98142fc4e5909
+extract_pilot3_comparison_means|function|6c6c7ff6be1dc534
+create_table_study2_model1|function|d41bd479d825c277
+plot_study2_model1|function|ad3cbd2b1165a575
+plot_pilot1_results|function|fc5c36980fe0746a
+fit_pilot2_model1|function|5eeb75ab6b73f538
+fit_pilot2_model2|function|35025ab3ef511db8
+extract_study3_means1|function|2a5375ceb6fb16a5
+fit_study1_model1|function|10e7334097d7ee51
+fit_study1_model2|function|0df9a220b00aaee6
+fit_study1_model3|function|c580bee908cbc6e4
+plot_pilot3_between_subjects_perceptions|function|406e22ca6814ee00
+create_table_advisor_study3_model1|function|59691e8f439f7ae8
+plot_pilot2_results_by_dilemma_type|function|69c15cb5be146fce
+fit_study1_model4|function|baa01a93de547749
+plot_pilot1_sankey_individual|function|d7b0ce0a0e215c1d
+plot_power_analysis_pilot3|function|091cbe5f5cc35917
+plot_study1_model1|function|e37e283a63e0be04
+create_table_study1_model1|function|75a17ab7069a9d02
+create_table_condition_study3_model1|function|bf297b2c797478fc
+plot_study1_model2|function|5ee9d74c42508661
+create_table_study1_model2|function|5dc0ed022db39e1b
+run_power_analysis_pilot3|function|fbb86b15a81e2950
+fit_study2_model1|function|26829f58db85da8f
+fit_study3_model1|function|7fadb5a269cc3bf4
+fit_study3_model2|function|bc6c53ab6814fd3e
+run_power_analysis_study2|function|3dafe4235b52f957
+plot_pilot1_sankey|function|8ef04cf3982e671a

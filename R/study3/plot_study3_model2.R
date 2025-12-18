@@ -1,5 +1,5 @@
 # function to plot responses to choice question
-plot_study3_model2 <- function(study3_fit2, split_by_dilemma = FALSE) {
+plot_study3_model2 <- function(study3_fit2, include, split_by_dilemma = FALSE) {
   # advisor and dilemma types
   advisor_types <- c(
     "ConsistentlyDeontological" = "Consistently\nDeontological",
@@ -119,7 +119,9 @@ plot_study3_model2 <- function(study3_fit2, split_by_dilemma = FALSE) {
   ggsave(
     plot = p,
     filename = paste0(
-      "plots/study3/study3_results_",
+      "plots/study3/",
+      include,
+      "/study3_results_",
       ifelse(split_by_dilemma, "by_dilemma_", ""),
       "choice.pdf"
     ),
