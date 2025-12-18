@@ -103,7 +103,7 @@ plot_study2_model1 <- function(study2_data, study2_means1, outcome,
   ggsave(
     plot = p,
     filename = paste0(
-      "plots/study2_results_",
+      "plots/study2/study2_results_",
       ifelse(split_by_dilemma, "by_dilemma_", ""),
       outcome,
       ".pdf"

@@ -64,7 +64,7 @@ plot_pilot2_results_by_dilemma <- function(pilot2_data, pilot2_dilemma_means,
       )
   # save
   ggsave(
-    filename = paste0("plots/pilot2_results_", response, ".pdf"),
+    filename = paste0("plots/pilot2/pilot2_results_", response, ".pdf"),
     plot = out,
     width = 6,
     height = 4.5

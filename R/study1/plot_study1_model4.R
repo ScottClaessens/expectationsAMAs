@@ -72,7 +72,7 @@ plot_study1_model4 <- function(study1_fit4) {
   # save and return
   ggsave(
     plot = p,
-    filename = paste0("plots/study1_results_rank.pdf"),
+    filename = paste0("plots/study1/study1_results_rank.pdf"),
     width = 7,
     height = 3
   )

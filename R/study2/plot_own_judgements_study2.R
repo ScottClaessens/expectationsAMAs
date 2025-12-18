@@ -52,7 +52,7 @@ plot_own_judgements_study2 <- function(study2_data) {
     )
   # save
   ggsave(
-    filename = "plots/study2_judgements.pdf",
+    filename = "plots/study2/study2_judgements.pdf",
     plot = plot,
     width = 5,
     height = 6

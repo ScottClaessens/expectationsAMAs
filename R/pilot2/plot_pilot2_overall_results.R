@@ -69,7 +69,7 @@ plot_pilot2_overall_results <- function(pilot2_data, pilot2_overall_means) {
     plot_annotation(tag_levels = "a")
   # save
   ggsave(
-    file = "plots/pilot2_overall_results.pdf",
+    file = "plots/pilot2/pilot2_overall_results.pdf",
     plot = out,
     height = 5,
     width = 7

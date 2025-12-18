@@ -113,7 +113,7 @@ plot_pilot3_between_subjects_perceptions <-
       )
     # save
     ggsave(
-      file = "plots/pilot3_between_subjects_perceptions.pdf",
+      file = "plots/pilot3/pilot3_between_subjects_perceptions.pdf",
       plot = out,
       height = 5,
       width = 6

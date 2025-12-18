@@ -82,7 +82,7 @@ plot_pilot3_comparison <- function(pilot3_fit2, pilot3_comparison_means) {
     )
   # save
   ggsave(
-    file = "plots/pilot3_comparison.pdf",
+    file = "plots/pilot3/pilot3_comparison.pdf",
     plot = out,
     height = 4,
     width = 6

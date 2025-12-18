@@ -92,7 +92,7 @@ plot_pilot3_between_subjects_AI <-
       )
     # save
     ggsave(
-      file = "plots/pilot3_between_subjects_AI.pdf",
+      file = "plots/pilot3/pilot3_between_subjects_AI.pdf",
       plot = out,
       height = 4,
       width = 5

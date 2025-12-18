@@ -83,7 +83,7 @@ plot_pilot2_results_by_dilemma_type <- function(pilot2_data,
     plot_layout(heights = c(1, -0.2, 1), guides = "collect")
   # save
   ggsave(
-    file = "plots/pilot2_results_by_dilemma_type.pdf",
+    file = "plots/pilot2/pilot2_results_by_dilemma_type.pdf",
     plot = out,
     height = 5,
     width = 7

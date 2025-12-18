@@ -119,7 +119,7 @@ plot_study3_model2 <- function(study3_fit2, split_by_dilemma = FALSE) {
   ggsave(
     plot = p,
     filename = paste0(
-      "plots/study3_results_",
+      "plots/study3/study3_results_",
       ifelse(split_by_dilemma, "by_dilemma_", ""),
       "choice.pdf"
     ),

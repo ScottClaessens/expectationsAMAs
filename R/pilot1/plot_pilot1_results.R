@@ -83,7 +83,7 @@ plot_pilot1_results <- function(pilot1_data, pilot1_means) {
   # save plot
   ggsave(
     plot = p,
-    filename = "plots/pilot1_results.pdf",
+    filename = "plots/pilot1/pilot1_results.pdf",
     height = 6,
     width = 7.5
   )

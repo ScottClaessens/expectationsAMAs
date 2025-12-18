@@ -24,7 +24,7 @@ plot_power_analysis_pilot3 <- function(power) {
     )
   # save
   ggsave(
-    filename = "plots/pilot3_power.pdf",
+    filename = "plots/pilot3/pilot3_power.pdf",
     plot = p,
     height = 6,
     width = 4
