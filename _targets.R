@@ -19,7 +19,7 @@ list(
   targets_pilot3,   # R/pilot3/targets_pilot3.R
   targets_study1,   # R/study1/targets_study1.R
   targets_study2,   # R/study2/targets_study2.R
-  targets_study3    # R/study3/targets_study3.R
+  targets_study3,   # R/study3/targets_study3.R
   # summary of pilot studies
-  #tar_quarto(summary, "quarto/summary/summary.qmd")
+  tar_quarto(summary, "quarto/summary/summary.qmd")
 )

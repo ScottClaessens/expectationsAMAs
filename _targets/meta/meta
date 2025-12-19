@@ -433,7 +433,7 @@ generate_new_data_pilot3|function|21cf2014e16b56fb
 load_pilot1_data|function|1e4b69e8cb87bf06
 load_study2_data|function|a35a164772fc4921
 extract_overall_pilot2_means|function|1705962ab8cbf91e
-.Random.seed|object|69bdc0bbb89faee2
+.Random.seed|object|d57428bece71d4d4
 load_pilot2_data|function|de1c9071c12ca5e7
 extract_pilot1_means|function|6ed164c107d2c044
 extract_study1_means1|function|ce1941b918cf0774
@@ -480,3 +480,4 @@ fit_study3_model1|function|7fadb5a269cc3bf4
 fit_study3_model2|function|bc6c53ab6814fd3e
 run_power_analysis_study2|function|3dafe4235b52f957
 plot_pilot1_sankey|function|8ef04cf3982e671a
+summary|stem|b281861125c69ca3|b4ec51ec242a4156|40a3b4e6aa29030e|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20441.5699664518s|s34740b|34740|file|local|vector|||21.219||
