@@ -1,7 +1,7 @@
 # Data README file
 
-**Dataset title:** Clean data from first main study for project on 
-"Expectations of Artificial Moral Advisors"
+**Dataset title:** Clean data from first main study for paper "Trust in human 
+and AI moral advisors favours rule-based over calculating moral reasoning"
 
 **Principal investigator:** Dr. Scott Claessens (scott.claessens@gmail.com)
 

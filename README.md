@@ -1,4 +1,5 @@
-# Expectations of Artificial Moral Advisors Across Cultures
+# Trust in Human and AI Moral Advisors Favours Rule-based over Calculating Moral
+Reasoning
 
 ## Getting Started
 
