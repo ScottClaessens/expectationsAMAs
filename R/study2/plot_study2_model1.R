@@ -44,6 +44,13 @@ plot_study2_model1 <- function(study2_data, study2_means1, outcome,
         )
       )
   }
+  # get y-axis label
+  ylab <- str_replace(
+    str_to_sentence(str_replace_all(outcome, "_", " ")),
+    pattern = fixed("ai"),
+    replacement = "AI"
+  )
+  ylab <- ifelse(ylab == "Trust", "Trustworthy", ylab)
   # plot
   p <-
     ggplot() +
@@ -71,11 +78,7 @@ plot_study2_model1 <- function(study2_data, study2_means1, outcome,
       linewidth = 0.7
     ) +
     scale_y_continuous(
-      name = str_replace(
-        str_to_sentence(str_replace_all(outcome, "_", " ")),
-        pattern = fixed("ai"),
-        replacement = "AI"
-      ),
+      name = ylab,
       limits = c(1, 7),
       breaks = 1:7
     ) +
