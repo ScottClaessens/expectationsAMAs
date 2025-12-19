@@ -90,6 +90,10 @@ plot_study3_model2 <- function(study3_fit2, include, split_by_dilemma = FALSE) {
         colour = condition
       )
     ) +
+    geom_hline(
+      yintercept = 0.25,
+      linetype = "dashed"
+    ) +
     geom_pointrange(
       position = position_dodge(width = 0.5)
     ) +
