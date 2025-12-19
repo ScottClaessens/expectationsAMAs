@@ -1,5 +1,4 @@
-# Trust in Human and AI Moral Advisors Favours Rule-based over Calculating Moral
-Reasoning
+# Trust in Human and AI Moral Advisors Favours Rule-Based over Calculating Moral Reasoning
 
 ## Getting Started
 
